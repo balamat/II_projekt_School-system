@@ -5,7 +5,7 @@ import java.util.Map;
 public class ClassDiary {
 
     LocalDate date;
-    int serialOfClass;
+    ClassSerial classSerial;
     Subject subject;
     Teacher teacher;
     List<Name> absentStudents;

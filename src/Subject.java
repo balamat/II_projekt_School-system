@@ -2,24 +2,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum Subject {
-    MATHS("Matematika", new ArrayList<>()),
-    HUNGARIAN("Magyar", new ArrayList<>()),
-    ENGLISH("Angol", new ArrayList<>()),
-    GERMAN("Német", new ArrayList<>()),
-    HISTORY("Történelem", new ArrayList<>()),
-    PHYSICS("Fizika", new ArrayList<>()),
-    VISUAL_ARTS("Rajz", new ArrayList<>()),
-    MUSIC("Ének", new ArrayList<>()),
-    SPORT("Testnevelés", new ArrayList<>()),
+    MATHS("Matematika"),
+    HUNGARIAN("Magyar"),
+    ENGLISH("Angol"),
+    GERMAN("Német"),
+    HISTORY("Történelem"),
+    PHYSICS("Fizika"),
+    VISUAL_ARTS("Rajz"),
+    MUSIC("Ének"),
+    SPORT("Testnevelés"),
     ;
 
-    Subject(String subjectName, List<Teacher> teacherList) {
+    Subject(String subjectName) {
         this.subjectName = subjectName;
-        this.teacherList = teacherList;
+
     }
 
     private String subjectName;
-    private List<Teacher> teacherList;
 
 
 }
