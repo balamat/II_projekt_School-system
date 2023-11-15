@@ -46,9 +46,11 @@ public class Main {
         //scanner - user
         //scanner -password
         //mainPage
-        System.out.println(teacher01.getName());
 
-        Menu.printMainPage(Log.login());
+//        UserInterface.printMainPage(Log.login());
+        String inputTeacher = "A B";
+        Teacher teacher = Teacher.getAllTeacherList().stream().filter(tch -> tch.getName().toString().equals(inputTeacher)).findFirst().orElseThrow();
+        System.out.println(teacher);
 
         //Functions
         //1- student info

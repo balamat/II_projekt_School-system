@@ -22,17 +22,18 @@ public class ClassDiary {
         allClassDiary.add(this);
     }
 
-    public ClassDiary addAbsentStudent(int absentNumber) {
-        for (int i = 0; i < absentNumber; i++) {
-            System.out.println("Add meg a hiányzó teljes nevét és a hiányzás okát a megadott formában! [Nemecsek Ernő, tüdőgyulladás");
-            Scanner absentScanner = new Scanner(System.in);
-            String absentInput = absentScanner.nextLine();
-            absentScanner.close();
-            String[] absentAnswer = absentInput.split(",");
-            Student student = this.studClass.getStudentList().stream().filter(st -> st.getName().equals(absentAnswer[0])).findFirst().orElseThrow();
-            this.absentStudents.put(student, absentAnswer[1].trim());
-            student.getAbsenceMapByStudent().put(this.date, true);
-        }
+    public ClassDiary addAbsentStudent() {
+        //int absentNumber
+//        for (int i = 0; i < absentNumber; i++) {
+//                  }
+        System.out.println("Add meg a hiányzó teljes nevét és a hiányzás okát a megadott formában! [Nemecsek Ernő, tüdőgyulladás");
+        Scanner absentScanner = new Scanner(System.in);
+        String absentInput = absentScanner.nextLine();
+        String[] absentAnswers = absentInput.split(",");
+        Student student = this.studClass.getStudentList().stream().filter(st -> st.getName().equals(absentAnswers[0])).findFirst().orElseThrow();
+        this.absentStudents.put(student, absentAnswers[1].trim());
+        student.getAbsenceMapByStudent().put(this.date, true);
+
         return this;
     }
 
