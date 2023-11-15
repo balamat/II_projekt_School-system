@@ -17,5 +17,7 @@ public enum Subjects {
 
     private String subjectName;
 
-
+    public String getSubjectName() {
+        return subjectName;
+    }
 }

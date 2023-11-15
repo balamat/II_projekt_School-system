@@ -14,11 +14,9 @@ public class Log {
         System.out.println("1 - Tanár");
         System.out.println("2 - Diák");
 
-        //?????????????????????????FOR TESTING
-//        Scanner permissionScanner = new Scanner(System.in);
-//        int permission = permissionScanner.nextInt();
-//        permissionScanner.close();
-        return 0;
+        Scanner permissionScanner = new Scanner(System.in);
+        int permission = permissionScanner.nextInt();
+        return permission;
     }
 
     public static void logout() {

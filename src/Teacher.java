@@ -3,6 +3,8 @@ import java.util.List;
 import java.util.UUID;
 
 public class Teacher implements User {
+
+    private static List<Teacher> allTeacherList = new ArrayList<>();
     private Name name;
     private List<Subjects> taughtSubject;
     private String uid;
@@ -13,6 +15,7 @@ public class Teacher implements User {
         this.taughtSubject.add(subject1);
         this.taughtSubject.add(subject2);
         this.uid = UUID.randomUUID().toString();        //MODIFY!!!!!!
+        allTeacherList.add(this);
     }
 
     public Teacher(Name name, Subjects subject1) {
@@ -20,6 +23,7 @@ public class Teacher implements User {
         this.taughtSubject = new ArrayList<Subjects>();
         this.taughtSubject.add(subject1);
         this.uid = UUID.randomUUID().toString();        //MODIFY!!!!!!
+        allTeacherList.add(this);
     }
 
     public Name getName() {
@@ -46,6 +50,10 @@ public class Teacher implements User {
         this.uid = uid;
     }
 
+    public static List<Teacher> getAllTeacherList() {
+        return allTeacherList;
+    }
+
     @Override
     public void login() {
 
@@ -68,7 +76,6 @@ public class Teacher implements User {
 
     @Override
     public String toString() {
-        return "Teacher{" +
-                "name=" + name;
+        return name.toString();
     }
 }

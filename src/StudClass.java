@@ -58,7 +58,7 @@ public class StudClass {
 
     @Override
     public String toString() {
-        return "Osztály: " + nameOfClass + '-' +
+        return nameOfClass + '-' +
                 "osztályfőnök: " + headTeacher;
     }
 }

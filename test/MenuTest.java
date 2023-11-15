@@ -1,14 +1,28 @@
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
 
-        //load - uploading data
-        LocalDate actualDate = LocalDate.now();
+public class MenuTest {
+    Scanner mockScanner = mock(Scanner.class);
+    Teacher mockTeacher = mock(Teacher.class);
 
-        //later - should be replaced with auto-generated data
+    @BeforeEach
+    public void setUpMockObjects() {
+        this.mockTeacher = new Teacher(new Name("A", "B"), Subjects.HISTORY);
+    }
 
+
+    public void addObjects() {
         Admin admin01 = new Admin();
 
         Teacher teacher01 = new Teacher(new Name("A", "B"), Subjects.HISTORY);
@@ -35,51 +49,30 @@ public class Main {
         Student student15 = new Student(new Name("Keane", "Roy"), B12);
         Student student16 = new Student(new Name("Solksjaer", "Ole Gunnar"), B12);
 
-
-        //LATER!!!! not forbidden to add a teacher who do not teach that spicific subject
         A12.getClassTeachersBySubject().put(Subjects.ENGLISH, new ArrayList<Teacher>());
         A12.getClassTeachersBySubject().get(Subjects.ENGLISH).add(teacher03);
         A12.getClassTeachersBySubject().put(Subjects.HISTORY, new ArrayList<Teacher>());
         A12.getClassTeachersBySubject().get(Subjects.HISTORY).add(teacher01);
-
-        //login
-        //scanner - user
-        //scanner -password
-        //mainPage
-        System.out.println(teacher01.getName());
-
-        Menu.printMainPage(Log.login());
-
-        //Functions
-        //1- student info
-        //basic
-        //averages
-        //timetable
-        //absence
-        //2 - class info
-        //basic
-
-
-        //averages
-        //timetable
-        //3 - fill diary
-        //fill-edit classDiary
-        //mark-absence
-        //4 - admin tasks
-        //add-modify-delete student
-        //add-modify-delete class
-        //add-modify-delete teacher
-
-        //student - 1
-        //teacher - 1,2,3
-        //admin - 1,2,3,4
-
-
-        //logout
-        //auto export toJson
-
-
     }
+
+    @Test
+    void TeacherSearchShouldReturnTeacher() {
+        when(mockScanner.next())
+                .thenReturn("A B");
+        assertSame(mockTeacher, Menu.teacherSearch(), "Not equals with teacher01, who's name is 'A B'");
+    }
+
+
+//    void Given_Choices_Admin_ClassDiary_Should_FillDiary() {
+//        when(Log.login()).thenReturn(0);
+//        when(Menu.dateSearch()).thenReturn(LocalDate.now().minusMonths(1));
+//        when(Menu.classSerialSearch()).thenReturn(ClassSerial.CL_1);
+//        when(Menu.subjectSearch()).thenReturn(Subjects.ENGLISH);
+//        when(Menu.teacherSearch()).thenReturn(teacher01);
+//        when(Menu.studClassSearch()).thenReturn(A12);
+//
+//        Menu.printMainPage(Log.login());
+//    }
 
 
 }

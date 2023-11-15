@@ -6,13 +6,16 @@ import java.util.UUID;
 
 public class Student {
 
+    private StudClass studClass;
     private Name name;
     private String uid;
     private Map<Subjects, List<Grade>> subjectAndGradeList;
     private Map<LocalDate, Boolean> absenceMapByStudent;
 
-    public Student(Name name) {
+    public Student(Name name, StudClass studClass) {
         this.name = name;
+        this.studClass = studClass;
+        this.studClass.getStudentList().add(this);
         this.uid = UUID.randomUUID().toString();            //MODIFY!!!!!!
         this.subjectAndGradeList = new HashMap<>();
         this.absenceMapByStudent = new HashMap<>();
@@ -48,6 +51,14 @@ public class Student {
 
     public void setAbsenceMapByStudent(Map<LocalDate, Boolean> absenceMapByStudent) {
         this.absenceMapByStudent = absenceMapByStudent;
+    }
+
+    public StudClass getStudClass() {
+        return studClass;
+    }
+
+    public void setStudClass(StudClass studClass) {
+        this.studClass = studClass;
     }
 
     @Override

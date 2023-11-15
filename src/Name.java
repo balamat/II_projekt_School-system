@@ -7,6 +7,7 @@ public class Name {
         this.lastName = lastName;
     }
 
+
     @Override
     public String toString() {
         return lastName + " " + firstName;
