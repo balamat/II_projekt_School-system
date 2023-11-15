@@ -1,8 +1,8 @@
 public class Assignment {
-    String description;
-    Subject subject;
+    private String description;
+    private Subjects subject;
 
-    public Assignment(String description, Subject subject) {
+    public Assignment(String description, Subjects subject) {
         this.description = description;
         this.subject = subject;
     }

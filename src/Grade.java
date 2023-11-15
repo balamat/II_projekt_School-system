@@ -1,6 +1,6 @@
 public class Grade {
-    Assignment assignment;
-    int grade;
+    private Assignment assignment;
+    private int grade;
 
     public Grade(Assignment assignment, int grade) {
         this.assignment = assignment;

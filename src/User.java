@@ -1,8 +1,10 @@
-public abstract class User {
-    abstract void login();
+public interface User {
+    void login();
 
-    abstract void showData();
+    void chooseMainFunction();
 
-    abstract void logout();
+    void showData();
+
+    void logout();
 
 }

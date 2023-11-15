@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-
-public enum Subject {
+public enum Subjects {
     MATHS("Matematika"),
     HUNGARIAN("Magyar"),
     ENGLISH("Angol"),
@@ -13,7 +10,7 @@ public enum Subject {
     SPORT("Testnevelés"),
     ;
 
-    Subject(String subjectName) {
+    Subjects(String subjectName) {
         this.subjectName = subjectName;
 
     }
