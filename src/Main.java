@@ -48,18 +48,18 @@ public class Main {
         //mainPage
 
 
-//        UserInterface.printMainPage(Log.login());
+        UserInterface.printMainPage(Log.login());
 //
 //        String[] strings = UserInterface.AbsentScanner();
 //        System.out.println(strings[0]);
 //        System.out.println(strings[1]);
 
 
-        Menu.FillClassDiary();
-        System.out.println("----------------------------");
-        System.out.println(ClassDiary.getAllClassDiary().get(ClassDiary.getAllClassDiary().size() - 1));
-        System.out.println(Menu.studentSearch("Nemecsek Ernő"));
-        System.out.println(Menu.studentSearch("Nemecsek Béla"));
+//        Menu.FillClassDiary();
+//        System.out.println("----------------------------");
+//        System.out.println(ClassDiary.getAllClassDiary().get(ClassDiary.getAllClassDiary().size() - 1));
+//        System.out.println(Menu.studentSearch("Nemecsek Ernő"));
+
 
 
         //Functions

@@ -7,5 +7,11 @@ public class Grade {
         this.grade = grade;
     }
 
-
+    @Override
+    public String toString() {
+        return "Grade{" +
+                "assignment=" + assignment +
+                ", grade=" + grade +
+                '}';
+    }
 }

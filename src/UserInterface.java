@@ -68,53 +68,55 @@ public class UserInterface {
             Menu.FillClassDiary();
         } else if (diaryOptionChoice == 2) {
             Menu.modifyClassDiary();
+        } else if (diaryOptionChoice == 3) {
+            Menu.addGrade();
         }
     }
 
-    public static String dateScanner() {
+    public static String dateScan() {
         System.out.println("Add meg az óra dátumát a megadott formátumban! [1999-11-11]");
         Scanner dateScanner = new Scanner(System.in);
         return dateScanner.next();
     }
 
-    public static String classSerialScanner() {
+    public static String classSerialScan() {
         System.out.println("Add meg a rögzítendő óra sorszámát (1-9 között)!");
         Scanner classSerialScanner = new Scanner(System.in);
         return classSerialScanner.next();
     }
 
-    public static String subjectScanner() {
+    public static String subjectScan() {
         System.out.println("Add meg a kiválasztandó óra nevét a megadott formátumban! [Történelem]");
         Scanner subjectScanner = new Scanner(System.in);
         return subjectScanner.next();
     }
 
-    public static String studentScanner() {
+    public static String studentScan() {
         System.out.println("Add meg a diák teljes nevét!");
         Scanner studentScanner = new Scanner(System.in);
         return studentScanner.nextLine();
     }
 
-    public static String teacherScanner() {
+    public static String teacherScan() {
         System.out.println("Add meg a tanár teljes nevét!");
         Scanner teacherScanner = new Scanner(System.in);
         return teacherScanner.nextLine();
     }
 
-    public static String studClassScanner() {
+    public static String studClassScan() {
         System.out.println("Add meg az osztály jelét!");
         Scanner studClassScanner = new Scanner(System.in);
         return studClassScanner.next();
     }
 
-    public static int numberOfAbsentScanner() {
+    public static int numberOfAbsentScan() {
         System.out.println("Add meg a hiányzók számát!");
         Scanner numberOfAbsentScanner = new Scanner(System.in);
         int numberOfAbsent = numberOfAbsentScanner.nextInt();
         return numberOfAbsent;
     }
 
-    public static String[] absentScanner() {
+    public static String[] absentScan() {
         System.out.println("Add meg a hiányzó teljes nevét és a hiányzás okát a megadott formában! [Nemecsek Ernő, tüdőgyulladás]");
         Scanner absentScanner = new Scanner(System.in);
         String absentInput = absentScanner.nextLine();
@@ -126,6 +128,15 @@ public class UserInterface {
         return absentAnswers;
     }
 
+    public static String[] gradeScan() {
+        Scanner gradeScanner = new Scanner(System.in);
+        String[] gradeAnswers = new String[2];
+        System.out.println("Add meg jegyet!");
+        gradeAnswers[0] = gradeScanner.nextLine().trim();
+        System.out.println("Add meg az osztályzás címét (pl. szódolgozat)!");
+        gradeAnswers[1] = gradeScanner.nextLine().trim();
+        return gradeAnswers;
+    }
 
     private static void printAdmin() {
     }

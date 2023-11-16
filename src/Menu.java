@@ -44,13 +44,12 @@ public class Menu {
 
     public static String FillClassDiary() {
         System.out.println("1 - aktuális óra naplózása");
-        LocalDate localDate = dateSearch(UserInterface.dateScanner());
-        ClassSerial classSerial = classSerialSearch(UserInterface.classSerialScanner());
-        Subjects subject = subjectSearch(UserInterface.subjectScanner());
-        Teacher teacher = teacherSearch(UserInterface.teacherScanner());
-        StudClass studClass = studClassSearch(UserInterface.studClassScanner());
-//        int absentNumber = numberOfAbsentScanner();
-        new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(UserInterface.numberOfAbsentScanner());
+        LocalDate localDate = dateSearch(UserInterface.dateScan());
+        ClassSerial classSerial = classSerialSearch(UserInterface.classSerialScan());
+        Subjects subject = subjectSearch(UserInterface.subjectScan());
+        Teacher teacher = teacherSearch(UserInterface.teacherScan());
+        StudClass studClass = studClassSearch(UserInterface.studClassScan());
+        new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(UserInterface.numberOfAbsentScan());
         String result = "Sikeres naplózás!";
         System.out.println(ClassDiary.getAllClassDiary().get(ClassDiary.getAllClassDiary().size() - 1));
         System.out.println(result);
@@ -63,14 +62,12 @@ public class Menu {
 
     public static void addGrade() {
         System.out.println("Jegy beírása");
-
-        //Scanner - Számonkérés neve, tárgy neve
-
-        //Diák scanner
-        //grade scanner
-        //add grade
+        Student student = studentSearch(UserInterface.studentScan());
+        Subjects subject = subjectSearch(UserInterface.subjectScan());
+        String[] grades = UserInterface.gradeScan();
+        new Grade(new Assignment(grades[1], subject), Integer.parseInt(grades[0]));
+        System.out.println("Jegy beírása sikeres");
     }
-
 
 
 }

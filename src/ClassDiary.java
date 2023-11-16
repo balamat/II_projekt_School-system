@@ -23,7 +23,7 @@ public class ClassDiary {
 
     public void addAbsentStudent(int absentNumber) {
         for (int i = 0; i < absentNumber; i++) {
-            String[] absentAnswers = UserInterface.absentScanner();
+            String[] absentAnswers = UserInterface.absentScan();
             Student student = Menu.studentSearch(absentAnswers[0]);
             this.absentStudents.put(student, absentAnswers[1]);
             student.getAbsenceMapByStudent().put(this.date, true);

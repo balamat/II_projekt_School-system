@@ -63,8 +63,12 @@ public class Student {
 
     @Override
     public String toString() {
-        return name.toString();
-
+        return "Student{" +
+                "studClass=" + studClass +
+                ", name=" + name +
+                ", subjectAndGradeList=" + subjectAndGradeList +
+                ", absenceMapByStudent=" + absenceMapByStudent +
+                '}';
     }
 }
 

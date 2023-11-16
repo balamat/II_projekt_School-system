@@ -1,10 +1,16 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.MockedStatic;
+import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.time.LocalDate;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 
@@ -15,51 +21,58 @@ public class MenuTest {
     Student mockStudent = mock(Student.class);
     UserInterface mockUserInterface = mock(UserInterface.class);
     StudClass mockStudClass = mock(StudClass.class);
+    ClassSerial mockClassSerial = mock(ClassSerial.class);
+    LocalDate mockDate = mock(LocalDate.class);
+    Subjects mockSubject = mock(Subjects.class);
 
     @BeforeEach
     public void setUpMockObjects() {
-                this.mockTeacher = new Teacher(new Name("Tört", "Elek"), Subjects.HISTORY);
-                this.mockStudClass = new StudClass(mockTeacher, "12A");
-                this.mockStudent = new Student(new Name("Nemecsek", "Ernő"), mockStudClass);
+        this.mockTeacher = new Teacher(new Name("Tört", "Elek"), mockSubject);
+        this.mockStudClass = new StudClass(mockTeacher, "12A");
+        this.mockStudent = new Student(new Name("Nemecsek", "Ernő"), mockStudClass);
+        this.mockDate = LocalDate.now();
+        this.mockClassSerial = ClassSerial.CL_1;
+        this.mockSubject = Subjects.HISTORY;
     }
 
     @Test
-    public void StudentSearchShouldReturnAStudent() {
-        assertSame(mockTeacher, Menu.teacherSearch("Tört Elek"), "Not the same String!");
+    public void teacherSearchShouldReturnTeacher() {
+        assertEquals(mockTeacher.toString(), Menu.teacherSearch("Tört Elek").toString(), "Not the same String!");
     }
-//    @Test
-//    public void TeacherSearchShouldReturnATeacher() {
-//        assertSame(mockStudent, Menu.StudentSearch("Nemecsek Ernő"), "Not the same String!");
-//    }
+
+    @Test
+    public void studentSearchShouldReturnStudent() {
+        assertEquals(mockStudent.toString(), Menu.studentSearch("Nemecsek Ernő").toString(), "Not the same String!");
+    }
+
+    @Test
+    public void studentSearchShouldThrowExceptionWhenNoMatch() {
+        assertThrows(NoSuchElementException.class, () -> {
+            Menu.studentSearch("Nemecsek");
+        });
+    }
+
+    @Test
+    void teacherSearchShouldTakeTeacherInput() {
+    }
 
 
+    @Test
+    void fillClassDiaryShouldValidateSuccesfullDiarySave() {
+        String input = "0";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
 
-//    @Test
-//    public void TeacherScannerShouldReturnSameString() {
-//        String result = "Tört Elek";
-//        when(mockScanner.next()).thenReturn(result);
-//        when(mockScanner.nextLine()).thenReturn(result);
-//        assertSame(result, UserInterface.TeacherScanner(), "Not the same String!");
-//    }
-
-
-//    @Test
-//    void ShouldPrintFillDiaryMenu() {
-//        when(mockScanner.nextInt())
-//                .thenReturn(0)
-//                .thenReturn(3)
-//                .thenReturn(1);
-//        Menu.printMainPage(0);
-//
-//        when((mockScanner.next()))
-//                .thenReturn("2001-02-03")
-//                .thenReturn("2")
-//                .thenReturn("Történelem")
-//                .thenReturn("A B")
-//                .thenReturn("12A")
-//                .thenReturn("Kis János, betegség");
-//        Menu.FillClassDiary();
-//    }
-
+        try (MockedStatic<Menu> utilities = Mockito.mockStatic(Menu.class)) {
+//            utilities.when(Menu::FillClassDiary).thenReturn("xyz");
+            utilities.when(()->Menu.dateSearch("2022-02-22")).thenReturn(mockDate);
+            utilities.when(()->Menu.classSerialSearch("x")).thenReturn(mockClassSerial);
+            utilities.when(()->Menu.subjectSearch("x")).thenReturn(mockSubject);
+            utilities.when(()->Menu.teacherSearch("x")).thenReturn(mockTeacher);
+            utilities.when(()->Menu.studClassSearch("x")).thenReturn(mockStudClass);
+            utilities.when(()->Menu.studentSearch("x")).thenReturn(mockStudent);
+            assertEquals("Sikeres naplózás!", Menu.FillClassDiary(), "Nem egyezik!");
+        }
+    }
 
 }
