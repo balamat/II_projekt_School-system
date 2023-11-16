@@ -9,7 +9,6 @@ public class ClassDiary {
     private Subjects subject;
     private Teacher teacher;
     private StudClass studClass;
-
     private Map<Student, String> absentStudents;
 
     public ClassDiary(LocalDate date, ClassSerial classSerial, Subjects subject, Teacher teacher, StudClass studClass) {
@@ -22,19 +21,13 @@ public class ClassDiary {
         allClassDiary.add(this);
     }
 
-    public ClassDiary addAbsentStudent() {
-        //int absentNumber
-//        for (int i = 0; i < absentNumber; i++) {
-//                  }
-        System.out.println("Add meg a hiányzó teljes nevét és a hiányzás okát a megadott formában! [Nemecsek Ernő, tüdőgyulladás");
-        Scanner absentScanner = new Scanner(System.in);
-        String absentInput = absentScanner.nextLine();
-        String[] absentAnswers = absentInput.split(",");
-        Student student = this.studClass.getStudentList().stream().filter(st -> st.getName().equals(absentAnswers[0])).findFirst().orElseThrow();
-        this.absentStudents.put(student, absentAnswers[1].trim());
-        student.getAbsenceMapByStudent().put(this.date, true);
-
-        return this;
+    public void addAbsentStudent(int absentNumber) {
+        for (int i = 0; i < absentNumber; i++) {
+            String[] absentAnswers = UserInterface.absentScanner();
+            Student student = Menu.studentSearch(absentAnswers[0]);
+            this.absentStudents.put(student, absentAnswers[1]);
+            student.getAbsenceMapByStudent().put(this.date, true);
+        }
     }
 
     public static List<ClassDiary> getAllClassDiary() {

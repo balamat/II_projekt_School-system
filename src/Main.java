@@ -47,10 +47,20 @@ public class Main {
         //scanner -password
         //mainPage
 
+
 //        UserInterface.printMainPage(Log.login());
-        String inputTeacher = "A B";
-        Teacher teacher = Teacher.getAllTeacherList().stream().filter(tch -> tch.getName().toString().equals(inputTeacher)).findFirst().orElseThrow();
-        System.out.println(teacher);
+//
+//        String[] strings = UserInterface.AbsentScanner();
+//        System.out.println(strings[0]);
+//        System.out.println(strings[1]);
+
+
+        Menu.FillClassDiary();
+        System.out.println("----------------------------");
+        System.out.println(ClassDiary.getAllClassDiary().get(ClassDiary.getAllClassDiary().size() - 1));
+        System.out.println(Menu.studentSearch("Nemecsek Ernő"));
+        System.out.println(Menu.studentSearch("Nemecsek Béla"));
+
 
         //Functions
         //1- student info

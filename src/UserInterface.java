@@ -37,7 +37,10 @@ public class UserInterface {
         }
     }
 
-    private static void printStudent() {
+    //private!!!
+    static void printStudent() {
+        System.out.println("Tanulói adatok");
+        System.out.println("--------------------");
     }
 
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -46,9 +49,6 @@ public class UserInterface {
         System.out.println("Osztályadatok");
         System.out.println("--------------------");
         StudClass.getAllStudClassList().forEach(System.out::println);
-        StudClass studClass = Menu.StudClassSearch(StudClassScanner());
-        System.out.println(studClass);
-        studClass.getStudentList().forEach(System.out::println);
     }
 
     private static void printClassDiary() {
@@ -61,6 +61,7 @@ public class UserInterface {
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - aktuális óra naplózása");
         System.out.println("2 - meglévő naplóadatok módosítása");
+        System.out.println("3 - jegy beírása");
         Scanner diaryOptionScanner = new Scanner(System.in);
         int diaryOptionChoice = diaryOptionScanner.nextInt();
         if (diaryOptionChoice == 1) {
@@ -70,35 +71,61 @@ public class UserInterface {
         }
     }
 
-    public static String DateScanner() {
+    public static String dateScanner() {
         System.out.println("Add meg az óra dátumát a megadott formátumban! [1999-11-11]");
         Scanner dateScanner = new Scanner(System.in);
         return dateScanner.next();
     }
 
-    public static String ClassSerialScanner() {
+    public static String classSerialScanner() {
         System.out.println("Add meg a rögzítendő óra sorszámát (1-9 között)!");
         Scanner classSerialScanner = new Scanner(System.in);
         return classSerialScanner.next();
     }
 
-    public static String SubjectScanner() {
+    public static String subjectScanner() {
         System.out.println("Add meg a kiválasztandó óra nevét a megadott formátumban! [Történelem]");
         Scanner subjectScanner = new Scanner(System.in);
         return subjectScanner.next();
     }
 
-    public static String TeacherScanner() {
-        System.out.println("Add meg a tanár nevét!");
-        Scanner teacherScanner = new Scanner(System.in);
-        return teacherScanner.next();
+    public static String studentScanner() {
+        System.out.println("Add meg a diák teljes nevét!");
+        Scanner studentScanner = new Scanner(System.in);
+        return studentScanner.nextLine();
     }
 
-    public static String StudClassScanner() {
+    public static String teacherScanner() {
+        System.out.println("Add meg a tanár teljes nevét!");
+        Scanner teacherScanner = new Scanner(System.in);
+        return teacherScanner.nextLine();
+    }
+
+    public static String studClassScanner() {
         System.out.println("Add meg az osztály jelét!");
         Scanner studClassScanner = new Scanner(System.in);
         return studClassScanner.next();
     }
+
+    public static int numberOfAbsentScanner() {
+        System.out.println("Add meg a hiányzók számát!");
+        Scanner numberOfAbsentScanner = new Scanner(System.in);
+        int numberOfAbsent = numberOfAbsentScanner.nextInt();
+        return numberOfAbsent;
+    }
+
+    public static String[] absentScanner() {
+        System.out.println("Add meg a hiányzó teljes nevét és a hiányzás okát a megadott formában! [Nemecsek Ernő, tüdőgyulladás]");
+        Scanner absentScanner = new Scanner(System.in);
+        String absentInput = absentScanner.nextLine();
+        String[] absentRawAnswers = absentInput.split(",", 2);
+        String[] absentAnswers = new String[absentRawAnswers.length];
+        for (int i = 0; i < absentRawAnswers.length; i++) {
+            absentAnswers[i] = absentRawAnswers[i].trim();
+        }
+        return absentAnswers;
+    }
+
 
     private static void printAdmin() {
     }

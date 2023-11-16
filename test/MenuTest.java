@@ -1,31 +1,45 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 
 public class MenuTest {
     Scanner mockScanner = mock(Scanner.class);
     Teacher mockTeacher = mock(Teacher.class);
+    ClassDiary mockClassDiary = mock(ClassDiary.class);
+    Student mockStudent = mock(Student.class);
+    UserInterface mockUserInterface = mock(UserInterface.class);
+    StudClass mockStudClass = mock(StudClass.class);
 
-//    @BeforeEach
-//    public void setUpMockObjects() {
-//        this.mockTeacher = new Teacher(new Name("A", "B"), Subjects.HISTORY);
+    @BeforeEach
+    public void setUpMockObjects() {
+                this.mockTeacher = new Teacher(new Name("Tört", "Elek"), Subjects.HISTORY);
+                this.mockStudClass = new StudClass(mockTeacher, "12A");
+                this.mockStudent = new Student(new Name("Nemecsek", "Ernő"), mockStudClass);
+    }
+
+    @Test
+    public void StudentSearchShouldReturnAStudent() {
+        assertSame(mockTeacher, Menu.teacherSearch("Tört Elek"), "Not the same String!");
+    }
+//    @Test
+//    public void TeacherSearchShouldReturnATeacher() {
+//        assertSame(mockStudent, Menu.StudentSearch("Nemecsek Ernő"), "Not the same String!");
 //    }
 
+
+
 //    @Test
-//    void TeacherSearchShouldReturnTeacher() {
-//        when(mockScanner.next())
-//                .thenReturn("A B");
-//        assertSame(Menu.teacherSearch(), "Not equals with teacher01, who's name is 'A B'");
+//    public void TeacherScannerShouldReturnSameString() {
+//        String result = "Tört Elek";
+//        when(mockScanner.next()).thenReturn(result);
+//        when(mockScanner.nextLine()).thenReturn(result);
+//        assertSame(result, UserInterface.TeacherScanner(), "Not the same String!");
 //    }
 
 
@@ -46,11 +60,6 @@ public class MenuTest {
 //                .thenReturn("Kis János, betegség");
 //        Menu.FillClassDiary();
 //    }
-
-
-
-
-
 
 
 }
