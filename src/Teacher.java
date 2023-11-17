@@ -56,7 +56,6 @@ public class Teacher implements User {
 
     @Override
     public void login() {
-
     }
 
     @Override

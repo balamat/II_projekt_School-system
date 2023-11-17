@@ -13,8 +13,8 @@ public class Main {
 
         Teacher teacher01 = new Teacher(new Name("A", "B"), Subjects.HISTORY);
         Teacher teacher02 = new Teacher(new Name("Tört", "Elek"), Subjects.MATHS);
-        Teacher teacher03 = new Teacher(new Name("Jóó", "Ferenc"), Subjects.ENGLISH, Subjects.GERMAN);
-        Teacher teacher04 = new Teacher(new Name("Kóssa", "Zoltán"), Subjects.PHYSICS);
+        Teacher teacher03 = new Teacher(new Name("Jó", "Ferenc"), Subjects.ENGLISH, Subjects.GERMAN);
+        Teacher teacher04 = new Teacher(new Name("Kós", "Károly"), Subjects.PHYSICS);
         Teacher teacher05 = new Teacher(new Name("Nemoda", "Norbert"), Subjects.SPORT);
 
         StudClass A12 = new StudClass(teacher01, "12A");
@@ -45,10 +45,23 @@ public class Main {
         //login
         //scanner - user
         //scanner -password
+
+        //load
+
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!2023.11.17-re:
+        //assginment, descr, subject, grade egyszerűsítése
+        //!!Adatfeltöltés
+        // Try-catch ágak
+        // Adatlekérős pontok
+
+
         //mainPage
 
 
-        UserInterface.printMainPage(Log.login());
+        Menu.fillClassDiary();
+//        Menu.saveGrade();
+        System.out.println(Menu.studentSearch("Nemecsek Ernő"));
+        System.out.println(student07.getSubjectAndGradeList().entrySet());
 //
 //        String[] strings = UserInterface.AbsentScanner();
 //        System.out.println(strings[0]);
@@ -61,7 +74,6 @@ public class Main {
 //        System.out.println(Menu.studentSearch("Nemecsek Ernő"));
 
 
-
         //Functions
         //1- student info
         //basic
@@ -70,22 +82,16 @@ public class Main {
         //absence
         //2 - class info
         //basic
-
-
         //averages
         //timetable
         //3 - fill diary
-        //fill-edit classDiary
-        //mark-absence
+        //fill classDiary-OK
+        //modify classDiary
+        //mark-OK
         //4 - admin tasks
         //add-modify-delete student
         //add-modify-delete class
         //add-modify-delete teacher
-
-        //student - 1
-        //teacher - 1,2,3
-        //admin - 1,2,3,4
-
 
         //logout
         //auto export toJson

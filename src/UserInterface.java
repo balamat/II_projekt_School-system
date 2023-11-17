@@ -65,11 +65,11 @@ public class UserInterface {
         Scanner diaryOptionScanner = new Scanner(System.in);
         int diaryOptionChoice = diaryOptionScanner.nextInt();
         if (diaryOptionChoice == 1) {
-            Menu.FillClassDiary();
+            Menu.fillClassDiary();
         } else if (diaryOptionChoice == 2) {
             Menu.modifyClassDiary();
         } else if (diaryOptionChoice == 3) {
-            Menu.addGrade();
+            Menu.saveGrade();
         }
     }
 
@@ -117,23 +117,21 @@ public class UserInterface {
     }
 
     public static String[] absentScan() {
-        System.out.println("Add meg a hiányzó teljes nevét és a hiányzás okát a megadott formában! [Nemecsek Ernő, tüdőgyulladás]");
         Scanner absentScanner = new Scanner(System.in);
-        String absentInput = absentScanner.nextLine();
-        String[] absentRawAnswers = absentInput.split(",", 2);
-        String[] absentAnswers = new String[absentRawAnswers.length];
-        for (int i = 0; i < absentRawAnswers.length; i++) {
-            absentAnswers[i] = absentRawAnswers[i].trim();
-        }
+        String[] absentAnswers = new String[2];
+        System.out.println("Add meg a hiányzó teljes nevét!");
+        absentAnswers[0] = absentScanner.nextLine().trim();
+        System.out.println("Add meg a hiányzás okát!");
+        absentAnswers[1] = absentScanner.nextLine().trim();
         return absentAnswers;
     }
 
     public static String[] gradeScan() {
         Scanner gradeScanner = new Scanner(System.in);
         String[] gradeAnswers = new String[2];
-        System.out.println("Add meg jegyet!");
-        gradeAnswers[0] = gradeScanner.nextLine().trim();
         System.out.println("Add meg az osztályzás címét (pl. szódolgozat)!");
+        gradeAnswers[0] = gradeScanner.nextLine().trim();
+        System.out.println("Add meg jegyet!");
         gradeAnswers[1] = gradeScanner.nextLine().trim();
         return gradeAnswers;
     }

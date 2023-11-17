@@ -5,7 +5,6 @@ import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -71,7 +70,7 @@ public class MenuTest {
             utilities.when(()->Menu.teacherSearch("x")).thenReturn(mockTeacher);
             utilities.when(()->Menu.studClassSearch("x")).thenReturn(mockStudClass);
             utilities.when(()->Menu.studentSearch("x")).thenReturn(mockStudent);
-            assertEquals("Sikeres naplózás!", Menu.FillClassDiary(), "Nem egyezik!");
+            assertEquals("Sikeres naplózás!", Menu.fillClassDiary(), "Nem egyezik!");
         }
     }
 

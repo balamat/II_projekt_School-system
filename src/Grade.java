@@ -1,16 +1,16 @@
 public class Grade {
-    private Assignment assignment;
+    private String description;
     private int grade;
 
-    public Grade(Assignment assignment, int grade) {
-        this.assignment = assignment;
+    public Grade(String description, int grade) {
+        this.description = description;
         this.grade = grade;
     }
 
     @Override
     public String toString() {
         return "Grade{" +
-                "assignment=" + assignment +
+                "description='" + description + '\'' +
                 ", grade=" + grade +
                 '}';
     }

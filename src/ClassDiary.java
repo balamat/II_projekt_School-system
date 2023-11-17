@@ -26,7 +26,7 @@ public class ClassDiary {
             String[] absentAnswers = UserInterface.absentScan();
             Student student = Menu.studentSearch(absentAnswers[0]);
             this.absentStudents.put(student, absentAnswers[1]);
-            student.getAbsenceMapByStudent().put(this.date, true);
+            student.getAbsenceMapByStudent().put(this.date, absentAnswers[1]);
         }
     }
 

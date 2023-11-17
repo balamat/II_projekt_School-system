@@ -42,7 +42,7 @@ public class Menu {
         return searchedStudent;
     }
 
-    public static String FillClassDiary() {
+    public static String fillClassDiary() {
         System.out.println("1 - aktuális óra naplózása");
         LocalDate localDate = dateSearch(UserInterface.dateScan());
         ClassSerial classSerial = classSerialSearch(UserInterface.classSerialScan());
@@ -60,12 +60,12 @@ public class Menu {
         System.out.println("Meglévő naplóadatok módosítása");
     }
 
-    public static void addGrade() {
+    public static void saveGrade() {
         System.out.println("Jegy beírása");
-        Student student = studentSearch(UserInterface.studentScan());
-        Subjects subject = subjectSearch(UserInterface.subjectScan());
+        Student student = Menu.studentSearch(UserInterface.studentScan());
+        Subjects subject = Menu.subjectSearch(UserInterface.subjectScan());
         String[] grades = UserInterface.gradeScan();
-        new Grade(new Assignment(grades[1], subject), Integer.parseInt(grades[0]));
+        student.addGrade(subject, grades);
         System.out.println("Jegy beírása sikeres");
     }
 
