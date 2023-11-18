@@ -1,0 +1,366 @@
+[
+  {
+    "uuid": "5fb6ff78-3f40-4f7b-a3fe-c6b1f09be918",
+    "date": "2023-08-10",
+    "classSerial": "CL_1",
+    "subject": "MATHS",
+    "teacher": {
+      "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "1043d0ff-9fbf-47d3-9245-119be2938338",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "0e8340f0-be7e-4da3-aa68-e19125d745e6": "puskázott, kiküldésre került",
+      "1cf77da5-6e6a-47ef-bef9-ff9aa9ce603d": "gittet rág",
+      "28a8bbf2-c9c2-4562-babc-fbefd8fa3d71": "beteg"
+    }
+  },
+  {
+    "uuid": "a17d8417-36aa-4906-9667-de75f1073ca1",
+    "date": "2023-08-10",
+    "classSerial": "CL_2",
+    "subject": "MATHS",
+    "teacher": {
+      "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "1043d0ff-9fbf-47d3-9245-119be2938338",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "0e8340f0-be7e-4da3-aa68-e19125d745e6": "Szavalóversenyen vesz részt.",
+      "48d37dfb-fe4b-40ab-8989-100e764b05c6": "Szavalóversenyen vesz részt.",
+      "47b578e4-5fc3-484b-950f-4fe9b3642be4": "Szavalóversenyen vesz részt."
+    }
+  },
+  {
+    "uuid": "508b2420-5e10-4406-8431-b34202ed406e",
+    "date": "2023-08-10",
+    "classSerial": "CL_3",
+    "subject": "MATHS",
+    "teacher": {
+      "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "1043d0ff-9fbf-47d3-9245-119be2938338",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "0e8340f0-be7e-4da3-aa68-e19125d745e6": "Matematika vesz részt.",
+      "1829bb04-e044-42d4-bc42-2b300ea31f88": "Síel."
+    }
+  },
+  {
+    "uuid": "1774bfbb-d638-40b7-80b7-b34818f46e70",
+    "date": "2023-08-10",
+    "classSerial": "CL_1",
+    "subject": "MATHS",
+    "teacher": {
+      "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "78967805-725d-48d0-9213-b4da89830a20": "beteg",
+      "f70e8ad7-dd79-41ca-8105-2ca9158b1138": "gittet rág",
+      "efff486d-9e7f-42e1-a26d-d2f9994dfe3d": "puskázott, kiküldésre került"
+    }
+  },
+  {
+    "uuid": "f1693368-bc02-45e4-b2e6-f8cc715b0985",
+    "date": "2023-08-10",
+    "classSerial": "CL_2",
+    "subject": "MATHS",
+    "teacher": {
+      "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "1d6781c0-2818-47c0-b433-a20f9007dc78": "Szavalóversenyen vesz részt.",
+      "fe4aa3ce-04fe-4896-a1c4-adf4495ccd3d": "Szavalóversenyen vesz részt.",
+      "efff486d-9e7f-42e1-a26d-d2f9994dfe3d": "Szavalóversenyen vesz részt."
+    }
+  },
+  {
+    "uuid": "419114f3-480c-4ef5-bdc5-2bb22127327b",
+    "date": "2023-08-10",
+    "classSerial": "CL_3",
+    "subject": "MATHS",
+    "teacher": {
+      "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "4d61725d-087e-44ce-8a2a-97cfca1fd85a": "Síel.",
+      "efff486d-9e7f-42e1-a26d-d2f9994dfe3d": "Matematika vesz részt."
+    }
+  }
+]

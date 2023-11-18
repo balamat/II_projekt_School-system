@@ -1,77 +1,7 @@
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.*;
 
 public class Menu {
-
-    public static List<JsonObject> loadJsontoJsonObject_students() {
-        String importPathStudent = "import/student.json";
-        Path path = Paths.get(importPathStudent);
-        try {
-            Gson gson = new Gson();
-            String inputString = Files.readString(path);
-            List<JsonObject> jsonObjectList = Arrays.asList(gson.fromJson(inputString, JsonObject[].class));
-            jsonObjectList.forEach(System.out::println);
-            return jsonObjectList;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static List<Student> loadJsontoStudent_students() {
-        String importPathStudent = "import/student.json";
-        Path path = Paths.get(importPathStudent);
-        try {
-            Gson gson = new Gson();
-            String inputString = Files.readString(path);
-            List<Student> importedStudentList = Arrays.asList(gson.fromJson(inputString, Student[].class));
-            return importedStudentList;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static void parseStudentfromJson(List<JsonObject> JsonObjectList) {
-        String lastName = JsonObjectList.get(0).getAsJsonObject("name").get("lastName").getAsString();
-        String firstName = JsonObjectList.get(0).getAsJsonObject("name").get("firstName").getAsString();
-        String uid = JsonObjectList.get(0).get("uid").getAsString();
-        String studClass = JsonObjectList.get(0).get("StudClass").getAsString();
-
-
-        System.out.println(lastName + " " + firstName);
-        System.out.println(uid);
-        System.out.println(studClass);
-
-    }
-
-    public static void exportStudentToJson() {
-
-        Gson prettyGson = new GsonBuilder()
-                .setPrettyPrinting()
-                .create();
-//                .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
-
-        String output = prettyGson.toJson(Student.getAllStudentList());
-        System.out.println(output);
-
-        try {
-            FileWriter fw = new FileWriter("export/student.json");
-            fw.write(output);
-            fw.close();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-    }
 
     public static LocalDate dateSearch(String inputDate) {
         return LocalDate.parse(inputDate);

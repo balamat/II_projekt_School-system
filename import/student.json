@@ -3,16 +3,16 @@
     "uuid": "9f2c09d3-8f87-4c4c-bc1e-102f8109bdf4",
     "studClass": {
       "headTeacher": {
-        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "uuid": "4cb49660-7104-494f-a8bf-554f90a44c0c",
         "name": {
-          "firstName": "B",
-          "lastName": "A"
+          "firstName": "Károly",
+          "lastName": "Kós"
         },
         "taughtSubject": [
-          "HISTORY"
+          "PHYSICS"
         ]
       },
-      "nameOfClass": "12A",
+      "nameOfClass": "12C",
       "studentList": [],
       "ClassTeachersBySubject": {
         "HISTORY": [

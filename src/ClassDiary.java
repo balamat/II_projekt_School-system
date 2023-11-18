@@ -2,8 +2,8 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class ClassDiary {
-    private final String uuid;
     private static List<ClassDiary> allClassDiary = new ArrayList<>();
+    private final String uuid;
     private LocalDate date;
     private ClassSerial classSerial;
     private Subjects subject;

@@ -3,16 +3,16 @@
     "uuid": "9f2c09d3-8f87-4c4c-bc1e-102f8109bdf4",
     "studClass": {
       "headTeacher": {
-        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "uuid": "4cb49660-7104-494f-a8bf-554f90a44c0c",
         "name": {
-          "firstName": "B",
-          "lastName": "A"
+          "firstName": "Károly",
+          "lastName": "Kós"
         },
         "taughtSubject": [
-          "HISTORY"
+          "PHYSICS"
         ]
       },
-      "nameOfClass": "12A",
+      "nameOfClass": "12C",
       "studentList": [],
       "ClassTeachersBySubject": {
         "HISTORY": [
@@ -599,10 +599,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "d16348de-04b1-4cb1-8fa9-ef8f0743e854",
+    "uuid": "efff486d-9e7f-42e1-a26d-d2f9994dfe3d",
     "studClass": {
       "headTeacher": {
-        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -616,20 +616,19 @@
       "ClassTeachersBySubject": {
         "ENGLISH": [
           {
-            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
             "name": {
-              "firstName": "Ferenc",
-              "lastName": "Jó"
+              "firstName": "Károly",
+              "lastName": "Kós"
             },
             "taughtSubject": [
-              "ENGLISH",
-              "GERMAN"
+              "PHYSICS"
             ]
           }
         ],
         "HISTORY": [
           {
-            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -646,16 +645,6 @@
       "lastName": "Nagy"
     },
     "subjectAndGradeList": {
-      "MATHS": [
-        {
-          "description": "doga1",
-          "grade": 2
-        },
-        {
-          "description": "felelet",
-          "grade": 5
-        }
-      ],
       "HUNGARIAN": [
         {
           "description": "versmondás",
@@ -694,6 +683,16 @@
           "grade": 3
         }
       ],
+      "MATHS": [
+        {
+          "description": "doga1",
+          "grade": 2
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        }
+      ],
       "HISTORY": [
         {
           "description": "doga2",
@@ -707,10 +706,10 @@
     }
   },
   {
-    "uuid": "2adcb2ea-5ce5-4c18-ba98-09a644a805de",
+    "uuid": "78967805-725d-48d0-9213-b4da89830a20",
     "studClass": {
       "headTeacher": {
-        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -724,20 +723,19 @@
       "ClassTeachersBySubject": {
         "ENGLISH": [
           {
-            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
             "name": {
-              "firstName": "Ferenc",
-              "lastName": "Jó"
+              "firstName": "Károly",
+              "lastName": "Kós"
             },
             "taughtSubject": [
-              "ENGLISH",
-              "GERMAN"
+              "PHYSICS"
             ]
           }
         ],
         "HISTORY": [
           {
-            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -756,10 +754,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "281d7c3a-f688-441b-8669-582033f4a019",
+    "uuid": "fe4aa3ce-04fe-4896-a1c4-adf4495ccd3d",
     "studClass": {
       "headTeacher": {
-        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -773,20 +771,19 @@
       "ClassTeachersBySubject": {
         "ENGLISH": [
           {
-            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
             "name": {
-              "firstName": "Ferenc",
-              "lastName": "Jó"
+              "firstName": "Károly",
+              "lastName": "Kós"
             },
             "taughtSubject": [
-              "ENGLISH",
-              "GERMAN"
+              "PHYSICS"
             ]
           }
         ],
         "HISTORY": [
           {
-            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -805,10 +802,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "23c1a2ec-cccf-4e88-a708-6c74555feb73",
+    "uuid": "1d6781c0-2818-47c0-b433-a20f9007dc78",
     "studClass": {
       "headTeacher": {
-        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -822,20 +819,19 @@
       "ClassTeachersBySubject": {
         "ENGLISH": [
           {
-            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
             "name": {
-              "firstName": "Ferenc",
-              "lastName": "Jó"
+              "firstName": "Károly",
+              "lastName": "Kós"
             },
             "taughtSubject": [
-              "ENGLISH",
-              "GERMAN"
+              "PHYSICS"
             ]
           }
         ],
         "HISTORY": [
           {
-            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -854,10 +850,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "4646dfc0-72d9-470e-890c-a75c7e408ced",
+    "uuid": "1c394547-8ade-449e-abe9-3ba660106a11",
     "studClass": {
       "headTeacher": {
-        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -871,20 +867,19 @@
       "ClassTeachersBySubject": {
         "ENGLISH": [
           {
-            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
             "name": {
-              "firstName": "Ferenc",
-              "lastName": "Jó"
+              "firstName": "Károly",
+              "lastName": "Kós"
             },
             "taughtSubject": [
-              "ENGLISH",
-              "GERMAN"
+              "PHYSICS"
             ]
           }
         ],
         "HISTORY": [
           {
-            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -903,10 +898,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "d0a12468-c2d0-4cf5-a4ca-dbd764bd4940",
+    "uuid": "4d61725d-087e-44ce-8a2a-97cfca1fd85a",
     "studClass": {
       "headTeacher": {
-        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -920,20 +915,19 @@
       "ClassTeachersBySubject": {
         "ENGLISH": [
           {
-            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
             "name": {
-              "firstName": "Ferenc",
-              "lastName": "Jó"
+              "firstName": "Károly",
+              "lastName": "Kós"
             },
             "taughtSubject": [
-              "ENGLISH",
-              "GERMAN"
+              "PHYSICS"
             ]
           }
         ],
         "HISTORY": [
           {
-            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -952,10 +946,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "762c02cf-33a2-4392-8c15-61b3b59901d5",
+    "uuid": "f70e8ad7-dd79-41ca-8105-2ca9158b1138",
     "studClass": {
       "headTeacher": {
-        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -969,20 +963,19 @@
       "ClassTeachersBySubject": {
         "ENGLISH": [
           {
-            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "uuid": "99eb65c6-0789-4b16-a191-fcc9aef143ed",
             "name": {
-              "firstName": "Ferenc",
-              "lastName": "Jó"
+              "firstName": "Károly",
+              "lastName": "Kós"
             },
             "taughtSubject": [
-              "ENGLISH",
-              "GERMAN"
+              "PHYSICS"
             ]
           }
         ],
         "HISTORY": [
           {
-            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "uuid": "1ce40e4f-eba8-43d1-9305-c545c7fab0cd",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -999,16 +992,6 @@
       "lastName": "Szoboszlai"
     },
     "subjectAndGradeList": {
-      "MATHS": [
-        {
-          "description": "doga1",
-          "grade": 2
-        },
-        {
-          "description": "felelet",
-          "grade": 5
-        }
-      ],
       "HUNGARIAN": [
         {
           "description": "versmondás",
@@ -1047,6 +1030,16 @@
           "grade": 3
         }
       ],
+      "MATHS": [
+        {
+          "description": "doga1",
+          "grade": 2
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        }
+      ],
       "HISTORY": [
         {
           "description": "doga2",
@@ -1060,10 +1053,10 @@
     }
   },
   {
-    "uuid": "04190f63-f031-4135-940d-0423cc60d913",
+    "uuid": "b4712435-8188-47a9-9d35-39304827ab9d",
     "studClass": {
       "headTeacher": {
-        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "uuid": "9bf709c1-e987-4df1-a216-4bd67525da6e",
         "name": {
           "firstName": "Elek",
           "lastName": "Tört"
@@ -1083,10 +1076,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "b9b54278-18e3-4b03-91b5-60ec79b7c0c3",
+    "uuid": "a156f817-b628-4a44-a8ba-56987c2ad33d",
     "studClass": {
       "headTeacher": {
-        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "uuid": "9bf709c1-e987-4df1-a216-4bd67525da6e",
         "name": {
           "firstName": "Elek",
           "lastName": "Tört"
@@ -1106,10 +1099,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "b629a7e1-5065-45b4-8785-0317ec1e7862",
+    "uuid": "36e0041a-42a3-49bd-bde7-b898a72c94c6",
     "studClass": {
       "headTeacher": {
-        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "uuid": "9bf709c1-e987-4df1-a216-4bd67525da6e",
         "name": {
           "firstName": "Elek",
           "lastName": "Tört"
@@ -1129,10 +1122,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "a6a9c91e-da20-4b22-ae15-5174b6a71451",
+    "uuid": "05b7391f-5379-4491-9146-e921fc0adde5",
     "studClass": {
       "headTeacher": {
-        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "uuid": "9bf709c1-e987-4df1-a216-4bd67525da6e",
         "name": {
           "firstName": "Elek",
           "lastName": "Tört"
@@ -1152,10 +1145,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "c07b497d-1dcd-4ecb-9f83-5597de374047",
+    "uuid": "24b58c38-3860-4e93-940c-46c7171f4b2c",
     "studClass": {
       "headTeacher": {
-        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "uuid": "9bf709c1-e987-4df1-a216-4bd67525da6e",
         "name": {
           "firstName": "Elek",
           "lastName": "Tört"
@@ -1175,10 +1168,10 @@
     "subjectAndGradeList": {}
   },
   {
-    "uuid": "3ccd91f6-b165-4a6f-b06e-47f79d418072",
+    "uuid": "ac294abe-1247-40f9-947e-ae482dcfc964",
     "studClass": {
       "headTeacher": {
-        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "uuid": "9bf709c1-e987-4df1-a216-4bd67525da6e",
         "name": {
           "firstName": "Elek",
           "lastName": "Tört"
