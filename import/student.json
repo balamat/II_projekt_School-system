@@ -1,0 +1,42 @@
+[
+    {
+        "StudClass": "12A",
+        "name": {
+            "lastName": "Nemcsak",
+            "firstName": "Ernő"
+        },
+        "uid": "925f74da-5a2d-481c-8d45-3419b7e899cd",
+        "subjectAndGradeList": {
+            "subject": "matematika",
+            "gradeBySubject": [
+                1,
+                2,
+                3
+            ]
+        },
+        "absence": {
+            "date": "2002-02-02",
+            "description": "betegség"
+        }
+    },
+    {
+        "StudClass": "12A",
+        "name": {
+            "lastName": "Akár",
+            "firstName": "Kicsoda"
+        },
+        "uid": "5c089f63-047e-435d-8f55-efa409c69dd5",
+        "subjectAndGradeList": {
+            "subject": "történelem",
+            "gradeBySubject": [
+                2,
+                2,
+                3
+            ]
+        },
+        "absence": {
+            "date": "2002-03-02",
+            "description": "betegség és egyéb"
+        }
+    }
+]

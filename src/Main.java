@@ -35,6 +35,10 @@ public class Main {
         Student student15 = new Student(new Name("Keane", "Roy"), B12);
         Student student16 = new Student(new Name("Solksjaer", "Ole Gunnar"), B12);
 
+        ClassDiary classDiary01 = new ClassDiary(LocalDate.now().minusDays(100), ClassSerial.CL_1, Subjects.MATHS, teacher01, A12);
+        ClassDiary classDiary02 = new ClassDiary(LocalDate.now().minusDays(100), ClassSerial.CL_2, Subjects.MATHS, teacher01, A12);
+        ClassDiary classDiary03 = new ClassDiary(LocalDate.now().minusDays(100), ClassSerial.CL_3, Subjects.MATHS, teacher01, A12);
+
 
         //LATER!!!! not forbidden to add a teacher who do not teach that spicific subject
         A12.getClassTeachersBySubject().put(Subjects.ENGLISH, new ArrayList<Teacher>());
@@ -57,15 +61,17 @@ public class Main {
 
         //mainPage
 
+//        UserInterface.printMainPage(0);
 
-        Menu.fillClassDiary();
-//        Menu.saveGrade();
-        System.out.println(Menu.studentSearch("Nemecsek Ernő"));
-        System.out.println(student07.getSubjectAndGradeList().entrySet());
-//
-//        String[] strings = UserInterface.AbsentScanner();
-//        System.out.println(strings[0]);
-//        System.out.println(strings[1]);
+//        System.out.println(student01);
+//        List<JsonObject> jsonObjectList = Menu.loadJson();
+//        Menu.parseStudentfromJson(jsonObjectList);
+        Menu.exportStudentToJson(student01);
+
+
+//        System.out.println(Menu.studentSearch("Nemecsek Ernő"));
+//        System.out.println(student07.getSubjectAndGradeList().entrySet());
+
 
 
 //        Menu.FillClassDiary();

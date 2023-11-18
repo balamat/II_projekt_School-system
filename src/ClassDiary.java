@@ -2,16 +2,18 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class ClassDiary {
-
+    private final String uuid;
     private static List<ClassDiary> allClassDiary = new ArrayList<>();
     private LocalDate date;
     private ClassSerial classSerial;
     private Subjects subject;
     private Teacher teacher;
     private StudClass studClass;
-    private Map<Student, String> absentStudents;
+    //1 - uuid os student, 2 - reason of absence
+    private Map<String, String> absentStudents;
 
     public ClassDiary(LocalDate date, ClassSerial classSerial, Subjects subject, Teacher teacher, StudClass studClass) {
+        this.uuid = UUID.randomUUID().toString();
         this.date = date;
         this.classSerial = classSerial;
         this.subject = subject;
@@ -25,8 +27,7 @@ public class ClassDiary {
         for (int i = 0; i < absentNumber; i++) {
             String[] absentAnswers = UserInterface.absentScan();
             Student student = Menu.studentSearch(absentAnswers[0]);
-            this.absentStudents.put(student, absentAnswers[1]);
-            student.getAbsenceMapByStudent().put(this.date, absentAnswers[1]);
+//            this.absentStudents.put(student.getUuid(), absentAnswers[1]);
         }
     }
 
@@ -78,12 +79,16 @@ public class ClassDiary {
         this.studClass = studClass;
     }
 
-    public Map<Student, String> getAbsentStudents() {
+    public Map<String, String> getAbsentStudents() {
         return absentStudents;
     }
 
-    public void setAbsentStudents(Map<Student, String> absentStudents) {
+    public void setAbsentStudents(Map<String, String> absentStudents) {
         this.absentStudents = absentStudents;
+    }
+
+    public String getUuid() {
+        return uuid;
     }
 
     @Override
