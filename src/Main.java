@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,13 +21,17 @@ public class Main {
         StudClass A12 = new StudClass(teacher01, "12A");
         StudClass B12 = new StudClass(teacher02, "12B");
 
-        Student student01 = new Student(new Name("Kis", "János"), A12);
-        Student student02 = new Student(new Name("Kisebb", "László"), A12);
-        Student student03 = new Student(new Name("Közepes", "Kelemen"), A12);
-        Student student04 = new Student(new Name("Nagy", "Béla"), A12);
-        Student student05 = new Student(new Name("Nagyobb", "Imre"), A12);
-        Student student06 = new Student(new Name("Legnagyobb", "Ernő"), A12);
-        Student student07 = new Student(new Name("Nemecsek", "Ernő"), A12);
+        System.out.println("Tanulók száma: " + Student.getAllStudentList().size());
+        Student.getAllStudentList().addAll( Menu.loadJsontoStudent_students());       ;
+        System.out.println("Tanulók száma: " + Student.getAllStudentList().size());
+
+        Student student01 = new Student(new Name("Nagy", "János"), A12);
+        Student student02 = new Student(new Name("Elekes", "Árpád"), A12);
+        Student student03 = new Student(new Name("Kovács", "Kristóf"), A12);
+        Student student04 = new Student(new Name("Zsolnay", "Péter"), A12);
+        Student student05 = new Student(new Name("Király", "Sándor"), A12);
+        Student student06 = new Student(new Name("Csoboth", "Kevin"), A12);
+        Student student07 = new Student(new Name("Szoboszlai", "Dominik"), A12);
 
         Student student11 = new Student(new Name("Rooney", "Wayne"), B12);
         Student student12 = new Student(new Name("Ronaldo", "Cristiano"), B12);
@@ -35,9 +40,34 @@ public class Main {
         Student student15 = new Student(new Name("Keane", "Roy"), B12);
         Student student16 = new Student(new Name("Solksjaer", "Ole Gunnar"), B12);
 
+        System.out.println("Tanulók száma: " + Student.getAllStudentList().size());
+
         ClassDiary classDiary01 = new ClassDiary(LocalDate.now().minusDays(100), ClassSerial.CL_1, Subjects.MATHS, teacher01, A12);
+        classDiary01.getAbsentStudents().put(student01.getUuid(), "puskázott, kiküldésre került");
+        classDiary01.getAbsentStudents().put(student02.getUuid(), "beteg");
+        classDiary01.getAbsentStudents().put(student07.getUuid(), "gittet rág");
+
         ClassDiary classDiary02 = new ClassDiary(LocalDate.now().minusDays(100), ClassSerial.CL_2, Subjects.MATHS, teacher01, A12);
+        classDiary02.getAbsentStudents().put(student01.getUuid(), "Szavalóversenyen vesz részt.");
+        classDiary02.getAbsentStudents().put(student03.getUuid(), "Szavalóversenyen vesz részt.");
+        classDiary02.getAbsentStudents().put(student04.getUuid(), "Szavalóversenyen vesz részt.");
+
         ClassDiary classDiary03 = new ClassDiary(LocalDate.now().minusDays(100), ClassSerial.CL_3, Subjects.MATHS, teacher01, A12);
+        classDiary03.getAbsentStudents().put(student01.getUuid(), "Matematika vesz részt.");
+        classDiary03.getAbsentStudents().put(student06.getUuid(), "Síel.");
+
+
+        student01.getSubjectAndGradeList().put(Subjects.MATHS, List.of(new Grade("doga1", 2), new Grade("felelet", 5)));
+        student01.getSubjectAndGradeList().put(Subjects.HISTORY, List.of(new Grade("doga2", 1), new Grade("felelet", 1)));
+        student01.getSubjectAndGradeList().put(Subjects.HUNGARIAN, List.of(new Grade("versmondás", 4), new Grade("felelet", 3)));
+        student01.getSubjectAndGradeList().put(Subjects.VISUAL_ARTS, List.of(new Grade("csendélet rajzolás", 2), new Grade("dolgozat - festők", 2)));
+        student01.getSubjectAndGradeList().put(Subjects.ENGLISH, List.of(new Grade("szódolgozat", 5), new Grade("felelet", 4), new Grade("szódolgozat javítása", 5), new Grade("témazáró 1.", 3)));
+
+        student07.getSubjectAndGradeList().put(Subjects.MATHS, List.of(new Grade("doga1", 2), new Grade("felelet", 5)));
+        student07.getSubjectAndGradeList().put(Subjects.HISTORY, List.of(new Grade("doga2", 2), new Grade("felelet", 5)));
+        student07.getSubjectAndGradeList().put(Subjects.HUNGARIAN, List.of(new Grade("versmondás", 1), new Grade("felelet", 3)));
+        student07.getSubjectAndGradeList().put(Subjects.VISUAL_ARTS, List.of(new Grade("csendélet rajzolás", 3), new Grade("dolgozat - festők", 5)));
+        student07.getSubjectAndGradeList().put(Subjects.ENGLISH, List.of(new Grade("szódolgozat", 1), new Grade("felelet", 5), new Grade("szódolgozat javítása", 5), new Grade("témazáró 1.", 3)));
 
 
         //LATER!!!! not forbidden to add a teacher who do not teach that spicific subject
@@ -66,13 +96,11 @@ public class Main {
 //        System.out.println(student01);
 //        List<JsonObject> jsonObjectList = Menu.loadJson();
 //        Menu.parseStudentfromJson(jsonObjectList);
-        Menu.exportStudentToJson(student01);
 
+        Menu.exportStudentToJson();
 
 //        System.out.println(Menu.studentSearch("Nemecsek Ernő"));
 //        System.out.println(student07.getSubjectAndGradeList().entrySet());
-
-
 
 //        Menu.FillClassDiary();
 //        System.out.println("----------------------------");

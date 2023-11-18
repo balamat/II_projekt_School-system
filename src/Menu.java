@@ -1,6 +1,5 @@
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 import java.io.FileWriter;
@@ -13,7 +12,7 @@ import java.util.*;
 
 public class Menu {
 
-    public static List<JsonObject> loadJson() {
+    public static List<JsonObject> loadJsontoJsonObject_students() {
         String importPathStudent = "import/student.json";
         Path path = Paths.get(importPathStudent);
         try {
@@ -22,6 +21,19 @@ public class Menu {
             List<JsonObject> jsonObjectList = Arrays.asList(gson.fromJson(inputString, JsonObject[].class));
             jsonObjectList.forEach(System.out::println);
             return jsonObjectList;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static List<Student> loadJsontoStudent_students() {
+        String importPathStudent = "import/student.json";
+        Path path = Paths.get(importPathStudent);
+        try {
+            Gson gson = new Gson();
+            String inputString = Files.readString(path);
+            List<Student> importedStudentList = Arrays.asList(gson.fromJson(inputString, Student[].class));
+            return importedStudentList;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -40,34 +52,14 @@ public class Menu {
 
     }
 
-    public static void exportStudentToJson(Student student) {
-//
-//        List<Student> allStudentList = new ArrayList<>();
-//        StudClass.getAllStudClassList().forEach(studClass -> studClass.getStudentList()
-//                .stream()
-//                .forEach(studentJson -> allStudentList.add(studentJson)));
-//
-//
-//        Student studentJson = allStudentList.get(0);
-
-
-
-
-        //????????????????????
-
-//        Gson gson = new Gson();
-//        try (FileWriter writer = new FileWriter("export/student.json")) {
-//            gson.toJson(student, writer);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+    public static void exportStudentToJson() {
 
         Gson prettyGson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();
 //                .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
-        System.out.println(student);
-        String output = new Gson().toJson(student);
+
+        String output = prettyGson.toJson(Student.getAllStudentList());
         System.out.println(output);
 
         try {
@@ -80,7 +72,6 @@ public class Menu {
         }
 
     }
-
 
     public static LocalDate dateSearch(String inputDate) {
         return LocalDate.parse(inputDate);
@@ -113,22 +104,14 @@ public class Menu {
      * @return
      */
     public static Student studentSearch(String inputStudent) {
-        List<Student> searchedStudentList = new ArrayList<>();
-        StudClass.getAllStudClassList().forEach(studClass -> studClass.getStudentList()
-                .stream()
-                .filter(student -> student.getName().toString().equals(inputStudent)).forEach(student -> searchedStudentList.add(student)));
-        Student searchedStudent = searchedStudentList.stream().findFirst().orElseThrow();
-        return searchedStudent;
+        Student student = Student.getAllStudentList().stream().filter(stud -> stud.getName().toString().equals(inputStudent)).findFirst().orElseThrow();
+        return student;
     }
 
-//    public static Student studentSearchByUuidD(String inputUuid) {
-//        List<Student> searchedStudentList = new ArrayList<>();
-//        StudClass.getAllStudClassList().forEach(studClass -> studClass.getStudentList()
-//                .stream()
-//                .filter(student -> student.getUuid().equals(inputUuid)).forEach(student -> searchedStudentList.add(student)));
-//        Student searchedStudent = searchedStudentList.stream().findFirst().orElseThrow();
-//        return searchedStudent;
-//    }
+    public static Student studentSearchByUuidD(String inputUuid) {
+        Student student = Student.getAllStudentList().stream().filter(stud -> stud.getUuid().equals(inputUuid)).findFirst().orElseThrow();
+        return student;
+    }
 
     public static String fillClassDiary() {
         System.out.println("1 - aktuális óra naplózása");
@@ -153,7 +136,7 @@ public class Menu {
         Student student = Menu.studentSearch(UserInterface.studentScan());
         Subjects subject = Menu.subjectSearch(UserInterface.subjectScan());
         String[] grades = UserInterface.gradeScan();
-//        student.addGrade(subject, grades);
+        student.addGrade(subject, grades);
         System.out.println("Jegy beírása sikeres");
     }
 

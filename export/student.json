@@ -1,1 +1,1200 @@
-{"studClass":{"headTeacher":{"uuid":"d4d5d0e3-5df6-44cd-98e3-e0aae244e0b2","name":{"firstName":"B","lastName":"A"},"taughtSubject":["HISTORY"]},"nameOfClass":"12A","studentList":[],"ClassTeachersBySubject":{"HISTORY":[{"uuid":"d4d5d0e3-5df6-44cd-98e3-e0aae244e0b2","name":{"firstName":"B","lastName":"A"},"taughtSubject":["HISTORY"]}],"ENGLISH":[{"uuid":"ac6e8de4-1161-4a1e-9138-ed321bba70b0","name":{"firstName":"Ferenc","lastName":"Jó"},"taughtSubject":["ENGLISH","GERMAN"]}]}},"name":{"firstName":"János","lastName":"Kis"}}
+[
+  {
+    "uuid": "9f2c09d3-8f87-4c4c-bc1e-102f8109bdf4",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "b0781754-202d-4188-9974-aecd014ed7f7",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "János",
+      "lastName": "Kis"
+    },
+    "subjectAndGradeList": {
+      "HUNGARIAN": [
+        {
+          "description": "versmondás",
+          "grade": 4
+        },
+        {
+          "description": "felelet",
+          "grade": 3
+        }
+      ],
+      "HISTORY": [
+        {
+          "description": "doga2",
+          "grade": 1
+        },
+        {
+          "description": "felelet",
+          "grade": 1
+        }
+      ],
+      "MATHS": [
+        {
+          "description": "doga1",
+          "grade": 2
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        }
+      ],
+      "VISUAL_ARTS": [
+        {
+          "description": "csendélet rajzolás",
+          "grade": 2
+        },
+        {
+          "description": "dolgozat - festők",
+          "grade": 2
+        }
+      ],
+      "ENGLISH": [
+        {
+          "description": "szódolgozat",
+          "grade": 5
+        },
+        {
+          "description": "felelet",
+          "grade": 4
+        },
+        {
+          "description": "szódolgozat javítása",
+          "grade": 5
+        },
+        {
+          "description": "témazáró 1.",
+          "grade": 3
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "1daccdc5-9c60-4f1b-af9d-f49f157de2d9",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "b0781754-202d-4188-9974-aecd014ed7f7",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "László",
+      "lastName": "Kisebb"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "d745f2af-c71c-4c3f-8cee-db47006aefcf",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "b0781754-202d-4188-9974-aecd014ed7f7",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Kelemen",
+      "lastName": "Közepes"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "cae71645-060c-4fde-8ca2-a76a384b5590",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "b0781754-202d-4188-9974-aecd014ed7f7",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Béla",
+      "lastName": "Nagy"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "11aa7130-131c-417d-98d2-c3c4e46823b2",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "b0781754-202d-4188-9974-aecd014ed7f7",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Imre",
+      "lastName": "Nagyobb"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "c8e91c6e-72d1-49bb-aedb-8afcd556ad5f",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "b0781754-202d-4188-9974-aecd014ed7f7",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Ernő",
+      "lastName": "Legnagyobb"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "f2a5d907-08a8-44d4-bad1-9023b74074f2",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "8a738e9f-afbc-48b0-88e9-42298c418143",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "b0781754-202d-4188-9974-aecd014ed7f7",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Ernő",
+      "lastName": "Nemecsek"
+    },
+    "subjectAndGradeList": {
+      "HUNGARIAN": [
+        {
+          "description": "versmondás",
+          "grade": 1
+        },
+        {
+          "description": "felelet",
+          "grade": 3
+        }
+      ],
+      "HISTORY": [
+        {
+          "description": "doga2",
+          "grade": 2
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        }
+      ],
+      "MATHS": [
+        {
+          "description": "doga1",
+          "grade": 2
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        }
+      ],
+      "VISUAL_ARTS": [
+        {
+          "description": "csendélet rajzolás",
+          "grade": 3
+        },
+        {
+          "description": "dolgozat - festők",
+          "grade": 5
+        }
+      ],
+      "ENGLISH": [
+        {
+          "description": "szódolgozat",
+          "grade": 1
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        },
+        {
+          "description": "szódolgozat javítása",
+          "grade": 5
+        },
+        {
+          "description": "témazáró 1.",
+          "grade": 3
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "b87139f3-8b92-48fa-9ff2-53b661358c46",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "0c2e5dff-2035-4b50-b5f3-a3a77aba1661",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Wayne",
+      "lastName": "Rooney"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "949c7334-33e4-4f8d-8a33-421625f0b55b",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "0c2e5dff-2035-4b50-b5f3-a3a77aba1661",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Cristiano",
+      "lastName": "Ronaldo"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "298d8530-0e0b-4d24-9417-7f75090e0656",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "0c2e5dff-2035-4b50-b5f3-a3a77aba1661",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Ryan",
+      "lastName": "Giggs"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "8521f0af-0f45-40b3-837f-54e786c4dcc7",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "0c2e5dff-2035-4b50-b5f3-a3a77aba1661",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Paul",
+      "lastName": "Scholes"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "ae03502a-917a-4647-885e-8e77e1aa05c6",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "0c2e5dff-2035-4b50-b5f3-a3a77aba1661",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Roy",
+      "lastName": "Keane"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "850ca8a4-205b-4f81-a0a5-4c66d4ad8195",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "0c2e5dff-2035-4b50-b5f3-a3a77aba1661",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Ole Gunnar",
+      "lastName": "Solksjaer"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "d16348de-04b1-4cb1-8fa9-ef8f0743e854",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "János",
+      "lastName": "Nagy"
+    },
+    "subjectAndGradeList": {
+      "MATHS": [
+        {
+          "description": "doga1",
+          "grade": 2
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        }
+      ],
+      "HUNGARIAN": [
+        {
+          "description": "versmondás",
+          "grade": 4
+        },
+        {
+          "description": "felelet",
+          "grade": 3
+        }
+      ],
+      "VISUAL_ARTS": [
+        {
+          "description": "csendélet rajzolás",
+          "grade": 2
+        },
+        {
+          "description": "dolgozat - festők",
+          "grade": 2
+        }
+      ],
+      "ENGLISH": [
+        {
+          "description": "szódolgozat",
+          "grade": 5
+        },
+        {
+          "description": "felelet",
+          "grade": 4
+        },
+        {
+          "description": "szódolgozat javítása",
+          "grade": 5
+        },
+        {
+          "description": "témazáró 1.",
+          "grade": 3
+        }
+      ],
+      "HISTORY": [
+        {
+          "description": "doga2",
+          "grade": 1
+        },
+        {
+          "description": "felelet",
+          "grade": 1
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "2adcb2ea-5ce5-4c18-ba98-09a644a805de",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Árpád",
+      "lastName": "Elekes"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "281d7c3a-f688-441b-8669-582033f4a019",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Kristóf",
+      "lastName": "Kovács"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "23c1a2ec-cccf-4e88-a708-6c74555feb73",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Péter",
+      "lastName": "Zsolnay"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "4646dfc0-72d9-470e-890c-a75c7e408ced",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Sándor",
+      "lastName": "Király"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "d0a12468-c2d0-4cf5-a4ca-dbd764bd4940",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Kevin",
+      "lastName": "Csoboth"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "762c02cf-33a2-4392-8c15-61b3b59901d5",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [],
+      "ClassTeachersBySubject": {
+        "ENGLISH": [
+          {
+            "uuid": "3a9e5979-b33e-45ae-b864-1d2cd4e996a9",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ],
+        "HISTORY": [
+          {
+            "uuid": "a037585f-d27e-4a11-985c-f84d0b21fc16",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ]
+      }
+    },
+    "name": {
+      "firstName": "Dominik",
+      "lastName": "Szoboszlai"
+    },
+    "subjectAndGradeList": {
+      "MATHS": [
+        {
+          "description": "doga1",
+          "grade": 2
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        }
+      ],
+      "HUNGARIAN": [
+        {
+          "description": "versmondás",
+          "grade": 1
+        },
+        {
+          "description": "felelet",
+          "grade": 3
+        }
+      ],
+      "VISUAL_ARTS": [
+        {
+          "description": "csendélet rajzolás",
+          "grade": 3
+        },
+        {
+          "description": "dolgozat - festők",
+          "grade": 5
+        }
+      ],
+      "ENGLISH": [
+        {
+          "description": "szódolgozat",
+          "grade": 1
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        },
+        {
+          "description": "szódolgozat javítása",
+          "grade": 5
+        },
+        {
+          "description": "témazáró 1.",
+          "grade": 3
+        }
+      ],
+      "HISTORY": [
+        {
+          "description": "doga2",
+          "grade": 2
+        },
+        {
+          "description": "felelet",
+          "grade": 5
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "04190f63-f031-4135-940d-0423cc60d913",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Wayne",
+      "lastName": "Rooney"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "b9b54278-18e3-4b03-91b5-60ec79b7c0c3",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Cristiano",
+      "lastName": "Ronaldo"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "b629a7e1-5065-45b4-8785-0317ec1e7862",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Ryan",
+      "lastName": "Giggs"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "a6a9c91e-da20-4b22-ae15-5174b6a71451",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Paul",
+      "lastName": "Scholes"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "c07b497d-1dcd-4ecb-9f83-5597de374047",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Roy",
+      "lastName": "Keane"
+    },
+    "subjectAndGradeList": {}
+  },
+  {
+    "uuid": "3ccd91f6-b165-4a6f-b06e-47f79d418072",
+    "studClass": {
+      "headTeacher": {
+        "uuid": "635306e7-e617-4452-b00f-9fb669cfad93",
+        "name": {
+          "firstName": "Elek",
+          "lastName": "Tört"
+        },
+        "taughtSubject": [
+          "MATHS"
+        ]
+      },
+      "nameOfClass": "12B",
+      "studentList": [],
+      "ClassTeachersBySubject": {}
+    },
+    "name": {
+      "firstName": "Ole Gunnar",
+      "lastName": "Solksjaer"
+    },
+    "subjectAndGradeList": {}
+  }
+]
