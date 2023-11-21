@@ -4,13 +4,13 @@ import java.util.UUID;
 
 public class Teacher implements User {
 
-    private final String uuid;
+    private final UUID uuid;
     private static List<Teacher> allTeacherList = new ArrayList<>();
     private Name name;
     private List<Subjects> taughtSubject;
 
     public Teacher(Name name, Subjects subject1, Subjects subject2) {
-        this.uuid = UUID.randomUUID().toString();
+        this.uuid = UUID.randomUUID();
         this.name = name;
         this.taughtSubject = new ArrayList<Subjects>();
         this.taughtSubject.add(subject1);
@@ -19,10 +19,10 @@ public class Teacher implements User {
     }
 
     public Teacher(Name name, Subjects subject1) {
+        this.uuid = UUID.randomUUID();
         this.name = name;
         this.taughtSubject = new ArrayList<Subjects>();
         this.taughtSubject.add(subject1);
-        this.uuid = UUID.randomUUID().toString();        //MODIFY!!!!!!
         allTeacherList.add(this);
     }
 
@@ -42,7 +42,7 @@ public class Teacher implements User {
         this.taughtSubject = taughtSubject;
     }
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 

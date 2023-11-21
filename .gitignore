@@ -3,6 +3,9 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+### exclude backup json files
+/files/backup
+
 ### Eclipse ###
 .apt_generated
 .classpath

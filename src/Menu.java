@@ -39,22 +39,22 @@ public class Menu {
     }
 
     public static Student studentSearchByUuidD(String inputUuid) {
-        Student student = Student.getAllStudentList().stream().filter(stud -> stud.getUuid().equals(inputUuid)).findFirst().orElseThrow();
+        Student student = Student.getAllStudentList().stream().filter(stud -> stud.getUuid().toString().equals(inputUuid)).findFirst().orElseThrow();
         return student;
     }
 
-    public static String fillClassDiary() {
-        System.out.println("1 - aktuális óra naplózása");
+    public static ClassDiary fillClassDiary() {
+        String resultMessage = "aktuális óra naplózása";
+        System.out.println(resultMessage.toUpperCase());
         LocalDate localDate = dateSearch(UserInterface.dateScan());
         ClassSerial classSerial = classSerialSearch(UserInterface.classSerialScan());
         Subjects subject = subjectSearch(UserInterface.subjectScan());
         Teacher teacher = teacherSearch(UserInterface.teacherScan());
         StudClass studClass = studClassSearch(UserInterface.studClassScan());
-        new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(UserInterface.numberOfAbsentScan());
-        String result = "Sikeres naplózás!";
-        System.out.println(ClassDiary.getAllClassDiary().get(ClassDiary.getAllClassDiary().size() - 1));
-        System.out.println(result);
-        return result;
+        ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(UserInterface.numberOfAbsentScan());
+        UserInterface.printActualObject(classDiary);
+        return classDiary;
+//UserInterface.printIfSuccessful(resultMessage);
     }
 
     public static void modifyClassDiary() {

@@ -3,17 +3,17 @@ import java.util.*;
 
 public class ClassDiary {
     private static List<ClassDiary> allClassDiary = new ArrayList<>();
-    private final String uuid;
+    private final UUID uuid;
     private LocalDate date;
     private ClassSerial classSerial;
     private Subjects subject;
     private Teacher teacher;
     private StudClass studClass;
     //1 - uuid os student, 2 - reason of absence
-    private Map<String, String> absentStudents;
+    private Map<UUID, String> absentStudents;
 
     public ClassDiary(LocalDate date, ClassSerial classSerial, Subjects subject, Teacher teacher, StudClass studClass) {
-        this.uuid = UUID.randomUUID().toString();
+        this.uuid = UUID.randomUUID();
         this.date = date;
         this.classSerial = classSerial;
         this.subject = subject;
@@ -23,12 +23,13 @@ public class ClassDiary {
         allClassDiary.add(this);
     }
 
-    public void addAbsentStudent(int absentNumber) {
+    public ClassDiary addAbsentStudent(int absentNumber) {
         for (int i = 0; i < absentNumber; i++) {
             String[] absentAnswers = UserInterface.absentScan();
             Student student = Menu.studentSearch(absentAnswers[0]);
             this.absentStudents.put(student.getUuid(), absentAnswers[1]);
         }
+        return this;
     }
 
     public static List<ClassDiary> getAllClassDiary() {
@@ -79,15 +80,15 @@ public class ClassDiary {
         this.studClass = studClass;
     }
 
-    public Map<String, String> getAbsentStudents() {
+    public Map<UUID, String> getAbsentStudents() {
         return absentStudents;
     }
 
-    public void setAbsentStudents(Map<String, String> absentStudents) {
+    public void setAbsentStudents(Map<UUID, String> absentStudents) {
         this.absentStudents = absentStudents;
     }
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 

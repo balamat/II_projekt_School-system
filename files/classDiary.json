@@ -1,11 +1,11 @@
 [
   {
-    "uuid": "5fb6ff78-3f40-4f7b-a3fe-c6b1f09be918",
-    "date": "2023-08-10",
+    "uuid": "5b655270-89e2-443d-a1b7-e22f1d5e910d",
+    "date": "2023-08-13",
     "classSerial": "CL_1",
     "subject": "MATHS",
     "teacher": {
-      "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+      "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
       "name": {
         "firstName": "B",
         "lastName": "A"
@@ -16,7 +16,7 @@
     },
     "studClass": {
       "headTeacher": {
-        "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+        "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -30,7 +30,7 @@
       "ClassTeachersBySubject": {
         "HISTORY": [
           {
-            "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+            "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -42,7 +42,7 @@
         ],
         "ENGLISH": [
           {
-            "uuid": "1043d0ff-9fbf-47d3-9245-119be2938338",
+            "uuid": "500aa789-778c-4424-9cca-8abba36147d0",
             "name": {
               "firstName": "Károly",
               "lastName": "Kós"
@@ -55,18 +55,18 @@
       }
     },
     "absentStudents": {
-      "0e8340f0-be7e-4da3-aa68-e19125d745e6": "puskázott, kiküldésre került",
-      "1cf77da5-6e6a-47ef-bef9-ff9aa9ce603d": "gittet rág",
-      "28a8bbf2-c9c2-4562-babc-fbefd8fa3d71": "beteg"
+      "27da9384-6227-4b72-a626-e3fc260fcb4c": "gittet rág",
+      "e748ef2b-0a9f-4820-bc4f-afbc020f53e5": "puskázott, kiküldésre került",
+      "58cb0006-173c-41d7-9fdf-396a0ff33ce9": "beteg"
     }
   },
   {
-    "uuid": "a17d8417-36aa-4906-9667-de75f1073ca1",
-    "date": "2023-08-10",
+    "uuid": "07ec66e5-edec-48ad-9487-5347286c8ecb",
+    "date": "2023-08-13",
     "classSerial": "CL_2",
     "subject": "MATHS",
     "teacher": {
-      "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+      "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
       "name": {
         "firstName": "B",
         "lastName": "A"
@@ -77,7 +77,7 @@
     },
     "studClass": {
       "headTeacher": {
-        "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+        "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -91,7 +91,7 @@
       "ClassTeachersBySubject": {
         "HISTORY": [
           {
-            "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+            "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -103,7 +103,7 @@
         ],
         "ENGLISH": [
           {
-            "uuid": "1043d0ff-9fbf-47d3-9245-119be2938338",
+            "uuid": "500aa789-778c-4424-9cca-8abba36147d0",
             "name": {
               "firstName": "Károly",
               "lastName": "Kós"
@@ -116,18 +116,18 @@
       }
     },
     "absentStudents": {
-      "0e8340f0-be7e-4da3-aa68-e19125d745e6": "Szavalóversenyen vesz részt.",
-      "48d37dfb-fe4b-40ab-8989-100e764b05c6": "Szavalóversenyen vesz részt.",
-      "47b578e4-5fc3-484b-950f-4fe9b3642be4": "Szavalóversenyen vesz részt."
+      "e748ef2b-0a9f-4820-bc4f-afbc020f53e5": "Szavalóversenyen vesz részt.",
+      "5b2faa1a-5c41-456a-a6b3-2cec815a5a90": "Szavalóversenyen vesz részt.",
+      "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746": "Szavalóversenyen vesz részt."
     }
   },
   {
-    "uuid": "508b2420-5e10-4406-8431-b34202ed406e",
-    "date": "2023-08-10",
+    "uuid": "d1f2f8f6-6dca-4b0b-a225-8df019f439fb",
+    "date": "2023-08-13",
     "classSerial": "CL_3",
     "subject": "MATHS",
     "teacher": {
-      "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+      "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
       "name": {
         "firstName": "B",
         "lastName": "A"
@@ -138,7 +138,7 @@
     },
     "studClass": {
       "headTeacher": {
-        "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+        "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
         "name": {
           "firstName": "B",
           "lastName": "A"
@@ -152,7 +152,7 @@
       "ClassTeachersBySubject": {
         "HISTORY": [
           {
-            "uuid": "57697769-b8c7-4a46-b45c-0465a72b5394",
+            "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
             "name": {
               "firstName": "B",
               "lastName": "A"
@@ -164,7 +164,7 @@
         ],
         "ENGLISH": [
           {
-            "uuid": "1043d0ff-9fbf-47d3-9245-119be2938338",
+            "uuid": "500aa789-778c-4424-9cca-8abba36147d0",
             "name": {
               "firstName": "Károly",
               "lastName": "Kós"
@@ -177,8 +177,8 @@
       }
     },
     "absentStudents": {
-      "0e8340f0-be7e-4da3-aa68-e19125d745e6": "Matematika vesz részt.",
-      "1829bb04-e044-42d4-bc42-2b300ea31f88": "Síel."
+      "e748ef2b-0a9f-4820-bc4f-afbc020f53e5": "Matematika vesz részt.",
+      "ac7f1461-b908-4c63-8b84-6d6bfe22ec85": "Síel."
     }
   }
 ]

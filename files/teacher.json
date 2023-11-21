@@ -1,0 +1,53 @@
+[
+  {
+    "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
+    "name": {
+      "firstName": "B",
+      "lastName": "A"
+    },
+    "taughtSubject": [
+      "HISTORY"
+    ]
+  },
+  {
+    "uuid": "93c1f081-a941-491c-ab0e-682d2b89c920",
+    "name": {
+      "firstName": "Elek",
+      "lastName": "Tört"
+    },
+    "taughtSubject": [
+      "MATHS"
+    ]
+  },
+  {
+    "uuid": "500aa789-778c-4424-9cca-8abba36147d0",
+    "name": {
+      "firstName": "Károly",
+      "lastName": "Kós"
+    },
+    "taughtSubject": [
+      "PHYSICS"
+    ]
+  },
+  {
+    "uuid": "927dd981-97ab-4c6b-938f-cd79915bf51b",
+    "name": {
+      "firstName": "Ferenc",
+      "lastName": "Jó"
+    },
+    "taughtSubject": [
+      "ENGLISH",
+      "GERMAN"
+    ]
+  },
+  {
+    "uuid": "244dec61-fe17-4ad0-a2ee-cb5fdf73d52e",
+    "name": {
+      "firstName": "Norbert",
+      "lastName": "Nemoda"
+    },
+    "taughtSubject": [
+      "SPORT"
+    ]
+  }
+]

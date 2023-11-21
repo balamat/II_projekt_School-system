@@ -3,18 +3,16 @@ import java.util.*;
 
 public class Student {
 
-    private final String uuid;
+    private final UUID uuid;
     private static List<Student> allStudentList = new ArrayList<>();
-    private StudClass studClass;
+    private String studClassString;
     private Name name;
     private Map<Subjects, List<Grade>> subjectAndGradeList;
 
-    public Student(Name name, StudClass studClass) {
-        this.uuid = UUID.randomUUID().toString();
+    public Student(Name name, String studClassString) {
+        this.uuid = UUID.randomUUID();
         this.name = name;
-        this.studClass = studClass;
-        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!4
-//        this.studClass.getStudentList().add(this);        //ez okozta a StackOverFlow-t
+        this.studClassString = studClassString;
         this.subjectAndGradeList = new HashMap<>();
         Student.getAllStudentList().add(this);
     }
@@ -27,7 +25,7 @@ public class Student {
         this.name = name;
     }
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 
@@ -39,12 +37,12 @@ public class Student {
         this.subjectAndGradeList = subjectAndGradeList;
     }
 
-    public StudClass getStudClass() {
-        return studClass;
+    public String getStudClassString() {
+        return studClassString;
     }
 
-    public void setStudClass(StudClass studClass) {
-        this.studClass = studClass;
+    public void setStudClassString(String studClassString) {
+        this.studClassString = studClassString;
     }
 
     public void addGrade(Subjects subject, String[] grades) {
@@ -61,7 +59,7 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "studClass=" + studClass +
+                "studClass=" + studClassString +
                 ", name=" + name +
                 ", uuid='" + uuid + '\'' +
                 ", subjectAndGradeList=" + subjectAndGradeList +

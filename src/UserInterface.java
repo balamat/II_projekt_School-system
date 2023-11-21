@@ -136,6 +136,23 @@ public class UserInterface {
         return gradeAnswers;
     }
 
+    public static void printIfSuccessful(String descriptionOfAction) {
+        System.out.println("A " + descriptionOfAction + " sikeres volt!");
+    }
+
+    /**
+     * Takes any type of object, casts to its own type and prints it.
+     * @param object
+     * @return the original (casted) objectf
+     * @param <objectClass>
+     */
+    public static <objectClass> objectClass printActualObject(Object object) {
+        Class<?> objectClass = object.getClass();
+        objectClass castedObject = (objectClass) object;
+        System.out.println(castedObject);
+        return castedObject;
+    }
+
     private static void printAdmin() {
     }
 }

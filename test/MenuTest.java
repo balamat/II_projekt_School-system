@@ -5,12 +5,14 @@ import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.time.LocalDate;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+import java.util.UUID;
 
 
 public class MenuTest {
@@ -27,11 +29,13 @@ public class MenuTest {
     @BeforeEach
     public void setUpMockObjects() {
         this.mockTeacher = new Teacher(new Name("Tört", "Elek"), mockSubject);
-        this.mockStudClass = new StudClass(uuid, mockTeacher, "12A");
         this.mockStudent = new Student(new Name("Nemecsek", "Ernő"), mockStudClass);
         this.mockDate = LocalDate.now();
         this.mockClassSerial = ClassSerial.CL_1;
         this.mockSubject = Subjects.HISTORY;
+
+        String s = "8b7fc189-8200-4e30-87aa-06560b2830a7";
+        when(mockStudent.getUuid()).thenReturn(UUID.fromString(s));
     }
 
     @Test
@@ -41,7 +45,7 @@ public class MenuTest {
 
     @Test
     public void studentSearchShouldReturnStudent() {
-        assertEquals(mockStudent.toString(), Menu.studentSearch("Nemecsek Ernő").toString(), "Not the same String!");
+        assertEquals(mockStudent.getName().toString(), Menu.studentSearch("Nemecsek Ernő").getName().toString(), "Not the same String!");
     }
 
     @Test
@@ -51,27 +55,9 @@ public class MenuTest {
         });
     }
 
+    //    studentSearchByUuidD
     @Test
-    void teacherSearchShouldTakeTeacherInput() {
+    public void studentSearchByUuidDShouldReturnStudent() {
+        assertEquals("8b7fc189-8200-4e30-87aa-06560b2830a7", Menu.studentSearch("Nemecsek Ernő").getUuid().toString(), "Not the same String!");
     }
-
-
-    @Test
-    void fillClassDiaryShouldValidateSuccesfullDiarySave() {
-        String input = "0";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
-
-        try (MockedStatic<Menu> utilities = Mockito.mockStatic(Menu.class)) {
-//            utilities.when(Menu::FillClassDiary).thenReturn("xyz");
-            utilities.when(()->Menu.dateSearch("2022-02-22")).thenReturn(mockDate);
-            utilities.when(()->Menu.classSerialSearch("x")).thenReturn(mockClassSerial);
-            utilities.when(()->Menu.subjectSearch("x")).thenReturn(mockSubject);
-            utilities.when(()->Menu.teacherSearch("x")).thenReturn(mockTeacher);
-            utilities.when(()->Menu.studClassSearch("x")).thenReturn(mockStudClass);
-            utilities.when(()->Menu.studentSearch("x")).thenReturn(mockStudent);
-            assertEquals("Sikeres naplózás!", Menu.fillClassDiary(), "Nem egyezik!");
-        }
-    }
-
 }
