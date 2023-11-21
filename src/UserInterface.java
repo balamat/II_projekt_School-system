@@ -86,9 +86,45 @@ public class UserInterface {
     }
 
     public static String subjectScan() {
-        System.out.println("Add meg a kiválasztandó óra nevét a megadott formátumban! [Történelem]");
+        System.out.println("Add meg a kiválasztandó óra nevét a megadott formátumban!");
+
+        System.out.printf("Az alábbiak közül választhatsz: ");
+        StringBuilder sbSubject = new StringBuilder();
+        for (Subjects subject : Subjects.values()
+        ) {
+            sbSubject.append(subject.getSubjectName()).append(", ");
+        }
+        sbSubject.deleteCharAt(sbSubject.length() - 1).deleteCharAt(sbSubject.length() - 1);
+        System.out.println(sbSubject.toString());
+
         Scanner subjectScanner = new Scanner(System.in);
         return subjectScanner.next();
+    }
+
+    public static String studClassScan() {
+        System.out.println("Add meg az osztály jelét a megadott formában [12A]!");
+
+        System.out.printf("Az alábbiak közül választhatsz: ");
+        StringBuilder sbStudClass = new StringBuilder();
+        StudClass.getAllStudClassList().stream().map(studClass -> studClass.getNameOfClass().toString()).sorted().forEach(studClass -> sbStudClass.append(studClass).append(", "));
+        sbStudClass.deleteCharAt(sbStudClass.length() - 1).deleteCharAt(sbStudClass.length() - 1);
+        System.out.println(sbStudClass.toString());
+
+        Scanner studClassScanner = new Scanner(System.in);
+        return studClassScanner.next();
+    }
+
+    public static String teacherScan() {
+        System.out.println("Add meg a tanár teljes nevét!");
+
+        System.out.printf("Az alábbiak oktatók közül választhatsz: ");
+        StringBuilder sbTeacher = new StringBuilder();
+        Teacher.getAllTeacherList().stream().map(teacher -> teacher.getName().toString()).sorted().forEach(teacher -> sbTeacher.append(teacher).append(", "));
+        sbTeacher.deleteCharAt(sbTeacher.length() - 1).deleteCharAt(sbTeacher.length() - 1);
+        System.out.println(sbTeacher.toString());
+
+        Scanner teacherScanner = new Scanner(System.in);
+        return teacherScanner.nextLine();
     }
 
     public static String studentScan() {
@@ -97,43 +133,29 @@ public class UserInterface {
         return studentScanner.nextLine();
     }
 
-    public static String teacherScan() {
-        System.out.println("Add meg a tanár teljes nevét!");
-        Scanner teacherScanner = new Scanner(System.in);
-        return teacherScanner.nextLine();
-    }
-
-    public static String studClassScan() {
-        System.out.println("Add meg az osztály jelét!");
-        Scanner studClassScanner = new Scanner(System.in);
-        return studClassScanner.next();
-    }
-
-    public static int numberOfAbsentScan() {
+    public static String numberOfAbsentScan() {
         System.out.println("Add meg a hiányzók számát!");
         Scanner numberOfAbsentScanner = new Scanner(System.in);
-        int numberOfAbsent = numberOfAbsentScanner.nextInt();
-        return numberOfAbsent;
+        return numberOfAbsentScanner.next();
     }
 
-    public static String[] absentScan() {
-        Scanner absentScanner = new Scanner(System.in);
-        String[] absentAnswers = new String[2];
-        System.out.println("Add meg a hiányzó teljes nevét!");
-        absentAnswers[0] = absentScanner.nextLine().trim();
+    public static String absenceCauseScan() {
+        Scanner absenseScanner = new Scanner(System.in);
         System.out.println("Add meg a hiányzás okát!");
-        absentAnswers[1] = absentScanner.nextLine().trim();
-        return absentAnswers;
+        String absenceCause = absenseScanner.nextLine().trim();
+        return absenceCause;
     }
 
-    public static String[] gradeScan() {
+    public static String gradeScan() {
         Scanner gradeScanner = new Scanner(System.in);
-        String[] gradeAnswers = new String[2];
+        System.out.println("Add meg az osztályzatot (1-5)!");
+        return gradeScanner.next();
+    }
+
+    public static String gradeDescriptionScan() {
+        Scanner gradeDescriptionScanner = new Scanner(System.in);
         System.out.println("Add meg az osztályzás címét (pl. szódolgozat)!");
-        gradeAnswers[0] = gradeScanner.nextLine().trim();
-        System.out.println("Add meg jegyet!");
-        gradeAnswers[1] = gradeScanner.nextLine().trim();
-        return gradeAnswers;
+        return gradeDescriptionScanner.nextLine().trim();
     }
 
     public static void printIfSuccessful(String descriptionOfAction) {
@@ -142,16 +164,23 @@ public class UserInterface {
 
     /**
      * Takes any type of object, casts to its own type and prints it.
+     *
      * @param object
-     * @return the original (casted) objectf
      * @param <objectClass>
+     * @return the original (casted) objectf
      */
-    public static <objectClass> objectClass printActualObject(Object object) {
+    public static <objectClass> objectClass printObject(Object object) {
         Class<?> objectClass = object.getClass();
         objectClass castedObject = (objectClass) object;
         System.out.println(castedObject);
+        System.out.println("Sikeres művelet!");
         return castedObject;
     }
+
+    public static void printSuccesfullyTerminated(String label) {
+        System.out.println(label + " - a művelet sikeresen megtörtént!");
+    }
+
 
     private static void printAdmin() {
     }

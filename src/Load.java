@@ -66,7 +66,11 @@ public class Load {
         String importPath = "files/student.json";
         Path path = Paths.get(importPath);
         try {
-            Gson gson = new Gson();
+
+//            Gson gson = new Gson();
+            Gson gson = new GsonBuilder()
+                    .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
+                    .create();
             String inputString = Files.readString(path);
             List<Student> importedList = Arrays.asList(gson.fromJson(inputString, Student[].class));
             return importedList;
@@ -79,7 +83,10 @@ public class Load {
         String importPath = "files/studClass.json";
         Path path = Paths.get(importPath);
         try {
-            Gson gson = new Gson();
+//            Gson gson = new Gson();
+            Gson gson = new GsonBuilder()
+                    .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
+                    .create();
             String inputString = Files.readString(path);
             List<StudClass> importedList = Arrays.asList(gson.fromJson(inputString, StudClass[].class));
             return importedList;
@@ -108,6 +115,7 @@ public class Load {
     public static void exportStudentToJson() {
 
         Gson prettyGson = new GsonBuilder()
+                .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
                 .setPrettyPrinting()
                 .create();
 
@@ -150,6 +158,7 @@ public class Load {
     public static void exportStudClassToJson() {
 
         Gson prettyGson = new GsonBuilder()
+                .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
                 .setPrettyPrinting()
                 .create();
 

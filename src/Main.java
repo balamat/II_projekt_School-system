@@ -1,6 +1,8 @@
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +14,6 @@ public class Main {
         ClassDiary.getAllClassDiary().addAll(Load.loadJsonToClassDiary());
         StudClass.getAllStudClassList().addAll(Load.loadJsonToStudClass());
         Load.sortStudents();
-
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         LocalDate actualDate = LocalDate.now();
@@ -21,8 +22,9 @@ public class Main {
         //scanner - user
         //scanner -password
 
-        Admin admin01 = new Admin();
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//        Admin admin01 = new Admin();
+//
 //        Teacher teacher01 = new Teacher(new Name("A", "B"), Subjects.HISTORY);
 //        Teacher teacher02 = new Teacher(new Name("Tört", "Elek"), Subjects.MATHS);
 //        Teacher teacher03 = new Teacher(new Name("Kós", "Károly"), Subjects.PHYSICS);
@@ -34,20 +36,20 @@ public class Main {
 //        StudClass C12 = new StudClass(teacher03, "12C");
 //
 //        /*creating json structure by instantiating sample objects*/
-//        Student student01 = new Student(new Name("Nagy", "János"), "A12");
-//        Student student02 = new Student(new Name("Elekes", "Árpád"), "A12");
-//        Student student03 = new Student(new Name("Kovács", "Kristóf"), "A12");
-//        Student student04 = new Student(new Name("Zsolnay", "Péter"), "A12");
-//        Student student05 = new Student(new Name("Király", "Sándor"), "A12");
-//        Student student06 = new Student(new Name("Csoboth", "Kevin"), "A12");
-//        Student student07 = new Student(new Name("Szoboszlai", "Dominik"), "A12");
+//        Student student01 = new Student(new Name("Nagy", "János"), "12A");
+//        Student student02 = new Student(new Name("Elekes", "Árpád"), "12A");
+//        Student student03 = new Student(new Name("Kovács", "Kristóf"), "12A");
+//        Student student04 = new Student(new Name("Zsolnay", "Péter"), "12A");
+//        Student student05 = new Student(new Name("Király", "Sándor"), "12A");
+//        Student student06 = new Student(new Name("Csoboth", "Kevin"), "12A");
+//        Student student07 = new Student(new Name("Szoboszlai", "Dominik"), "12A");
 //
-//        Student student11 = new Student(new Name("Rooney", "Wayne"), "B12");
-//        Student student12 = new Student(new Name("Ronaldo", "Cristiano"), "B12");
-//        Student student13 = new Student(new Name("Giggs", "Ryan"), "B12");
-//        Student student14 = new Student(new Name("Scholes", "Paul"), "B12");
-//        Student student15 = new Student(new Name("Keane", "Roy"), "B12");
-//        Student student16 = new Student(new Name("Solksjaer", "Ole Gunnar"), "B12");
+//        Student student11 = new Student(new Name("Rooney", "Wayne"), "12B");
+//        Student student12 = new Student(new Name("Ronaldo", "Cristiano"), "12B");
+//        Student student13 = new Student(new Name("Giggs", "Ryan"), "12B");
+//        Student student14 = new Student(new Name("Scholes", "Paul"), "12B");
+//        Student student15 = new Student(new Name("Keane", "Roy"), "12B");
+//        Student student16 = new Student(new Name("Solksjaer", "Ole Gunnar"), "12B");
 //
 //        ClassDiary classDiary01 = new ClassDiary(LocalDate.now().minusDays(100), ClassSerial.CL_1, Subjects.MATHS, teacher01, A12);
 //        classDiary01.getAbsentStudents().put(student01.getUuid(), "puskázott, kiküldésre került");
@@ -79,6 +81,8 @@ public class Main {
 //        A12.getClassTeachersBySubject().get(Subjects.ENGLISH).add(teacher03);
 //        A12.getClassTeachersBySubject().put(Subjects.HISTORY, new ArrayList<Teacher>());
 //        A12.getClassTeachersBySubject().get(Subjects.HISTORY).add(teacher01);
+//        Load.sortStudents();
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
         StudClass.getAllStudClassList().forEach(System.out::println);
         System.out.println("---------------------------------");
@@ -86,11 +90,11 @@ public class Main {
         System.out.println("---------------------------------");
         ClassDiary.getAllClassDiary().forEach(System.out::println);
         System.out.println("---------------------------------");
-//        Menu.fillClassDiary();
+
 
 
         //mainPage                        //OK!!
-//        UserInterface.printMainPage(0);
+        UserInterface.printMainPage(0);
 
 
         //Functions

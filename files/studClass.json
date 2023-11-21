@@ -1,7 +1,7 @@
 [
   {
     "headTeacher": {
-      "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
+      "uuid": "52aa6f2a-98fb-4995-8635-8b65c02b570f",
       "name": {
         "firstName": "B",
         "lastName": "A"
@@ -13,12 +13,13 @@
     "nameOfClass": "12A",
     "studentList": [
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -81,57 +82,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -194,12 +201,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -262,57 +270,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -375,12 +389,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -443,57 +458,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -556,12 +577,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -624,57 +646,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -737,12 +765,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -805,57 +834,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -918,12 +953,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -986,57 +1022,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1099,12 +1141,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1167,57 +1210,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1280,12 +1329,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1348,57 +1398,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1461,12 +1517,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1529,57 +1586,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1642,12 +1705,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1710,57 +1774,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1823,12 +1893,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -1891,57 +1962,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2004,12 +2081,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2072,57 +2150,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2185,12 +2269,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2253,57 +2338,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2366,12 +2457,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2434,57 +2526,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2547,12 +2645,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2615,57 +2714,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2728,12 +2833,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2796,57 +2902,63 @@
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2909,12 +3021,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -2973,61 +3086,73 @@
               "description": "témazáró 1.",
               "grade": 3
             }
+          ],
+          "PHYSICS": [
+            {
+              "description": "46",
+              "grade": 5
+            }
           ]
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3090,12 +3215,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3153,62 +3279,78 @@
             {
               "description": "témazáró 1.",
               "grade": 3
+            },
+            {
+              "description": "doga",
+              "grade": 5
+            }
+          ],
+          "PHYSICS": [
+            {
+              "description": "46",
+              "grade": 5
             }
           ]
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3271,12 +3413,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3334,62 +3477,82 @@
             {
               "description": "témazáró 1.",
               "grade": 3
+            },
+            {
+              "description": "doga",
+              "grade": 5
+            },
+            {
+              "description": "felelés",
+              "grade": 5
+            }
+          ],
+          "PHYSICS": [
+            {
+              "description": "46",
+              "grade": 5
             }
           ]
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3452,12 +3615,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3515,62 +3679,88 @@
             {
               "description": "témazáró 1.",
               "grade": 3
+            },
+            {
+              "description": "doga",
+              "grade": 5
+            },
+            {
+              "description": "felelés",
+              "grade": 5
+            }
+          ],
+          "PHYSICS": [
+            {
+              "description": "46",
+              "grade": 5
+            }
+          ],
+          "GERMAN": [
+            {
+              "description": "das Wald - fogalmazás",
+              "grade": 4
             }
           ]
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3633,12 +3823,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3696,62 +3887,92 @@
             {
               "description": "témazáró 1.",
               "grade": 3
+            },
+            {
+              "description": "doga",
+              "grade": 5
+            },
+            {
+              "description": "felelés",
+              "grade": 5
+            }
+          ],
+          "PHYSICS": [
+            {
+              "description": "46",
+              "grade": 5
+            }
+          ],
+          "GERMAN": [
+            {
+              "description": "das Wald - fogalmazás",
+              "grade": 4
+            },
+            {
+              "description": "felszerelését nem hozta az órára",
+              "grade": 1
             }
           ]
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3814,12 +4035,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3877,62 +4099,98 @@
             {
               "description": "témazáró 1.",
               "grade": 3
+            },
+            {
+              "description": "doga",
+              "grade": 5
+            },
+            {
+              "description": "felelés",
+              "grade": 5
+            }
+          ],
+          "PHYSICS": [
+            {
+              "description": "46",
+              "grade": 5
+            }
+          ],
+          "GERMAN": [
+            {
+              "description": "das Wald - fogalmazás",
+              "grade": 4
+            },
+            {
+              "description": "felszerelését nem hozta az órára",
+              "grade": 1
+            }
+          ],
+          "MUSIC": [
+            {
+              "description": "kottaolvasás",
+              "grade": 4
             }
           ]
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
+        "birthday": "2011-12-24",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -3995,12 +4253,13 @@
         }
       },
       {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
+        "uuid": "1c0b5ccb-620f-4748-b83e-e291b31f4e78",
         "name": {
           "firstName": "János",
           "lastName": "Nagy"
         },
+        "birthday": "2010-02-17",
+        "studClassString": "12A",
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -4058,605 +4317,98 @@
             {
               "description": "témazáró 1.",
               "grade": 3
+            },
+            {
+              "description": "doga",
+              "grade": 5
+            },
+            {
+              "description": "felelés",
+              "grade": 5
+            }
+          ],
+          "PHYSICS": [
+            {
+              "description": "46",
+              "grade": 5
+            }
+          ],
+          "GERMAN": [
+            {
+              "description": "das Wald - fogalmazás",
+              "grade": 4
+            },
+            {
+              "description": "felszerelését nem hozta az órára",
+              "grade": 1
+            }
+          ],
+          "MUSIC": [
+            {
+              "description": "kottaolvasás",
+              "grade": 4
             }
           ]
         }
       },
       {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
+        "uuid": "b0f53654-9e02-432a-a589-0f84f5d30e36",
         "name": {
           "firstName": "Árpád",
           "lastName": "Elekes"
         },
+        "birthday": "2011-06-18",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
+        "uuid": "9e9c8062-83c3-44c3-910c-1aa030e2213c",
         "name": {
           "firstName": "Kristóf",
           "lastName": "Kovács"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
+        "uuid": "71ed3aca-a964-4a0b-b1c3-d32d19a7356a",
         "name": {
           "firstName": "Péter",
           "lastName": "Zsolnay"
         },
+        "birthday": "2013-02-01",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
+        "uuid": "80107449-b78e-4a12-be14-2d6123cfeb3b",
         "name": {
           "firstName": "Sándor",
           "lastName": "Király"
         },
+        "birthday": "2012-08-29",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
+        "uuid": "09802695-e6d7-46a7-9102-9bff3efbc6c5",
         "name": {
           "firstName": "Kevin",
           "lastName": "Csoboth"
         },
+        "birthday": "2011-10-08",
+        "studClassString": "12A",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
+        "uuid": "d28ee3ef-d9cb-42e6-bb53-547f9fc083e4",
         "name": {
           "firstName": "Dominik",
           "lastName": "Szoboszlai"
         },
-        "subjectAndGradeList": {
-          "HUNGARIAN": [
-            {
-              "description": "versmondás",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 3
-            }
-          ],
-          "HISTORY": [
-            {
-              "description": "doga2",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "MATHS": [
-            {
-              "description": "doga1",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "VISUAL_ARTS": [
-            {
-              "description": "csendélet rajzolás",
-              "grade": 3
-            },
-            {
-              "description": "dolgozat - festők",
-              "grade": 5
-            }
-          ],
-          "ENGLISH": [
-            {
-              "description": "szódolgozat",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            },
-            {
-              "description": "szódolgozat javítása",
-              "grade": 5
-            },
-            {
-              "description": "témazáró 1.",
-              "grade": 3
-            }
-          ]
-        }
-      },
-      {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
+        "birthday": "2011-12-24",
         "studClassString": "12A",
-        "name": {
-          "firstName": "János",
-          "lastName": "Nagy"
-        },
-        "subjectAndGradeList": {
-          "HUNGARIAN": [
-            {
-              "description": "versmondás",
-              "grade": 4
-            },
-            {
-              "description": "felelet",
-              "grade": 3
-            }
-          ],
-          "HISTORY": [
-            {
-              "description": "doga2",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 1
-            }
-          ],
-          "MATHS": [
-            {
-              "description": "doga1",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "VISUAL_ARTS": [
-            {
-              "description": "csendélet rajzolás",
-              "grade": 2
-            },
-            {
-              "description": "dolgozat - festők",
-              "grade": 2
-            }
-          ],
-          "ENGLISH": [
-            {
-              "description": "szódolgozat",
-              "grade": 5
-            },
-            {
-              "description": "felelet",
-              "grade": 4
-            },
-            {
-              "description": "szódolgozat javítása",
-              "grade": 5
-            },
-            {
-              "description": "témazáró 1.",
-              "grade": 3
-            }
-          ]
-        }
-      },
-      {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Árpád",
-          "lastName": "Elekes"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Kristóf",
-          "lastName": "Kovács"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Péter",
-          "lastName": "Zsolnay"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Sándor",
-          "lastName": "Király"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Kevin",
-          "lastName": "Csoboth"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Dominik",
-          "lastName": "Szoboszlai"
-        },
-        "subjectAndGradeList": {
-          "HUNGARIAN": [
-            {
-              "description": "versmondás",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 3
-            }
-          ],
-          "HISTORY": [
-            {
-              "description": "doga2",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "MATHS": [
-            {
-              "description": "doga1",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "VISUAL_ARTS": [
-            {
-              "description": "csendélet rajzolás",
-              "grade": 3
-            },
-            {
-              "description": "dolgozat - festők",
-              "grade": 5
-            }
-          ],
-          "ENGLISH": [
-            {
-              "description": "szódolgozat",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            },
-            {
-              "description": "szódolgozat javítása",
-              "grade": 5
-            },
-            {
-              "description": "témazáró 1.",
-              "grade": 3
-            }
-          ]
-        }
-      },
-      {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "János",
-          "lastName": "Nagy"
-        },
-        "subjectAndGradeList": {
-          "HUNGARIAN": [
-            {
-              "description": "versmondás",
-              "grade": 4
-            },
-            {
-              "description": "felelet",
-              "grade": 3
-            }
-          ],
-          "HISTORY": [
-            {
-              "description": "doga2",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 1
-            }
-          ],
-          "MATHS": [
-            {
-              "description": "doga1",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "VISUAL_ARTS": [
-            {
-              "description": "csendélet rajzolás",
-              "grade": 2
-            },
-            {
-              "description": "dolgozat - festők",
-              "grade": 2
-            }
-          ],
-          "ENGLISH": [
-            {
-              "description": "szódolgozat",
-              "grade": 5
-            },
-            {
-              "description": "felelet",
-              "grade": 4
-            },
-            {
-              "description": "szódolgozat javítása",
-              "grade": 5
-            },
-            {
-              "description": "témazáró 1.",
-              "grade": 3
-            }
-          ]
-        }
-      },
-      {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Árpád",
-          "lastName": "Elekes"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Kristóf",
-          "lastName": "Kovács"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Péter",
-          "lastName": "Zsolnay"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Sándor",
-          "lastName": "Király"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Kevin",
-          "lastName": "Csoboth"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Dominik",
-          "lastName": "Szoboszlai"
-        },
-        "subjectAndGradeList": {
-          "HUNGARIAN": [
-            {
-              "description": "versmondás",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 3
-            }
-          ],
-          "HISTORY": [
-            {
-              "description": "doga2",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "MATHS": [
-            {
-              "description": "doga1",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "VISUAL_ARTS": [
-            {
-              "description": "csendélet rajzolás",
-              "grade": 3
-            },
-            {
-              "description": "dolgozat - festők",
-              "grade": 5
-            }
-          ],
-          "ENGLISH": [
-            {
-              "description": "szódolgozat",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            },
-            {
-              "description": "szódolgozat javítása",
-              "grade": 5
-            },
-            {
-              "description": "témazáró 1.",
-              "grade": 3
-            }
-          ]
-        }
-      },
-      {
-        "uuid": "e748ef2b-0a9f-4820-bc4f-afbc020f53e5",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "János",
-          "lastName": "Nagy"
-        },
-        "subjectAndGradeList": {
-          "HUNGARIAN": [
-            {
-              "description": "versmondás",
-              "grade": 4
-            },
-            {
-              "description": "felelet",
-              "grade": 3
-            }
-          ],
-          "HISTORY": [
-            {
-              "description": "doga2",
-              "grade": 1
-            },
-            {
-              "description": "felelet",
-              "grade": 1
-            }
-          ],
-          "MATHS": [
-            {
-              "description": "doga1",
-              "grade": 2
-            },
-            {
-              "description": "felelet",
-              "grade": 5
-            }
-          ],
-          "VISUAL_ARTS": [
-            {
-              "description": "csendélet rajzolás",
-              "grade": 2
-            },
-            {
-              "description": "dolgozat - festők",
-              "grade": 2
-            }
-          ],
-          "ENGLISH": [
-            {
-              "description": "szódolgozat",
-              "grade": 5
-            },
-            {
-              "description": "felelet",
-              "grade": 4
-            },
-            {
-              "description": "szódolgozat javítása",
-              "grade": 5
-            },
-            {
-              "description": "témazáró 1.",
-              "grade": 3
-            }
-          ]
-        }
-      },
-      {
-        "uuid": "58cb0006-173c-41d7-9fdf-396a0ff33ce9",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Árpád",
-          "lastName": "Elekes"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "5b2faa1a-5c41-456a-a6b3-2cec815a5a90",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Kristóf",
-          "lastName": "Kovács"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "b7775e1a-c6ee-4a0c-8085-6f4c3d6bd746",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Péter",
-          "lastName": "Zsolnay"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "d624eed3-8285-4ef4-81c6-c1a04a851287",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Sándor",
-          "lastName": "Király"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "ac7f1461-b908-4c63-8b84-6d6bfe22ec85",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Kevin",
-          "lastName": "Csoboth"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "27da9384-6227-4b72-a626-e3fc260fcb4c",
-        "studClassString": "12A",
-        "name": {
-          "firstName": "Dominik",
-          "lastName": "Szoboszlai"
-        },
         "subjectAndGradeList": {
           "HUNGARIAN": [
             {
@@ -4722,7 +4474,7 @@
     "ClassTeachersBySubject": {
       "HISTORY": [
         {
-          "uuid": "e74b3d8f-2daa-499b-8a48-19265eff7b4d",
+          "uuid": "52aa6f2a-98fb-4995-8635-8b65c02b570f",
           "name": {
             "firstName": "B",
             "lastName": "A"
@@ -4734,7 +4486,7 @@
       ],
       "ENGLISH": [
         {
-          "uuid": "500aa789-778c-4424-9cca-8abba36147d0",
+          "uuid": "df5d7cb0-88d1-4f65-927e-985dee21476a",
           "name": {
             "firstName": "Károly",
             "lastName": "Kós"
@@ -4748,7 +4500,7 @@
   },
   {
     "headTeacher": {
-      "uuid": "93c1f081-a941-491c-ab0e-682d2b89c920",
+      "uuid": "21c8a18c-2af6-4e0b-95ef-1a83dcbc763d",
       "name": {
         "firstName": "Elek",
         "lastName": "Tört"
@@ -4760,1407 +4512,1494 @@
     "nameOfClass": "12B",
     "studentList": [
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ],
+          "VISUAL_ARTS": [
+            {
+              "description": "felszerelés",
+              "grade": 6
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ],
+          "VISUAL_ARTS": [
+            {
+              "description": "felszerelés",
+              "grade": 6
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ],
+          "VISUAL_ARTS": [
+            {
+              "description": "felszerelés",
+              "grade": 6
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ],
+          "VISUAL_ARTS": [
+            {
+              "description": "felszerelés",
+              "grade": 6
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ],
+          "VISUAL_ARTS": [
+            {
+              "description": "felszerelés",
+              "grade": 6
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ],
+          "VISUAL_ARTS": [
+            {
+              "description": "felszerelés",
+              "grade": 6
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ],
+          "VISUAL_ARTS": [
+            {
+              "description": "felszerelés",
+              "grade": 6
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
+        "birthday": "2012-09-25",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
+        "uuid": "609787ca-fe44-4109-878c-d47b59772060",
         "name": {
           "firstName": "Wayne",
           "lastName": "Rooney"
         },
+        "birthday": "2009-11-02",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
+        "uuid": "b1276d27-fccb-4a1f-8eae-73b414ea78fb",
         "name": {
           "firstName": "Cristiano",
           "lastName": "Ronaldo"
         },
+        "birthday": "2010-10-19",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
+        "uuid": "baacb7e9-17ca-4bc9-b095-ece1e971336c",
         "name": {
           "firstName": "Ryan",
           "lastName": "Giggs"
         },
+        "birthday": "2013-02-06",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
+        "uuid": "7dadd0bc-3081-40b7-a808-c08cb169a5f8",
         "name": {
           "firstName": "Paul",
           "lastName": "Scholes"
         },
-        "subjectAndGradeList": {}
+        "birthday": "2011-08-11",
+        "studClassString": "12B",
+        "subjectAndGradeList": {
+          "ENGLISH": [
+            {
+              "description": "szódolgozat",
+              "grade": 5
+            }
+          ],
+          "VISUAL_ARTS": [
+            {
+              "description": "felszerelés",
+              "grade": 6
+            }
+          ]
+        }
       },
       {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
+        "uuid": "fe68a5bf-3518-4f86-bf4f-026b304c8384",
         "name": {
           "firstName": "Roy",
           "lastName": "Keane"
         },
+        "birthday": "2011-04-09",
+        "studClassString": "12B",
         "subjectAndGradeList": {}
       },
       {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
+        "uuid": "fe3bd158-d034-4f11-a242-12b2e66590db",
         "name": {
           "firstName": "Ole Gunnar",
           "lastName": "Solksjaer"
         },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
+        "birthday": "2012-09-25",
         "studClassString": "12B",
-        "name": {
-          "firstName": "Wayne",
-          "lastName": "Rooney"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Cristiano",
-          "lastName": "Ronaldo"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Ryan",
-          "lastName": "Giggs"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Paul",
-          "lastName": "Scholes"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Roy",
-          "lastName": "Keane"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Ole Gunnar",
-          "lastName": "Solksjaer"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Wayne",
-          "lastName": "Rooney"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Cristiano",
-          "lastName": "Ronaldo"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Ryan",
-          "lastName": "Giggs"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Paul",
-          "lastName": "Scholes"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Roy",
-          "lastName": "Keane"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Ole Gunnar",
-          "lastName": "Solksjaer"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "f62db52e-315a-4b19-b480-c7c7ac4bd695",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Wayne",
-          "lastName": "Rooney"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "5b496ad6-d86e-4ed3-9506-8c1e2e8f98b5",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Cristiano",
-          "lastName": "Ronaldo"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "dc441cd4-c877-45ff-a9c6-3e7234329d21",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Ryan",
-          "lastName": "Giggs"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "f1110eda-0192-40a8-ab07-23819aa37865",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Paul",
-          "lastName": "Scholes"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "3844e3e7-e3ec-44d5-85f0-c5e2681fb662",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Roy",
-          "lastName": "Keane"
-        },
-        "subjectAndGradeList": {}
-      },
-      {
-        "uuid": "92dc565a-4815-4b9a-8f9c-99a25df784e3",
-        "studClassString": "12B",
-        "name": {
-          "firstName": "Ole Gunnar",
-          "lastName": "Solksjaer"
-        },
         "subjectAndGradeList": {}
       }
     ],
@@ -6168,7 +6007,7 @@
   },
   {
     "headTeacher": {
-      "uuid": "500aa789-778c-4424-9cca-8abba36147d0",
+      "uuid": "df5d7cb0-88d1-4f65-927e-985dee21476a",
       "name": {
         "firstName": "Károly",
         "lastName": "Kós"

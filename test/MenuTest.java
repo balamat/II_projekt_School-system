@@ -29,7 +29,7 @@ public class MenuTest {
     @BeforeEach
     public void setUpMockObjects() {
         this.mockTeacher = new Teacher(new Name("Tört", "Elek"), mockSubject);
-        this.mockStudent = new Student(new Name("Nemecsek", "Ernő"), mockStudClass);
+        this.mockStudent = new Student(new Name("Nemecsek", "Ernő"), "12A");
         this.mockDate = LocalDate.now();
         this.mockClassSerial = ClassSerial.CL_1;
         this.mockSubject = Subjects.HISTORY;

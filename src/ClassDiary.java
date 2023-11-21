@@ -23,11 +23,11 @@ public class ClassDiary {
         allClassDiary.add(this);
     }
 
-    public ClassDiary addAbsentStudent(int absentNumber) {
-        for (int i = 0; i < absentNumber; i++) {
-            String[] absentAnswers = UserInterface.absentScan();
-            Student student = Menu.studentSearch(absentAnswers[0]);
-            this.absentStudents.put(student.getUuid(), absentAnswers[1]);
+    public ClassDiary addAbsentStudent(int numberOfAbsent) {
+        for (int i = 0; i < numberOfAbsent; i++) {
+            Student student = Menu.studentSearch();
+            String absenceCause = UserInterface.absenceCauseScan();
+            this.absentStudents.put(student.getUuid(), absenceCause);
         }
         return this;
     }
