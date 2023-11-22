@@ -25,9 +25,6 @@ public class Grade {
 
     @Override
     public String toString() {
-        return "Grade{" +
-                "description='" + description + '\'' +
-                ", grade=" + grade +
-                '}';
+        return grade + " [" + description + "]";
     }
 }

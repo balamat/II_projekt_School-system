@@ -11,10 +11,22 @@ public class Menu {
         do {
             try {
                 LocalDate localdate = LocalDate.parse(UserInterface.dateScan());
-                return localdate;
+                if (localdate.isAfter(Log.actualDate)) {
+                    throw new DataException();
+                } else if (localdate.isBefore(Log.actualDate.minusYears(1)) && Log.permission != 0) {
+                    throw new PermissionException();
+                } else {
+                    return localdate;
+                }
             } catch (DateTimeParseException e) {
                 isWrongInput = true;
                 System.out.println("A megadott idő formátuma nem megfelelő!");
+            } catch (DataException e) {
+                isWrongInput = true;
+                System.out.println("Nem lehet jövőbeli órát naplózni!");
+            } catch (PermissionException e) {
+                isWrongInput = true;
+                System.out.println("Admin jogosultság szükséges: 1 évnél régebbi óra!!");
             }
         }
         while (isWrongInput);
@@ -100,21 +112,29 @@ public class Menu {
         return null;
     }
 
-    public static Student studentSearchByUuid(String inputUuid) {
-        Student student = Student.getAllStudentList().stream().filter(stud -> stud.getUuid().toString().equals(inputUuid)).findFirst().orElseThrow();
-        return student;
+    public static ClassDiary classDiarySearch() {
+        do {
+            try {
+                isWrongInput = false;
+                LocalDate localDate = dateSearch();
+                ClassSerial classSerial = classSerialSearch();
+                ClassDiary classDiary = ClassDiary.getAllClassDiary().stream()
+                        .filter(cd -> cd.getDate().equals(localDate))
+                        .filter(cd -> cd.getClassSerial().equals(classSerial))
+                        .findFirst().orElseThrow();
+                return classDiary;
+            } catch (NoSuchElementException e) {
+                isWrongInput = true;
+                System.out.println("A megadott óra még nincs bekönyvelve!");
+            }
+        } while (isWrongInput);
+        return null;
     }
 
-    public static ClassDiary fillClassDiary() {
-        String labelOfAction = "aktuális óra naplózása";
-        System.out.println(labelOfAction.toUpperCase());
-        LocalDate localDate = dateSearch();
-        ClassSerial classSerial = classSerialSearch();
-        Subjects subject = subjectSearch();
-        Teacher teacher = teacherSearch();
-        StudClass studClass = studClassSearch();
+    public static int numberOfAbsentValidator(StudClass studClass) {
+        System.out.println(studClass);
+        System.out.println(studClass.getStudentList().size());
         int numberOfAbsent = 0;
-
         do {
             try {
                 //reset the inputValidator to its original state
@@ -131,16 +151,42 @@ public class Menu {
                 isWrongInput = true;
             }
         } while (isWrongInput);
+        return numberOfAbsent;
+    }
+
+    public static ClassDiary fillClassDiary() {
+        String labelOfAction = "aktuális óra naplózása";
+        System.out.println(labelOfAction.toUpperCase());
+        LocalDate localDate = dateSearch();
+        ClassSerial classSerial = classSerialSearch();
+        Subjects subject = subjectSearch();
+        Teacher teacher = teacherSearch();
+        StudClass studClass = studClassSearch();
+        int numberOfAbsent = numberOfAbsentValidator(studClass);
 
         ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(numberOfAbsent);
-        UserInterface.printObject(classDiary);
+        System.out.println(classDiary);
         UserInterface.printSuccesfullyTerminated(labelOfAction);
         return classDiary;
     }
 
     public static void modifyClassDiary() {
         String labelOfAction = "meglévő naplóadatok módosítása";
-        UserInterface.printSuccesfullyTerminated(labelOfAction);
+        System.out.println(labelOfAction.toUpperCase());
+        ClassDiary searchedClassDiary = classDiarySearch();
+        System.out.println("A kiválasztott óra adatai:");
+        System.out.println(searchedClassDiary);
+        System.out.println("Akarod a hiányzókat módosítani? Ha igen írd, be, hogy 'igen'!Ha nem akkor üss be egy billentyűt és az entert!");
+        if (UserInterface.generalScan().equals("igen")) {
+            searchedClassDiary.getAbsentStudents().clear();
+            System.out.println("Az órára bekönyvelt hiányzások törlésre kerültek!");
+            int numberOfAbsent = numberOfAbsentValidator(searchedClassDiary.getStudClass());
+            searchedClassDiary.addAbsentStudent(numberOfAbsent);
+            UserInterface.printSuccesfullyTerminated(labelOfAction);
+            System.out.println(searchedClassDiary);
+        } else {
+            System.out.println("Naplóadat nem került módosításra!");
+        }
     }
 
     public static void saveGrade() {

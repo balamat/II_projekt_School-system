@@ -33,6 +33,8 @@ public class Load {
                             .forEach(studClass -> {
                                 if (studClass.getNameOfClass().equals(student.getStudClassString())) {
                                     studClass.getStudentList().add(student);
+                                    System.out.println(studClass.getNameOfClass());
+                                    System.out.println(studClass.getStudentList().size());
                                 }
                             });
                 });

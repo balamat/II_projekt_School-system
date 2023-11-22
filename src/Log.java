@@ -1,6 +1,10 @@
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Log {
+
+    public static int permission = 0;
+    public static LocalDate actualDate = LocalDate.now();
 
     public static int login() {
 //        System.out.println("Add meg a teljes neved (Vezetéknév Keresztnév1 Keresztnév2...)!");

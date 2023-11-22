@@ -18,6 +18,7 @@ public class Student {
         this.studClassString = studClassString;
         this.subjectAndGradeList = new HashMap<>();
         Student.getAllStudentList().add(this);
+//        StudClass.getAllStudClassList().stream().filter(cl -> cl.getNameOfClass().equals(studClassString)).findFirst().get().getStudentList().add(this);
     }
 
     public Student(Name name, String studClassString, String birthday) {
@@ -27,6 +28,7 @@ public class Student {
         this.studClassString = studClassString;
         this.subjectAndGradeList = new HashMap<>();
         Student.getAllStudentList().add(this);
+//        StudClass.getAllStudClassList().stream().filter(cl -> cl.getNameOfClass().equals(studClassString)).findFirst().get().getStudentList().add(this);
     }
 
     public Name getName() {
@@ -76,22 +78,25 @@ public class Student {
         this.birthday = birthday;
     }
 
+    //////////////////////////////////
+    public double gradeInspector() {
+        return 0;
+    }
+
     public static LocalDate generateRandomDate() {
-        long minDay = LocalDate.of(2009, 8, 31).toEpochDay();
+        long minDay = LocalDate.of(2007, 8, 31).toEpochDay();
         long maxDay = LocalDate.of(2013, 9, 1).toEpochDay();
         long randomDay = ThreadLocalRandom.current().nextLong(minDay, maxDay);
         return LocalDate.ofEpochDay(randomDay);
     }
 
-
     @Override
     public String toString() {
-        return "Student{" +
-                "studClass=" + studClassString +
-                ", name=" + name +
-                ", uuid='" + uuid + '\'' +
-                ", subjectAndGradeList=" + subjectAndGradeList +
-                '}';
+        return "Személyi adatok:" + System.lineSeparator() +
+                "\t Név: " + name + System.lineSeparator() +
+                "\t UserID: " + uuid + System.lineSeparator() +
+                "\t születési idő: " + birthday + System.lineSeparator() +
+                "\t Osztály: " + studClassString + System.lineSeparator();
     }
 }
 

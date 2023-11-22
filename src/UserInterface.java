@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class UserInterface {
 
@@ -7,13 +7,12 @@ public class UserInterface {
      * 0 - admin
      * 1 - teacher
      * 2 - student
-     *
-     * @param permission
      */
-    public static void printMainPage(int permission) {
+    public static void printMainPage() {
+        int permission = Log.permission;
         System.out.println("Válassz a lehetőségek közül!");
         System.out.println("1 - Tanulói adatok elérése");
-        if (permission == 0 || permission == 1) {
+        if (Log.permission == 0 || permission == 1) {
             System.out.println("2 - Osztályadatok elérése");
             System.out.println("3 - Óra naplózása");
         }
@@ -24,10 +23,10 @@ public class UserInterface {
         Scanner menuChoiceScanner = new Scanner(System.in);
         int menuChoice = menuChoiceScanner.nextInt();
         if (menuChoice == 1) {
-            printStudent();
+            printStudentInfo();
         }
         if (menuChoice == 2 && (permission == 0 || permission == 1)) {
-            printClass();
+            printStudClassInfo();
         }
         if (menuChoice == 3 && (permission == 0 || permission == 1)) {
             printClassDiary();
@@ -37,15 +36,59 @@ public class UserInterface {
         }
     }
 
-    //private!!!
-    static void printStudent() {
-        System.out.println("Tanulói adatok");
-        System.out.println("--------------------");
+    public static void printStudentInfo() {
+        System.out.println("Válassz a lehetőségek közül:");
+        System.out.println("1 - Diák adatainak lekérdezése");
+        System.out.println("2 - Diák jegyeinek lekérdezése");
+        System.out.println("3 - Diák hiányzásainak lekérdezése");
+        int choice = Integer.parseInt(generalScan());
+        switch (choice) {
+            case 1:
+                printStudentPersonalData();
+                break;
+            case 2:
+                printStudentGrades();
+                break;
+            case 3:
+                printStudentAbsence();
+                break;
+        }
+    }
+
+    public static void printStudentPersonalData() {
+        String labelOfAction = "személyes adatok";
+        System.out.println(labelOfAction.toUpperCase());
+
+        System.out.println(Menu.studentSearch());
+    }
+
+    public static void printStudentGrades() {
+        String labelOfAction = "jegyek lekérdezése";
+        System.out.println(labelOfAction.toUpperCase());
+        Student student = Menu.studentSearch();
+
+        List<Double> avgListByStudent = new ArrayList<>();
+        student.getSubjectAndGradeList().forEach((a, b) -> {
+            Double avg = b.stream().mapToInt(Grade -> Grade.getGrade()).average().orElse(0);
+            avgListByStudent.add(avg);
+            System.out.println(a.getSubjectName() + ": \t" + b + " - átlag: " + avg);
+        });
+        double totalAvg = avgListByStudent.stream().mapToDouble(a -> a).sum() / avgListByStudent.size();
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Tanulmányi átlag: " + totalAvg + System.lineSeparator());
+        avgListByStudent.clear();
+    }
+
+    public static void printStudentAbsence() {
+        String labelOfAction = "hiányzások lekérdezése";
+        System.out.println(labelOfAction.toUpperCase());
+        Map<ClassDiary, String> classDiaryMap = ClassDiary.generateAbsenceMapByStudent(Menu.studentSearch());
+        classDiaryMap.keySet().stream().forEach(classDiary -> System.out.println(classDiary.getDate().toString() + " - " + classDiary.getClassSerial() + ": " + classDiaryMap.get(classDiary)));
     }
 
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     //alphabetic order of the students - later to modify
-    private static void printClass() {
+    public static void printStudClassInfo() {
         System.out.println("Osztályadatok");
         System.out.println("--------------------");
         StudClass.getAllStudClassList().forEach(System.out::println);
@@ -71,6 +114,21 @@ public class UserInterface {
         } else if (diaryOptionChoice == 3) {
             Menu.saveGrade();
         }
+    }
+
+    public static void printAdmin() {
+    }
+
+    public static void printSuccesfullyTerminated(String label) {
+        System.out.println(label + " - a művelet sikeresen megtörtént!");
+    }
+
+
+    /*----------------------------SCANNERS----------------------------*/
+
+    public static String generalScan() {
+        Scanner generalScanner = new Scanner(System.in);
+        return generalScanner.next();
     }
 
     public static String dateScan() {
@@ -158,30 +216,4 @@ public class UserInterface {
         return gradeDescriptionScanner.nextLine().trim();
     }
 
-    public static void printIfSuccessful(String descriptionOfAction) {
-        System.out.println("A " + descriptionOfAction + " sikeres volt!");
-    }
-
-    /**
-     * Takes any type of object, casts to its own type and prints it.
-     *
-     * @param object
-     * @param <objectClass>
-     * @return the original (casted) objectf
-     */
-    public static <objectClass> objectClass printObject(Object object) {
-        Class<?> objectClass = object.getClass();
-        objectClass castedObject = (objectClass) object;
-        System.out.println(castedObject);
-        System.out.println("Sikeres művelet!");
-        return castedObject;
-    }
-
-    public static void printSuccesfullyTerminated(String label) {
-        System.out.println(label + " - a művelet sikeresen megtörtént!");
-    }
-
-
-    private static void printAdmin() {
-    }
 }

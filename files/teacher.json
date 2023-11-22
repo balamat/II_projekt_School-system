@@ -1,6 +1,6 @@
 [
   {
-    "uuid": "52aa6f2a-98fb-4995-8635-8b65c02b570f",
+    "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
     "name": {
       "firstName": "B",
       "lastName": "A"
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "uuid": "21c8a18c-2af6-4e0b-95ef-1a83dcbc763d",
+    "uuid": "0c514a4e-f1da-4885-b991-10cd6fb21ae5",
     "name": {
       "firstName": "Elek",
       "lastName": "Tört"
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "uuid": "df5d7cb0-88d1-4f65-927e-985dee21476a",
+    "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
     "name": {
       "firstName": "Károly",
       "lastName": "Kós"
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "uuid": "24dd41b5-8763-4c56-a5a3-8ee8ac67efd7",
+    "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
     "name": {
       "firstName": "Ferenc",
       "lastName": "Jó"
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "uuid": "0b847bd2-6d93-4da7-8f0c-cb2d3555fd02",
+    "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
     "name": {
       "firstName": "Norbert",
       "lastName": "Nemoda"
