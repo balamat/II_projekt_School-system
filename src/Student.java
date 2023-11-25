@@ -24,15 +24,6 @@ public class Student {
         return this;
     }
 
-    public void sortStudentToStudClass() {
-        for (StudClass studClass : StudClass.getAllStudClassList()
-        ) {
-            if (studClass.getNameOfClass().equals(this.getStudClassString())) {
-                studClass.getStudentList().add(this);
-            }
-        }
-    }
-
     public Student(Name name, String studClassString, String birthday) {
         this.uuid = UUID.randomUUID();
         this.name = name;

@@ -6,7 +6,6 @@ public class StudClass {
     private static List<StudClass> allStudClassList = new ArrayList<>();
     private Teacher headTeacher;
     private String nameOfClass;
-    private List<Student> studentList;
     private Map<Subjects, List<Teacher>> ClassTeachersBySubject;
     //more than 1 teacher can teach a subject for a certain class
 
@@ -14,7 +13,6 @@ public class StudClass {
         this.headTeacher = headTeacher;
         this.nameOfClass = nameOfClass;
         ClassTeachersBySubject = new HashMap<>();
-        studentList = new ArrayList<>();
     }
 
     public StudClass addToList() {
@@ -38,10 +36,6 @@ public class StudClass {
         this.nameOfClass = nameOfClass;
     }
 
-    public List<Student> getStudentList() {
-        return studentList;
-    }
-
     public Map<Subjects, List<Teacher>> getClassTeachersBySubject() {
         return ClassTeachersBySubject;
     }
@@ -60,7 +54,8 @@ public class StudClass {
         StringBuilder sbStudent = new StringBuilder();
         StringBuilder sbTeacher = new StringBuilder();
 
-        studentList.stream()
+        Student.getAllStudentList().stream()
+                .filter(student -> student.getStudClassString().equals(this.nameOfClass))
                 .map(student -> student.getName())
                 .sorted(Comparator.comparing(Name::getLastName))
                 .forEach(i -> sbStudent.append("\t\t " + index[0]++ + "." + i + System.lineSeparator()));

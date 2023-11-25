@@ -16,29 +16,12 @@ public class Main {
         //scanner -password
 
 
-        //??????
-        //Load.sortStudents();
-//        System.out.println(StudClass.getAllStudClassList().get(0).getStudentList().size());
-//        System.out.println(StudClass.getAllStudClassList().get(1).getStudentList().size());
-//        System.out.println(StudClass.getAllStudClassList().get(2).getStudentList().size());
-
         //mainPage                        //OK!!
+//        UserInterface.printMainPage();
 
-        UserInterface.printMainPage();
-        System.out.println();
-        System.out.println(Student.getAllStudentList().size());
-        System.out.println(StudClass.getAllStudClassList().size());
-        System.out.println(StudClass.getAllStudClassList().get(0).getStudentList().size());
-        System.out.println(StudClass.getAllStudClassList().get(1).getStudentList().size());
-        System.out.println(StudClass.getAllStudClassList().get(2).getStudentList().size());
-        System.out.println();
-        System.out.println(Student.getAllStudentList().get(0).getSubjectAndGradeList().get(Subjects.GERMAN));
-        System.out.println("----");
-        System.out.println(StudClass.getAllStudClassList().get(0).getStudentList().get(0).getSubjectAndGradeList().get(Subjects.GERMAN));
-
+//        Menu.saveGrade();
 //        UserInterface.printStudentGrades();
-//        UserInterface.printStudClassGrades();
-
+        UserInterface.printStudClassGrades();
 
         //Functions
         //1- student info
@@ -47,8 +30,8 @@ public class Main {
         //absence                           //OK!!
         //timetable
         //2 - class info                    //OK!!
-        //class info
-        //averages
+        //class info                        //OK!!
+        //averages                          //OK!!
         //timetable
         //3 - fill diary                    //OK!!
         //fill classDiary                   //OK!!

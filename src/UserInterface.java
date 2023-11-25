@@ -117,37 +117,47 @@ public class UserInterface {
         System.out.println(labelOfAction.toUpperCase());
         StudClass studClass = Menu.studClassSearch();
 
-        StringBuilder sbSubjFirstRow = new StringBuilder();
-        StringBuilder sbSubjDataPerStudent = new StringBuilder();
-
         DecimalFormat df = new DecimalFormat("0.00");
         int indent = 30;
         int tab = 4;
         int tabFirstRow = tab + 1;
 
-        sbSubjFirstRow.append(" ".repeat(indent));
+        StringBuilder sbFirstRow = new StringBuilder();
+        StringBuilder sbSubjDataPerStudent = new StringBuilder();
+        StringBuilder sbLastRow = new StringBuilder();
 
+        sbFirstRow.append(" ".repeat(indent));
         for (Subjects subject : Subjects.values()
         ) {
-            sbSubjFirstRow.append(subject.getSubjectName().substring(0, 3)).append(" ".repeat(tabFirstRow));
+            sbFirstRow.append(subject.getSubjectName().substring(0, 3)).append(" ".repeat(tabFirstRow));
         }
+        sbFirstRow.append("Átl");
 
-        studClass.getStudentList().stream()
+        Student.getAllStudentList().stream()
+                .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
                 .forEach(student -> {
                     sbSubjDataPerStudent.append(student.getName()).append(" ".repeat(indent - student.getName().toString().length()));
 
-                    ///////////////////hiba helye!!!!!!!!!!!!!!
                     Arrays.stream(Subjects.values()).forEach(subj ->
                             {
                                 sbSubjDataPerStudent.append(df.format(Calculator.calculateStudentAvgBySubject(student, subj)))
                                         .append(" ".repeat(tab));
                             }
                     );
+                    sbSubjDataPerStudent.append(df.format(Calculator.calculateStudentAvg(student)));
                     sbSubjDataPerStudent.append(System.lineSeparator());
                 });
 
-        System.out.println(sbSubjFirstRow.toString());
+        sbLastRow.append(" ".repeat(indent));
+        for (Subjects subject : Subjects.values()
+        ) {
+            sbLastRow.append(df.format(Calculator.calculateSubjectAvg(subject, studClass))).append(" ".repeat(tab));
+        }
+        sbLastRow.append(df.format(Calculator.calculateStudClassAvg(studClass)));
+
+        System.out.println(sbFirstRow.toString());
         System.out.println(sbSubjDataPerStudent.toString());
+        System.out.println(sbLastRow.toString());
     }
 
     public static void printStudClassAbsence() {

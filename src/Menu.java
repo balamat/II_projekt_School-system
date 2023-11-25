@@ -138,7 +138,7 @@ public class Menu {
                 //reset the inputValidator to its original state
                 isWrongInput = false;
                 numberOfAbsent = Integer.parseInt(UserInterface.numberOfAbsentScan());
-                if (numberOfAbsent > studClass.getStudentList().size()) {
+                if (numberOfAbsent > Student.getAllStudentList().stream().filter(student -> student.getStudClassString().equals(studClass.getNameOfClass())).count()) {
                     throw new DataException();
                 }
             } catch (NumberFormatException e) {
