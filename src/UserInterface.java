@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class UserInterface {
@@ -67,40 +68,95 @@ public class UserInterface {
         System.out.println(labelOfAction.toUpperCase());
         Student student = Menu.studentSearch();
 
-        List<Double> avgListByStudent = new ArrayList<>();
         student.getSubjectAndGradeList().forEach((a, b) -> {
-            Double avg = b.stream().mapToInt(Grade -> Grade.getGrade()).average().orElse(0);
-            avgListByStudent.add(avg);
-            System.out.println(a.getSubjectName() + ": \t" + b + " - átlag: " + avg);
+            System.out.println(a.getSubjectName() + ": \t" + b + " - átlag: " + Calculator.calculateStudentAvgBySubject(student, a));
         });
-        double totalAvg = avgListByStudent.stream().mapToDouble(a -> a).sum() / avgListByStudent.size();
+
+        double totalAvg = Calculator.calculateStudentAvg(student);
         System.out.println("---------------------------------------------------------");
         System.out.println("Tanulmányi átlag: " + totalAvg + System.lineSeparator());
-        avgListByStudent.clear();
     }
 
     public static void printStudentAbsence() {
         String labelOfAction = "hiányzások lekérdezése";
         System.out.println(labelOfAction.toUpperCase());
         Map<ClassDiary, String> classDiaryMap = ClassDiary.generateAbsenceMapByStudent(Menu.studentSearch());
-        classDiaryMap.keySet().stream().forEach(classDiary -> System.out.println(classDiary.getDate().toString() + " - " + classDiary.getClassSerial() + ": " + classDiaryMap.get(classDiary)));
+        classDiaryMap.keySet().stream().sorted((a, b) -> a.getDate().compareTo(b.getDate())).forEach(classDiary -> System.out.println(classDiary.getDate().toString() + " - " + classDiary.getClassSerial() + ": " + classDiaryMap.get(classDiary)));
     }
 
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    //alphabetic order of the students - later to modify
     public static void printStudClassInfo() {
         System.out.println("Osztályadatok");
         System.out.println("--------------------");
-        StudClass.getAllStudClassList().forEach(System.out::println);
+        System.out.println("Válassz a lehetőségek közül:");
+        System.out.println("1 - Osztály adatainak lekérdezése");
+        System.out.println("2 - Osztály jegyeinek lekérdezése");
+        System.out.println("3 - Osztály hiányzásainak lekérdezése");
+        int choice = Integer.parseInt(generalScan());
+        switch (choice) {
+            case 1:
+                printStudClassData();
+                break;
+            case 2:
+                printStudClassGrades();
+                break;
+            case 3:
+                printStudClassAbsence();
+                break;
+        }
     }
 
-    private static void printClassDiary() {
+    public static void printStudClassData() {
+        String labelOfAction = "osztályadatok";
+        System.out.println(labelOfAction.toUpperCase());
+
+        System.out.println(Menu.studClassSearch());
+    }
+
+    public static void printStudClassGrades() {
+        String labelOfAction = "osztályadatok";
+        System.out.println(labelOfAction.toUpperCase());
+        StudClass studClass = Menu.studClassSearch();
+
+        StringBuilder sbSubjFirstRow = new StringBuilder();
+        StringBuilder sbSubjDataPerStudent = new StringBuilder();
+
+        DecimalFormat df = new DecimalFormat("0.00");
+        int indent = 30;
+        int tab = 4;
+        int tabFirstRow = tab + 1;
+
+        sbSubjFirstRow.append(" ".repeat(indent));
+
+        for (Subjects subject : Subjects.values()
+        ) {
+            sbSubjFirstRow.append(subject.getSubjectName().substring(0, 3)).append(" ".repeat(tabFirstRow));
+        }
+
+        studClass.getStudentList().stream()
+                .forEach(student -> {
+                    sbSubjDataPerStudent.append(student.getName()).append(" ".repeat(indent - student.getName().toString().length()));
+
+                    ///////////////////hiba helye!!!!!!!!!!!!!!
+                    Arrays.stream(Subjects.values()).forEach(subj ->
+                            {
+                                sbSubjDataPerStudent.append(df.format(Calculator.calculateStudentAvgBySubject(student, subj)))
+                                        .append(" ".repeat(tab));
+                            }
+                    );
+                    sbSubjDataPerStudent.append(System.lineSeparator());
+                });
+
+        System.out.println(sbSubjFirstRow.toString());
+        System.out.println(sbSubjDataPerStudent.toString());
+    }
+
+    public static void printStudClassAbsence() {
+
+    }
+
+    public static void printClassDiary() {
         System.out.println("Naplóadatok");
         System.out.println("--------------------");
-        printDiaryOptions();
-    }
-
-    public static void printDiaryOptions() {
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - aktuális óra naplózása");
         System.out.println("2 - meglévő naplóadatok módosítása");
@@ -122,7 +178,6 @@ public class UserInterface {
     public static void printSuccesfullyTerminated(String label) {
         System.out.println(label + " - a művelet sikeresen megtörtént!");
     }
-
 
     /*----------------------------SCANNERS----------------------------*/
 

@@ -132,8 +132,6 @@ public class Menu {
     }
 
     public static int numberOfAbsentValidator(StudClass studClass) {
-        System.out.println(studClass);
-        System.out.println(studClass.getStudentList().size());
         int numberOfAbsent = 0;
         do {
             try {

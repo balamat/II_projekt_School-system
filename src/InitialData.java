@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class InitialData {
 
 
@@ -9,9 +11,9 @@ public class InitialData {
 //        Teacher teacher04 = new Teacher(new Name("Jó", "Ferenc"), Subjects.ENGLISH, Subjects.GERMAN);
 //        Teacher teacher05 = new Teacher(new Name("Nemoda", "Norbert"), Subjects.SPORT);
 //
-//        StudClass A12 = new StudClass(teacher01, "12A");
-//        StudClass B12 = new StudClass(teacher02, "12B");
-//        StudClass C12 = new StudClass(teacher03, "12C");
+//        StudClass A12 = new StudClass(teacher01, "12A").addToList();
+//        StudClass B12 = new StudClass(teacher02, "12B").addToList();
+//        StudClass C12 = new StudClass(teacher03, "12C").addToList();
 //
 //        /*creating json structure by instantiating sample objects*/
 //        Student student01 = new Student(new Name("Nagy", "János"), "12A");
@@ -59,6 +61,10 @@ public class InitialData {
 //        A12.getClassTeachersBySubject().get(Subjects.ENGLISH).add(teacher03);
 //        A12.getClassTeachersBySubject().put(Subjects.HISTORY, new ArrayList<Teacher>());
 //        A12.getClassTeachersBySubject().get(Subjects.HISTORY).add(teacher01);
+
+//        StudClass.getAllStudClassList().get(0).getClassTeachersBySubject().put(Subjects.HUNGARIAN, new ArrayList<>());
+//        StudClass.getAllStudClassList().get(0).getClassTeachersBySubject().get(Subjects.HUNGARIAN).add(Menu.teacherSearch());
+
 //        Load.sortStudents();
 
 }

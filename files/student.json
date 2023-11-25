@@ -71,6 +71,24 @@
           "description": "hőtani számítások",
           "grade": 2
         }
+      ],
+      "GERMAN": [
+        {
+          "description": "Das wörter - fogalmazás",
+          "grade": 3
+        }
+      ],
+      "MUSIC": [
+        {
+          "description": "kedvenc szám eléneklése",
+          "grade": 5
+        }
+      ],
+      "SPORT": [
+        {
+          "description": "cooper-teszt",
+          "grade": 4
+        }
       ]
     }
   },
@@ -92,7 +110,14 @@
     },
     "birthday": "2013-05-05",
     "studClassString": "12A",
-    "subjectAndGradeList": {}
+    "subjectAndGradeList": {
+      "GERMAN": [
+        {
+          "description": "röpdoga",
+          "grade": 1
+        }
+      ]
+    }
   },
   {
     "uuid": "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f",
@@ -189,6 +214,16 @@
         {
           "description": "témazáró 1.",
           "grade": 3
+        }
+      ],
+      "MUSIC": [
+        {
+          "description": "Az éjjel soha nem érhet véget",
+          "grade": 5
+        },
+        {
+          "description": "Nélküled",
+          "grade": 4
         }
       ]
     }

@@ -14,6 +14,9 @@ public class StudClass {
         this.nameOfClass = nameOfClass;
         this.studentList = new ArrayList<>();
         ClassTeachersBySubject = new HashMap<>();
+    }
+
+    public void addToList() {
         allStudClassList.add(this);
     }
 
@@ -55,7 +58,27 @@ public class StudClass {
 
     @Override
     public String toString() {
-        return nameOfClass + '-' +
-                "osztályfőnök: " + headTeacher;
+        int[] index = new int[]{1};
+        StringBuilder sbStudent = new StringBuilder();
+        StringBuilder sbTeacher = new StringBuilder();
+
+        studentList.stream()
+                .map(student -> student.getName())
+                .sorted(Comparator.comparing(Name::getLastName))
+                .forEach(i -> sbStudent.append("\t\t " + index[0]++ + "." + i + System.lineSeparator()));
+
+        getClassTeachersBySubject().keySet().stream()
+                .sorted(Comparator.comparing(Subjects::getSubjectName))
+                .forEach(key -> {
+                    sbTeacher.append("\t\t " + key.getSubjectName() + ": ");
+                    getClassTeachersBySubject().get(key).forEach(teacher -> sbTeacher.append(teacher + ", "));
+                    sbTeacher.delete(sbTeacher.length()-2,sbTeacher.length()-1);
+                    sbTeacher.append(System.lineSeparator());
+                });
+
+        return "Osztály: " + nameOfClass + System.lineSeparator() +
+                "\t Osztályfőnök: " + headTeacher + System.lineSeparator() +
+                "\t Tanárok: " + System.lineSeparator() + sbTeacher + System.lineSeparator() +
+                "\t Tanulók: " + System.lineSeparator() + sbStudent + System.lineSeparator();
     }
 }

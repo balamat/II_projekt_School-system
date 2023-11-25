@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
@@ -8,12 +9,15 @@ public class Main {
     public static void main(String[] args) {
 
         //load - uploading data
-        /////////////////////////////////////////////////////////////////////////////////////////////////////
         Teacher.getAllTeacherList().addAll(Load.loadJsonToTeacher());
         Student.getAllStudentList().addAll(Load.loadJsonToStudent());
         ClassDiary.getAllClassDiary().addAll(Load.loadJsonToClassDiary());
         StudClass.getAllStudClassList().addAll(Load.loadJsonToStudClass());
-        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //login
+        //scanner - user
+        //scanner -password
+
 
         //??????
         //Load.sortStudents();
@@ -21,23 +25,11 @@ public class Main {
         System.out.println(StudClass.getAllStudClassList().get(1).getStudentList().size());
         System.out.println(StudClass.getAllStudClassList().get(2).getStudentList().size());
 
-
-        //login
-        //scanner - user
-        //scanner -password
-
-        StudClass.getAllStudClassList().forEach(System.out::println);
-        System.out.println("---------------------------------");
-        Student.getAllStudentList().forEach(System.out::println);
-        System.out.println("---------------------------------");
-        ClassDiary.getAllClassDiary().forEach(System.out::println);
-        System.out.println("---------------------------------");
-
         //mainPage                        //OK!!
 
+        UserInterface.printStudentGrades();
+        UserInterface.printStudClassGrades();
 
-        UserInterface.printStudentAbsence();
-//        UserInterface.printMainPage();
 
 
         //Functions
@@ -46,8 +38,8 @@ public class Main {
         //grade, average                    //OK!!
         //absence                           //OK!!
         //timetable
-        //2 - class info
-        //basic
+        //2 - class info                    //OK!!
+        //class info
         //averages
         //timetable
         //3 - fill diary                    //OK!!

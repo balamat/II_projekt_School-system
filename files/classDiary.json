@@ -1427,5 +1427,1872 @@
     "absentStudents": {
       "c47298e3-59c7-4362-b06b-0e8e41bf11e5": "beteg"
     }
+  },
+  {
+    "uuid": "47b2180f-44d0-455e-ae3a-88a890a51d24",
+    "date": "2023-10-14",
+    "classSerial": "CL_1",
+    "subject": "SPORT",
+    "teacher": {
+      "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+      "name": {
+        "firstName": "Károly",
+        "lastName": "Kós"
+      },
+      "taughtSubject": [
+        "PHYSICS"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [
+        {
+          "uuid": "c47298e3-59c7-4362-b06b-0e8e41bf11e5",
+          "name": {
+            "firstName": "János",
+            "lastName": "Nagy"
+          },
+          "birthday": "2009-11-19",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 4
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 1
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 2
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 2
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 5
+              },
+              {
+                "description": "felelet",
+                "grade": 4
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "69297503-d859-4571-a5b2-78775fd11254",
+          "name": {
+            "firstName": "Árpád",
+            "lastName": "Elekes"
+          },
+          "birthday": "2010-12-01",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "42fbdcfb-729c-4694-9a84-9b993384607a",
+          "name": {
+            "firstName": "Kristóf",
+            "lastName": "Kovács"
+          },
+          "birthday": "2013-05-05",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f",
+          "name": {
+            "firstName": "Péter",
+            "lastName": "Zsolnay"
+          },
+          "birthday": "2010-05-02",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "3df6766d-d37b-44e9-a5de-5cfe6ec6b26d",
+          "name": {
+            "firstName": "Sándor",
+            "lastName": "Király"
+          },
+          "birthday": "2010-03-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "6c99a207-84be-49b5-b6cf-e67a2d63a891",
+          "name": {
+            "firstName": "Kevin",
+            "lastName": "Csoboth"
+          },
+          "birthday": "2011-02-20",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "1c40331d-a8de-4e44-a7fb-73326b0c6479",
+          "name": {
+            "firstName": "Dominik",
+            "lastName": "Szoboszlai"
+          },
+          "birthday": "2012-09-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 3
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 5
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        }
+      ],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "1c40331d-a8de-4e44-a7fb-73326b0c6479": "Szerbia elleni válogatott meccsen szerepel",
+      "c47298e3-59c7-4362-b06b-0e8e41bf11e5": "a hazai focimeccsen szurkol"
+    }
+  },
+  {
+    "uuid": "84c610e6-c8fb-4386-9e67-d80d813a88e8",
+    "date": "2023-11-22",
+    "classSerial": "CL_1",
+    "subject": "MATHS",
+    "teacher": {
+      "uuid": "0c514a4e-f1da-4885-b991-10cd6fb21ae5",
+      "name": {
+        "firstName": "Elek",
+        "lastName": "Tört"
+      },
+      "taughtSubject": [
+        "MATHS"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [
+        {
+          "uuid": "c47298e3-59c7-4362-b06b-0e8e41bf11e5",
+          "name": {
+            "firstName": "János",
+            "lastName": "Nagy"
+          },
+          "birthday": "2009-11-19",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 4
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 1
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 2
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 2
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 5
+              },
+              {
+                "description": "felelet",
+                "grade": 4
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "69297503-d859-4571-a5b2-78775fd11254",
+          "name": {
+            "firstName": "Árpád",
+            "lastName": "Elekes"
+          },
+          "birthday": "2010-12-01",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "42fbdcfb-729c-4694-9a84-9b993384607a",
+          "name": {
+            "firstName": "Kristóf",
+            "lastName": "Kovács"
+          },
+          "birthday": "2013-05-05",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f",
+          "name": {
+            "firstName": "Péter",
+            "lastName": "Zsolnay"
+          },
+          "birthday": "2010-05-02",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "3df6766d-d37b-44e9-a5de-5cfe6ec6b26d",
+          "name": {
+            "firstName": "Sándor",
+            "lastName": "Király"
+          },
+          "birthday": "2010-03-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "6c99a207-84be-49b5-b6cf-e67a2d63a891",
+          "name": {
+            "firstName": "Kevin",
+            "lastName": "Csoboth"
+          },
+          "birthday": "2011-02-20",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "1c40331d-a8de-4e44-a7fb-73326b0c6479",
+          "name": {
+            "firstName": "Dominik",
+            "lastName": "Szoboszlai"
+          },
+          "birthday": "2012-09-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 3
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 5
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        }
+      ],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          },
+          {
+            "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
+            "name": {
+              "firstName": "Norbert",
+              "lastName": "Nemoda"
+            },
+            "taughtSubject": [
+              "SPORT"
+            ]
+          }
+        ],
+        "HUNGARIAN": [
+          {
+            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f": "betegség"
+    }
+  },
+  {
+    "uuid": "f6d927ae-2f94-48fb-8b64-d7d25a8f39c4",
+    "date": "2023-10-14",
+    "classSerial": "CL_8",
+    "subject": "SPORT",
+    "teacher": {
+      "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
+      "name": {
+        "firstName": "Norbert",
+        "lastName": "Nemoda"
+      },
+      "taughtSubject": [
+        "SPORT"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [
+        {
+          "uuid": "c47298e3-59c7-4362-b06b-0e8e41bf11e5",
+          "name": {
+            "firstName": "János",
+            "lastName": "Nagy"
+          },
+          "birthday": "2009-11-19",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 4
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 1
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 2
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 2
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 5
+              },
+              {
+                "description": "felelet",
+                "grade": 4
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "69297503-d859-4571-a5b2-78775fd11254",
+          "name": {
+            "firstName": "Árpád",
+            "lastName": "Elekes"
+          },
+          "birthday": "2010-12-01",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "42fbdcfb-729c-4694-9a84-9b993384607a",
+          "name": {
+            "firstName": "Kristóf",
+            "lastName": "Kovács"
+          },
+          "birthday": "2013-05-05",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f",
+          "name": {
+            "firstName": "Péter",
+            "lastName": "Zsolnay"
+          },
+          "birthday": "2010-05-02",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "3df6766d-d37b-44e9-a5de-5cfe6ec6b26d",
+          "name": {
+            "firstName": "Sándor",
+            "lastName": "Király"
+          },
+          "birthday": "2010-03-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "6c99a207-84be-49b5-b6cf-e67a2d63a891",
+          "name": {
+            "firstName": "Kevin",
+            "lastName": "Csoboth"
+          },
+          "birthday": "2011-02-20",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "1c40331d-a8de-4e44-a7fb-73326b0c6479",
+          "name": {
+            "firstName": "Dominik",
+            "lastName": "Szoboszlai"
+          },
+          "birthday": "2012-09-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 3
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 5
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        }
+      ],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          },
+          {
+            "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
+            "name": {
+              "firstName": "Norbert",
+              "lastName": "Nemoda"
+            },
+            "taughtSubject": [
+              "SPORT"
+            ]
+          }
+        ],
+        "HUNGARIAN": [
+          {
+            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {
+      "1c40331d-a8de-4e44-a7fb-73326b0c6479": "focizik"
+    }
+  },
+  {
+    "uuid": "a1e4c82a-552f-4aad-963b-17eeddb57726",
+    "date": "2022-12-11",
+    "classSerial": "CL_1",
+    "subject": "ENGLISH",
+    "teacher": {
+      "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [
+        {
+          "uuid": "c47298e3-59c7-4362-b06b-0e8e41bf11e5",
+          "name": {
+            "firstName": "János",
+            "lastName": "Nagy"
+          },
+          "birthday": "2009-11-19",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 4
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 1
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 2
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 2
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 5
+              },
+              {
+                "description": "felelet",
+                "grade": 4
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "69297503-d859-4571-a5b2-78775fd11254",
+          "name": {
+            "firstName": "Árpád",
+            "lastName": "Elekes"
+          },
+          "birthday": "2010-12-01",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "42fbdcfb-729c-4694-9a84-9b993384607a",
+          "name": {
+            "firstName": "Kristóf",
+            "lastName": "Kovács"
+          },
+          "birthday": "2013-05-05",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f",
+          "name": {
+            "firstName": "Péter",
+            "lastName": "Zsolnay"
+          },
+          "birthday": "2010-05-02",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "3df6766d-d37b-44e9-a5de-5cfe6ec6b26d",
+          "name": {
+            "firstName": "Sándor",
+            "lastName": "Király"
+          },
+          "birthday": "2010-03-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "6c99a207-84be-49b5-b6cf-e67a2d63a891",
+          "name": {
+            "firstName": "Kevin",
+            "lastName": "Csoboth"
+          },
+          "birthday": "2011-02-20",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "1c40331d-a8de-4e44-a7fb-73326b0c6479",
+          "name": {
+            "firstName": "Dominik",
+            "lastName": "Szoboszlai"
+          },
+          "birthday": "2012-09-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 3
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 5
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        }
+      ],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          },
+          {
+            "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
+            "name": {
+              "firstName": "Norbert",
+              "lastName": "Nemoda"
+            },
+            "taughtSubject": [
+              "SPORT"
+            ]
+          }
+        ],
+        "HUNGARIAN": [
+          {
+            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {}
+  },
+  {
+    "uuid": "21ae05f3-d759-4f3f-b9d2-25e3e8b22b7d",
+    "date": "2005-04-01",
+    "classSerial": "CL_7",
+    "subject": "GERMAN",
+    "teacher": {
+      "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+      "name": {
+        "firstName": "Károly",
+        "lastName": "Kós"
+      },
+      "taughtSubject": [
+        "PHYSICS"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [
+        {
+          "uuid": "c47298e3-59c7-4362-b06b-0e8e41bf11e5",
+          "name": {
+            "firstName": "János",
+            "lastName": "Nagy"
+          },
+          "birthday": "2009-11-19",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 4
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 1
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 2
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 2
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 5
+              },
+              {
+                "description": "felelet",
+                "grade": 4
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "69297503-d859-4571-a5b2-78775fd11254",
+          "name": {
+            "firstName": "Árpád",
+            "lastName": "Elekes"
+          },
+          "birthday": "2010-12-01",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "42fbdcfb-729c-4694-9a84-9b993384607a",
+          "name": {
+            "firstName": "Kristóf",
+            "lastName": "Kovács"
+          },
+          "birthday": "2013-05-05",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f",
+          "name": {
+            "firstName": "Péter",
+            "lastName": "Zsolnay"
+          },
+          "birthday": "2010-05-02",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "3df6766d-d37b-44e9-a5de-5cfe6ec6b26d",
+          "name": {
+            "firstName": "Sándor",
+            "lastName": "Király"
+          },
+          "birthday": "2010-03-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "6c99a207-84be-49b5-b6cf-e67a2d63a891",
+          "name": {
+            "firstName": "Kevin",
+            "lastName": "Csoboth"
+          },
+          "birthday": "2011-02-20",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "1c40331d-a8de-4e44-a7fb-73326b0c6479",
+          "name": {
+            "firstName": "Dominik",
+            "lastName": "Szoboszlai"
+          },
+          "birthday": "2012-09-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 3
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 5
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        }
+      ],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          },
+          {
+            "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
+            "name": {
+              "firstName": "Norbert",
+              "lastName": "Nemoda"
+            },
+            "taughtSubject": [
+              "SPORT"
+            ]
+          }
+        ],
+        "HUNGARIAN": [
+          {
+            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {}
+  },
+  {
+    "uuid": "24bd728b-f2b2-4fc9-804a-f0d6d8d3102a",
+    "date": "1999-01-01",
+    "classSerial": "CL_7",
+    "subject": "ENGLISH",
+    "teacher": {
+      "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [
+        {
+          "uuid": "c47298e3-59c7-4362-b06b-0e8e41bf11e5",
+          "name": {
+            "firstName": "János",
+            "lastName": "Nagy"
+          },
+          "birthday": "2009-11-19",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 4
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 1
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 2
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 2
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 5
+              },
+              {
+                "description": "felelet",
+                "grade": 4
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "69297503-d859-4571-a5b2-78775fd11254",
+          "name": {
+            "firstName": "Árpád",
+            "lastName": "Elekes"
+          },
+          "birthday": "2010-12-01",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "42fbdcfb-729c-4694-9a84-9b993384607a",
+          "name": {
+            "firstName": "Kristóf",
+            "lastName": "Kovács"
+          },
+          "birthday": "2013-05-05",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f",
+          "name": {
+            "firstName": "Péter",
+            "lastName": "Zsolnay"
+          },
+          "birthday": "2010-05-02",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "3df6766d-d37b-44e9-a5de-5cfe6ec6b26d",
+          "name": {
+            "firstName": "Sándor",
+            "lastName": "Király"
+          },
+          "birthday": "2010-03-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "6c99a207-84be-49b5-b6cf-e67a2d63a891",
+          "name": {
+            "firstName": "Kevin",
+            "lastName": "Csoboth"
+          },
+          "birthday": "2011-02-20",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "1c40331d-a8de-4e44-a7fb-73326b0c6479",
+          "name": {
+            "firstName": "Dominik",
+            "lastName": "Szoboszlai"
+          },
+          "birthday": "2012-09-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 3
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 5
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        }
+      ],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          },
+          {
+            "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
+            "name": {
+              "firstName": "Norbert",
+              "lastName": "Nemoda"
+            },
+            "taughtSubject": [
+              "SPORT"
+            ]
+          }
+        ],
+        "HUNGARIAN": [
+          {
+            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {}
+  },
+  {
+    "uuid": "7676ace7-365a-4ea9-8770-ab4ccc095e53",
+    "date": "2000-06-01",
+    "classSerial": "CL_5",
+    "subject": "VISUAL_ARTS",
+    "teacher": {
+      "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+      "name": {
+        "firstName": "B",
+        "lastName": "A"
+      },
+      "taughtSubject": [
+        "HISTORY"
+      ]
+    },
+    "studClass": {
+      "headTeacher": {
+        "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+        "name": {
+          "firstName": "B",
+          "lastName": "A"
+        },
+        "taughtSubject": [
+          "HISTORY"
+        ]
+      },
+      "nameOfClass": "12A",
+      "studentList": [
+        {
+          "uuid": "c47298e3-59c7-4362-b06b-0e8e41bf11e5",
+          "name": {
+            "firstName": "János",
+            "lastName": "Nagy"
+          },
+          "birthday": "2009-11-19",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 4
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 1
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 2
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 2
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 5
+              },
+              {
+                "description": "felelet",
+                "grade": 4
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        },
+        {
+          "uuid": "69297503-d859-4571-a5b2-78775fd11254",
+          "name": {
+            "firstName": "Árpád",
+            "lastName": "Elekes"
+          },
+          "birthday": "2010-12-01",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "42fbdcfb-729c-4694-9a84-9b993384607a",
+          "name": {
+            "firstName": "Kristóf",
+            "lastName": "Kovács"
+          },
+          "birthday": "2013-05-05",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f",
+          "name": {
+            "firstName": "Péter",
+            "lastName": "Zsolnay"
+          },
+          "birthday": "2010-05-02",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "3df6766d-d37b-44e9-a5de-5cfe6ec6b26d",
+          "name": {
+            "firstName": "Sándor",
+            "lastName": "Király"
+          },
+          "birthday": "2010-03-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "6c99a207-84be-49b5-b6cf-e67a2d63a891",
+          "name": {
+            "firstName": "Kevin",
+            "lastName": "Csoboth"
+          },
+          "birthday": "2011-02-20",
+          "studClassString": "12A",
+          "subjectAndGradeList": {}
+        },
+        {
+          "uuid": "1c40331d-a8de-4e44-a7fb-73326b0c6479",
+          "name": {
+            "firstName": "Dominik",
+            "lastName": "Szoboszlai"
+          },
+          "birthday": "2012-09-15",
+          "studClassString": "12A",
+          "subjectAndGradeList": {
+            "HUNGARIAN": [
+              {
+                "description": "versmondás",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 3
+              }
+            ],
+            "HISTORY": [
+              {
+                "description": "doga2",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "MATHS": [
+              {
+                "description": "doga1",
+                "grade": 2
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              }
+            ],
+            "VISUAL_ARTS": [
+              {
+                "description": "csendélet rajzolás",
+                "grade": 3
+              },
+              {
+                "description": "dolgozat - festők",
+                "grade": 5
+              }
+            ],
+            "ENGLISH": [
+              {
+                "description": "szódolgozat",
+                "grade": 1
+              },
+              {
+                "description": "felelet",
+                "grade": 5
+              },
+              {
+                "description": "szódolgozat javítása",
+                "grade": 5
+              },
+              {
+                "description": "témazáró 1.",
+                "grade": 3
+              }
+            ]
+          }
+        }
+      ],
+      "ClassTeachersBySubject": {
+        "HISTORY": [
+          {
+            "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+            "name": {
+              "firstName": "B",
+              "lastName": "A"
+            },
+            "taughtSubject": [
+              "HISTORY"
+            ]
+          }
+        ],
+        "ENGLISH": [
+          {
+            "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+            "name": {
+              "firstName": "Károly",
+              "lastName": "Kós"
+            },
+            "taughtSubject": [
+              "PHYSICS"
+            ]
+          },
+          {
+            "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
+            "name": {
+              "firstName": "Norbert",
+              "lastName": "Nemoda"
+            },
+            "taughtSubject": [
+              "SPORT"
+            ]
+          }
+        ],
+        "HUNGARIAN": [
+          {
+            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
+    },
+    "absentStudents": {}
   }
 ]

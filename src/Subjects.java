@@ -1,8 +1,8 @@
 public enum Subjects {
+    GERMAN("Német"),
     MATHS("Matematika"),
     HUNGARIAN("Magyar"),
     ENGLISH("Angol"),
-    GERMAN("Német"),
     HISTORY("Történelem"),
     PHYSICS("Fizika"),
     VISUAL_ARTS("Rajz"),
@@ -15,7 +15,7 @@ public enum Subjects {
 
     }
 
-    private String subjectName;
+    private final String subjectName;
 
     public String getSubjectName() {
         return subjectName;

@@ -112,7 +112,7 @@ public class ClassDiary {
                 ", classSerial=" + classSerial + System.lineSeparator() +
                 ", subject=" + subject + System.lineSeparator() +
                 ", teacher=" + teacher + System.lineSeparator() +
-                ", studClass=" + studClass + System.lineSeparator() +
+                ", studClass=" + studClass.getNameOfClass() + System.lineSeparator() +
                 ", absentStudents=" + absentStudents +
                 '}' + System.lineSeparator();
     }

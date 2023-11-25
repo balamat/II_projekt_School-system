@@ -224,6 +224,29 @@
           "taughtSubject": [
             "PHYSICS"
           ]
+        },
+        {
+          "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
+          "name": {
+            "firstName": "Norbert",
+            "lastName": "Nemoda"
+          },
+          "taughtSubject": [
+            "SPORT"
+          ]
+        }
+      ],
+      "HUNGARIAN": [
+        {
+          "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+          "name": {
+            "firstName": "Ferenc",
+            "lastName": "Jó"
+          },
+          "taughtSubject": [
+            "ENGLISH",
+            "GERMAN"
+          ]
         }
       ]
     }
