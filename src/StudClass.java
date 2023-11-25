@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class StudClass {
 
@@ -12,12 +13,13 @@ public class StudClass {
     public StudClass(Teacher headTeacher, String nameOfClass) {
         this.headTeacher = headTeacher;
         this.nameOfClass = nameOfClass;
-        this.studentList = new ArrayList<>();
         ClassTeachersBySubject = new HashMap<>();
+        studentList = new ArrayList<>();
     }
 
-    public void addToList() {
+    public StudClass addToList() {
         allStudClassList.add(this);
+        return this;
     }
 
     public Teacher getHeadTeacher() {
@@ -38,10 +40,6 @@ public class StudClass {
 
     public List<Student> getStudentList() {
         return studentList;
-    }
-
-    public void setStudentList(List<Student> studentList) {
-        this.studentList = studentList;
     }
 
     public Map<Subjects, List<Teacher>> getClassTeachersBySubject() {
@@ -72,7 +70,7 @@ public class StudClass {
                 .forEach(key -> {
                     sbTeacher.append("\t\t " + key.getSubjectName() + ": ");
                     getClassTeachersBySubject().get(key).forEach(teacher -> sbTeacher.append(teacher + ", "));
-                    sbTeacher.delete(sbTeacher.length()-2,sbTeacher.length()-1);
+                    sbTeacher.delete(sbTeacher.length() - 2, sbTeacher.length() - 1);
                     sbTeacher.append(System.lineSeparator());
                 });
 

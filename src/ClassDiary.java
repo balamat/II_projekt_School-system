@@ -20,7 +20,11 @@ public class ClassDiary {
         this.teacher = teacher;
         this.studClass = studClass;
         this.absentStudents = new HashMap<>();
+    }
+
+    public ClassDiary addToList() {
         allClassDiary.add(this);
+        return this;
     }
 
     public ClassDiary addAbsentStudent(int numberOfAbsent) {

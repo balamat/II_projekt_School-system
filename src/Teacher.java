@@ -15,7 +15,11 @@ public class Teacher implements User {
         this.taughtSubject = new ArrayList<Subjects>();
         this.taughtSubject.add(subject1);
         this.taughtSubject.add(subject2);
+    }
+
+    public Teacher addToList() {
         allTeacherList.add(this);
+        return this;
     }
 
     public Teacher(Name name, Subjects subject1) {

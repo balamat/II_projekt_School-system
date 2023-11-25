@@ -17,8 +17,20 @@ public class Student {
         this.birthday = generateRandomDate();
         this.studClassString = studClassString;
         this.subjectAndGradeList = new HashMap<>();
-        Student.getAllStudentList().add(this);
-//        StudClass.getAllStudClassList().stream().filter(cl -> cl.getNameOfClass().equals(studClassString)).findFirst().get().getStudentList().add(this);
+    }
+
+    public Student addToList() {
+        allStudentList.add(this);
+        return this;
+    }
+
+    public void sortStudentToStudClass() {
+        for (StudClass studClass : StudClass.getAllStudClassList()
+        ) {
+            if (studClass.getNameOfClass().equals(this.getStudClassString())) {
+                studClass.getStudentList().add(this);
+            }
+        }
     }
 
     public Student(Name name, String studClassString, String birthday) {
@@ -28,7 +40,6 @@ public class Student {
         this.studClassString = studClassString;
         this.subjectAndGradeList = new HashMap<>();
         Student.getAllStudentList().add(this);
-//        StudClass.getAllStudClassList().stream().filter(cl -> cl.getNameOfClass().equals(studClassString)).findFirst().get().getStudentList().add(this);
     }
 
     public Name getName() {

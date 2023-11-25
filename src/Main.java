@@ -9,10 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         //load - uploading data
-        Teacher.getAllTeacherList().addAll(Load.loadJsonToTeacher());
-        Student.getAllStudentList().addAll(Load.loadJsonToStudent());
-        ClassDiary.getAllClassDiary().addAll(Load.loadJsonToClassDiary());
-        StudClass.getAllStudClassList().addAll(Load.loadJsonToStudClass());
+        Load.loadFromJson();
 
         //login
         //scanner - user
@@ -21,15 +18,26 @@ public class Main {
 
         //??????
         //Load.sortStudents();
-        System.out.println(StudClass.getAllStudClassList().get(0).getStudentList().size());
-        System.out.println(StudClass.getAllStudClassList().get(1).getStudentList().size());
-        System.out.println(StudClass.getAllStudClassList().get(2).getStudentList().size());
+//        System.out.println(StudClass.getAllStudClassList().get(0).getStudentList().size());
+//        System.out.println(StudClass.getAllStudClassList().get(1).getStudentList().size());
+//        System.out.println(StudClass.getAllStudClassList().get(2).getStudentList().size());
 
         //mainPage                        //OK!!
 
-        UserInterface.printStudentGrades();
-        UserInterface.printStudClassGrades();
+        UserInterface.printMainPage();
+        System.out.println();
+        System.out.println(Student.getAllStudentList().size());
+        System.out.println(StudClass.getAllStudClassList().size());
+        System.out.println(StudClass.getAllStudClassList().get(0).getStudentList().size());
+        System.out.println(StudClass.getAllStudClassList().get(1).getStudentList().size());
+        System.out.println(StudClass.getAllStudClassList().get(2).getStudentList().size());
+        System.out.println();
+        System.out.println(Student.getAllStudentList().get(0).getSubjectAndGradeList().get(Subjects.GERMAN));
+        System.out.println("----");
+        System.out.println(StudClass.getAllStudClassList().get(0).getStudentList().get(0).getSubjectAndGradeList().get(Subjects.GERMAN));
 
+//        UserInterface.printStudentGrades();
+//        UserInterface.printStudClassGrades();
 
 
         //Functions
@@ -53,14 +61,9 @@ public class Main {
 
         //logout
         //save specific data - a certain class/student to CSV
-        //auto export toJson                //OK!!
 
-        Load.exportTeacherToJson();
-        Load.exportStudentToJson();
-        Load.exportClassDiaryToJson();
-        Load.exportStudClassToJson();
+        //auto export toJson                //OK!!
+        Load.exportToJson();
 
     }
-
-
 }
