@@ -24,19 +24,21 @@ public class Main {
 //        UserInterface.printStudClassGrades();
 
         //Functions
-        //1- student info
+        //1- student info                   //OK!!
         //personal info                     //OK!!
         //grade, average                    //OK!!
         //absence                           //OK!!
-        //timetable
+
         //2 - class info                    //OK!!
         //class info                        //OK!!
         //averages                          //OK!!
-        //timetable
+        //absence                           //OK!!
+
         //3 - fill diary                    //OK!!
         //fill classDiary                   //OK!!
         //modify classDiary                 //OK!!
         //mark                              //OK!!
+        
         //4 - admin tasks
         //add-modify-delete student
         //add-modify-delete class

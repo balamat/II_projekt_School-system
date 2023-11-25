@@ -157,11 +157,27 @@ public class UserInterface {
 
         System.out.println(sbFirstRow.toString());
         System.out.println(sbSubjDataPerStudent.toString());
-        System.out.println(sbLastRow.toString());
+        System.out.println(sbLastRow);
     }
 
     public static void printStudClassAbsence() {
+        int indent = 30;
+        int tab = 4;
+        int tabFirstRow = tab + 1;
+        StringBuilder sb = new StringBuilder();
 
+        StudClass studClass = Menu.studClassSearch();
+        Student.getAllStudentList().stream()
+                .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
+                .forEach(student -> {
+                    sb.append(student.getName()).append(" ".repeat(indent - student.getName().toString().length()));
+                    sb.append(" ".repeat(tab));
+                    Set<ClassDiary> classDiaries = ClassDiary.generateAbsenceMapByStudent(student).keySet();
+                    sb.append("Hiányzások: " + classDiaries.size()).append(" ".repeat(tab));
+                    classDiaries.stream().forEach(i -> sb.append(i.getDate()).append(" - ").append(i.getClassSerial().getSerial() + ".óra").append(" ".repeat(tab)));
+                    sb.append(System.lineSeparator());
+                });
+        System.out.println(sb);
     }
 
     public static void printClassDiary() {

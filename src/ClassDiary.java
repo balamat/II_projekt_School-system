@@ -105,7 +105,6 @@ public class ClassDiary {
         ClassDiary.getAllClassDiary().stream()
                 .filter(classDiary -> classDiary.getAbsentStudents().containsKey(student.getUuid()))
                 .forEach(classDiary -> absenceMap.put(classDiary, classDiary.getAbsentStudents().get(student.getUuid())));
-
         return absenceMap;
     }
 
