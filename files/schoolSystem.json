@@ -287,6 +287,12 @@
             "description": "tz 1.",
             "grade": 5
           }
+        ],
+        "MATHS": [
+          {
+            "description": "osztás",
+            "grade": 3
+          }
         ]
       }
     },
@@ -1348,6 +1354,39 @@
         }
       },
       "absentStudents": {}
+    },
+    {
+      "uuid": "ce06cded-2664-4673-b9ef-6703911eb5c6",
+      "date": "2023-11-25",
+      "classSerial": "CL_1",
+      "subject": "ENGLISH",
+      "teacher": {
+        "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+        "name": {
+          "firstName": "Károly",
+          "lastName": "Kós"
+        },
+        "taughtSubject": [
+          "PHYSICS"
+        ]
+      },
+      "studClass": {
+        "headTeacher": {
+          "uuid": "0c514a4e-f1da-4885-b991-10cd6fb21ae5",
+          "name": {
+            "firstName": "Elek",
+            "lastName": "Tört"
+          },
+          "taughtSubject": [
+            "MATHS"
+          ]
+        },
+        "nameOfClass": "12B",
+        "ClassTeachersBySubject": {}
+      },
+      "absentStudents": {
+        "6a209a34-a9f5-4f69-88b9-9763bbf41ba4": "nyílt napon vesz részt"
+      }
     }
   ]
 ]

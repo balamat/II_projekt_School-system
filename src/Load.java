@@ -52,171 +52,12 @@ public class Load {
         }
     }
 
-
-    public static List<Teacher> loadJsonToTeacher() {
-        String importPath = "files/teacher.json";
-        Path path = Paths.get(importPath);
-        try {
-            Gson gson = new Gson();
-            String inputString = Files.readString(path);
-            List<Teacher> importedList = Arrays.asList(gson.fromJson(inputString, Teacher[].class));
-            return importedList;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static List<Student> loadJsonToStudent() {
-        String importPath = "files/student.json";
-        Path path = Paths.get(importPath);
-        try {
-
-//            Gson gson = new Gson();
-            Gson gson = new GsonBuilder()
-                    .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
-                    .create();
-            String inputString = Files.readString(path);
-            List<Student> importedList = Arrays.asList(gson.fromJson(inputString, Student[].class));
-            return importedList;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static List<StudClass> loadJsonToStudClass() {
-        String importPath = "files/studClass.json";
-        Path path = Paths.get(importPath);
-        try {
-//            Gson gson = new Gson();
-            Gson gson = new GsonBuilder()
-                    .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
-                    .create();
-            String inputString = Files.readString(path);
-            List<StudClass> importedList = Arrays.asList(gson.fromJson(inputString, StudClass[].class));
-            return importedList;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static List<ClassDiary> loadJsonToClassDiary() {
-        String importPath = "files/classDiary.json";
-        Path path = Paths.get(importPath);
-        try {
-            Gson gson = new GsonBuilder()
-                    .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
-                    .create();
-
-
-            String inputString = Files.readString(path);
-            List<ClassDiary> importedClassDiaryList = Arrays.asList(gson.fromJson(inputString, ClassDiary[].class));
-            return importedClassDiaryList;
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static void exportStudentToJson() {
-
-        Gson prettyGson = new GsonBuilder()
-                .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
-                .setPrettyPrinting()
-                .create();
-
-        String output = prettyGson.toJson(Student.getAllStudentList());
-
-        try {
-            FileWriter fw = new FileWriter("files/student.json");
-            fw.write(output);
-            fw.close();
-            FileWriter fw_backup = new FileWriter("files/backup/student_" + backupVersion() + ".json");
-            fw_backup.write(output);
-            fw_backup.close();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static void exportTeacherToJson() {
-
-        Gson prettyGson = new GsonBuilder()
-                .setPrettyPrinting()
-                .create();
-
-        String output = prettyGson.toJson(Teacher.getAllTeacherList());
-
-        try {
-            FileWriter fw = new FileWriter("files/teacher.json");
-            fw.write(output);
-            fw.close();
-            FileWriter fw_backup = new FileWriter("files/backup/teacher_" + backupVersion() + ".json");
-            fw_backup.write(output);
-            fw_backup.close();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static void exportStudClassToJson() {
-
-        Gson prettyGson = new GsonBuilder()
-                .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
-                .setPrettyPrinting()
-                .create();
-
-        String output = prettyGson.toJson(StudClass.getAllStudClassList());
-
-        try {
-            FileWriter fw = new FileWriter("files/studClass.json");
-            fw.write(output);
-            fw.close();
-            FileWriter fw_backup = new FileWriter("files/backup/studClass_" + backupVersion() + ".json");
-            fw_backup.write(output);
-            fw_backup.close();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-
-    public static void exportClassDiaryToJson() {
-
-        Gson prettyGson = new GsonBuilder()
-                .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
-                .setPrettyPrinting()
-                .create();
-
-        String output = prettyGson.toJson(ClassDiary.getAllClassDiary());
-
-        try {
-            FileWriter fw = new FileWriter("files/classDiary.json");
-            fw.write(output);
-            fw.close();
-            FileWriter fw_backup = new FileWriter("files/backup/classDiary_" + backupVersion() + ".json");
-            fw_backup.write(output);
-            fw_backup.close();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     public static void exportToJson() {
 
         Gson prettyGson = new GsonBuilder()
                 .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
                 .setPrettyPrinting()
                 .create();
-
-
-//        String jsonArrayStudent = prettyGson.toJson(Student.getAllStudentList());
-//        String jsonArrayTeacher = prettyGson.toJson(Teacher.getAllTeacherList());
-//        String jsonArrayStudClass = prettyGson.toJson(StudClass.getAllStudClassList());
-//        String jsonArrayClassDiary = prettyGson.toJson(ClassDiary.getAllClassDiary());
-
 
         List<Object> totalList = new ArrayList<>();
         totalList.add(Student.getAllStudentList());
@@ -225,7 +66,6 @@ public class Load {
         totalList.add((ClassDiary.getAllClassDiary()));
 
         String output = prettyGson.toJson(totalList);
-
 
         try {
             FileWriter fw = new FileWriter("files/schoolSystem.json");

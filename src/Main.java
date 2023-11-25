@@ -19,9 +19,9 @@ public class Main {
         //mainPage                        //OK!!
 //        UserInterface.printMainPage();
 
-//        Menu.saveGrade();
+        UserInterface.printMainPage();
 //        UserInterface.printStudentGrades();
-        UserInterface.printStudClassGrades();
+//        UserInterface.printStudClassGrades();
 
         //Functions
         //1- student info

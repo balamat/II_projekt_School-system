@@ -162,7 +162,7 @@ public class Menu {
         StudClass studClass = studClassSearch();
         int numberOfAbsent = numberOfAbsentValidator(studClass);
 
-        ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(numberOfAbsent);
+        ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(numberOfAbsent).addToList();
         System.out.println(classDiary);
         UserInterface.printSuccesfullyTerminated(labelOfAction);
         return classDiary;
