@@ -365,6 +365,16 @@
       "birthday": "2001-11-19",
       "studClassString": "12C",
       "subjectAndGradeList": {}
+    },
+    {
+      "uuid": "b6d6421f-8926-4383-8ae0-7d33fa004567",
+      "name": {
+        "firstName": "Ádám",
+        "lastName": "Nagy"
+      },
+      "birthday": "2004-01-30",
+      "studClassString": "12A",
+      "subjectAndGradeList": {}
     }
   ],
   [
@@ -522,21 +532,6 @@
         ]
       },
       "nameOfClass": "12C",
-      "ClassTeachersBySubject": {}
-    },
-    {
-      "headTeacher": {
-        "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
-        "name": {
-          "firstName": "Ferenc",
-          "lastName": "Jó"
-        },
-        "taughtSubject": [
-          "ENGLISH",
-          "GERMAN"
-        ]
-      },
-      "nameOfClass": "12D",
       "ClassTeachersBySubject": {}
     },
     {

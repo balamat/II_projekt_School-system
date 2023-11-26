@@ -345,6 +345,23 @@ public class UserInterface {
     }
 
     public static void adminArchiveStudClass() {
+        String labelOfAction = "osztály archiválása";
+        System.out.println(labelOfAction.toUpperCase());
+
+        StudClass studClass = Menu.studClassSearch();
+        long count = Student.getAllStudentList().stream()
+                .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
+                .count();
+        if (count > 0) {
+            System.out.println("Az archiválandó osztályhoz " + count + " diák tartozik!");
+            System.out.println("Melyik osztályba kerüljenek át a diákok?");
+            StudClass destinationStudClass = Menu.studClassSearch();
+            Student.getAllStudentList().stream()
+                    .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
+                    .forEach(student -> student.setStudClassString(destinationStudClass.getNameOfClass()));
+        }
+        studClass.archive();
+        printSuccesfullyTerminated(labelOfAction);
     }
 
 

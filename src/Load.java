@@ -70,7 +70,7 @@ public class Load {
             List<StudClass> importListStudClass = Arrays.asList(gson.fromJson(jsonArrayStudClass, StudClass[].class));
 
             Student.getArchivedStudentList().addAll(importListStudent);
-            StudClass.getAllStudClassList().addAll(importListStudClass);
+            StudClass.getArchivedStudClassList().addAll(importListStudClass);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

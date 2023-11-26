@@ -21,6 +21,11 @@ public class StudClass {
         return this;
     }
 
+    public void archive() {
+        allStudClassList.remove(this);
+        archivedStudClassList.add(this);
+    }
+
     public Teacher getHeadTeacher() {
         return headTeacher;
     }
