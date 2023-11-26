@@ -1,7 +1,6 @@
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.*;
-import java.util.jar.JarOutputStream;
 
 public class UserInterface {
 
@@ -216,20 +215,91 @@ public class UserInterface {
 
         switch (choice) {
             case 1:
-                Menu.fillClassDiary();
+                fillClassDiary();
                 break;
             case 2:
-                Menu.modifyClassDiary();
+                modifyClassDiary();
                 break;
             case 3:
-                Menu.saveGrade();
+                saveGrade();
                 break;
             case 4:
-                Menu.deleteGrade();
+                deleteGrade();
                 break;
             case 0:
                 UserInterface.printMainPage();
                 break;
+        }
+    }
+
+    public static void fillClassDiary() {
+        String labelOfAction = "aktuális óra naplózása";
+        System.out.println(labelOfAction.toUpperCase());
+
+        LocalDate localDate = Menu.dateSearch();
+        ClassSerial classSerial = Menu.classSerialSearch();
+        Subjects subject = Menu.subjectSearch();
+        Teacher teacher = Menu.teacherSearch();
+        StudClass studClass = Menu.studClassSearch();
+        int numberOfAbsent = Menu.numberOfAbsentValidator(studClass);
+
+        ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(numberOfAbsent).addToList();
+        System.out.println(classDiary);
+        printSuccesfullyTerminated(labelOfAction);
+    }
+
+    public static void saveGrade() {
+        String labelOfAction = "jegy beírása";
+        System.out.println(labelOfAction.toUpperCase());
+
+        Student student = Menu.studentSearch();
+        Subjects subject = Menu.subjectSearch();
+        String description = gradeDescriptionScan();
+
+        int grade = Menu.gradeValidator();
+        student.addGrade(subject, description, grade);
+        printSuccesfullyTerminated(labelOfAction);
+    }
+
+    public static void modifyClassDiary() {
+        String labelOfAction = "meglévő naplóadatok módosítása";
+        System.out.println(labelOfAction.toUpperCase());
+
+        ClassDiary searchedClassDiary = Menu.classDiarySearch();
+        System.out.println("A kiválasztott óra adatai:");
+        System.out.println(searchedClassDiary);
+        System.out.println("Akarod a hiányzókat módosítani? Ha igen írd, be, hogy 'igen'!Ha nem akkor üss be egy billentyűt és az entert!");
+        if (generalScan().equals("igen")) {
+            searchedClassDiary.getAbsentStudents().clear();
+            System.out.println("Az órára bekönyvelt hiányzások törlésre kerültek!");
+            StudClass studClass = StudClass.getAllStudClassList().stream().filter(studCl -> studCl.getNameOfClass().equals(searchedClassDiary.getStudClassString())).findFirst().orElse(StudClass.getAllStudClassList().get(0));
+            int numberOfAbsent = Menu.numberOfAbsentValidator(studClass);
+            searchedClassDiary.addAbsentStudent(numberOfAbsent);
+            printSuccesfullyTerminated(labelOfAction);
+            System.out.println(searchedClassDiary);
+        } else {
+            System.out.println("Naplóadat nem került módosításra!");
+        }
+    }
+
+    public static void deleteGrade() {
+        String labelOfAction = "jegy törlése";
+        System.out.println(labelOfAction.toUpperCase());
+
+        String message = "A tantárgyból nincs jegye a diáknak!";
+        System.out.println("A naplóból egy adott tárgy utoljára beírt jegye törölhető.");
+        Student student = Menu.studentSearch();
+        Subjects subject = Menu.subjectSearch();
+        if (student.getSubjectAndGradeList().containsKey(subject)) {
+            List<Grade> grades = student.getSubjectAndGradeList().get(subject);
+            if (grades.size() > 0) {
+                grades.remove(grades.size() - 1);
+                printSuccesfullyTerminated(labelOfAction);
+            } else {
+                System.out.println(message);
+            }
+        } else {
+            System.out.println(message);
         }
     }
 
@@ -413,6 +483,7 @@ public class UserInterface {
     public static void printSuccesfullyTerminated(String label) {
         System.out.println(label + " - a művelet sikeresen megtörtént!");
     }
+
 
     /*----------------------------SCANNERS----------------------------*/
 

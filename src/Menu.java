@@ -215,61 +215,8 @@ public class Menu {
         return choice;
     }
 
-
-
-
-
-
-
-    /*----------------------------combined with UI----------------------------*/
-
-    public static ClassDiary fillClassDiary() {
-        String labelOfAction = "aktuális óra naplózása";
-        System.out.println(labelOfAction.toUpperCase());
-
-        LocalDate localDate = dateSearch();
-        ClassSerial classSerial = classSerialSearch();
-        Subjects subject = subjectSearch();
-        Teacher teacher = teacherSearch();
-        StudClass studClass = studClassSearch();
-        int numberOfAbsent = numberOfAbsentValidator(studClass);
-
-        ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(numberOfAbsent).addToList();
-        System.out.println(classDiary);
-        UserInterface.printSuccesfullyTerminated(labelOfAction);
-        return classDiary;
-    }
-
-    public static void modifyClassDiary() {
-        String labelOfAction = "meglévő naplóadatok módosítása";
-        System.out.println(labelOfAction.toUpperCase());
-
-        ClassDiary searchedClassDiary = classDiarySearch();
-        System.out.println("A kiválasztott óra adatai:");
-        System.out.println(searchedClassDiary);
-        System.out.println("Akarod a hiányzókat módosítani? Ha igen írd, be, hogy 'igen'!Ha nem akkor üss be egy billentyűt és az entert!");
-        if (UserInterface.generalScan().equals("igen")) {
-            searchedClassDiary.getAbsentStudents().clear();
-            System.out.println("Az órára bekönyvelt hiányzások törlésre kerültek!");
-            StudClass studClass = StudClass.getAllStudClassList().stream().filter(studCl -> studCl.getNameOfClass().equals(searchedClassDiary.getStudClassString())).findFirst().orElse(StudClass.getAllStudClassList().get(0));
-            int numberOfAbsent = numberOfAbsentValidator(studClass);
-            searchedClassDiary.addAbsentStudent(numberOfAbsent);
-            UserInterface.printSuccesfullyTerminated(labelOfAction);
-            System.out.println(searchedClassDiary);
-        } else {
-            System.out.println("Naplóadat nem került módosításra!");
-        }
-    }
-
-    public static void saveGrade() {
-        String labelOfAction = "jegy beírása";
-        System.out.println(labelOfAction.toUpperCase());
-
-        Student student = Menu.studentSearch();
-        Subjects subject = Menu.subjectSearch();
-        String description = UserInterface.gradeDescriptionScan();
+    public static int gradeValidator() {
         int grade = 0;
-
         do {
             try {
                 //reset the inputValidator to its original state
@@ -286,31 +233,7 @@ public class Menu {
                 isWrongInput = true;
             }
         } while (isWrongInput);
-
-        student.addGrade(subject, description, grade);
-        UserInterface.printSuccesfullyTerminated(labelOfAction);
+        return grade;
     }
-
-    public static void deleteGrade() {
-        String labelOfAction = "jegy törlése";
-        System.out.println(labelOfAction.toUpperCase());
-
-        String message = "A tantárgyból nincs jegye a diáknak!";
-        System.out.println("A naplóból egy adott tárgy utoljára beírt jegye törölhető.");
-        Student student = Menu.studentSearch();
-        Subjects subject = Menu.subjectSearch();
-        if (student.getSubjectAndGradeList().containsKey(subject)) {
-            List<Grade> grades = student.getSubjectAndGradeList().get(subject);
-            if (grades.size() > 0) {
-                grades.remove(grades.size() - 1);
-                UserInterface.printSuccesfullyTerminated(labelOfAction);
-            } else {
-                System.out.println(message);
-            }
-        } else {
-            System.out.println(message);
-        }
-    }
-
 
 }
