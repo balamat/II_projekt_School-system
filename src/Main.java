@@ -20,7 +20,6 @@ public class Main {
         //mainPage
         UserInterface.printMainPage();
 
-        System.out.println(UserInterface.choiceList);
 
         //Functions
         //1- student info

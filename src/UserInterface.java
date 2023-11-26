@@ -1,6 +1,8 @@
+import java.awt.*;
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.*;
+import java.util.List;
 
 public class UserInterface {
 
@@ -72,6 +74,7 @@ public class UserInterface {
         System.out.println(labelOfAction.toUpperCase());
 
         System.out.println(Menu.studentSearch());
+        continueMenu();
     }
 
     public static void printStudentGrades() {
@@ -86,6 +89,7 @@ public class UserInterface {
         double totalAvg = Calculator.calculateStudentAvg(student);
         System.out.println("---------------------------------------------------------");
         System.out.println("Tanulmányi átlag: " + totalAvg + System.lineSeparator());
+        continueMenu();
     }
 
     public static void printStudentAbsence() {
@@ -93,6 +97,7 @@ public class UserInterface {
         System.out.println(labelOfAction.toUpperCase());
         Map<ClassDiary, String> classDiaryMap = ClassDiary.generateAbsenceMapByStudent(Menu.studentSearch());
         classDiaryMap.keySet().stream().sorted((a, b) -> a.getDate().compareTo(b.getDate())).forEach(classDiary -> System.out.println(classDiary.getDate().toString() + " - " + classDiary.getClassSerial() + ": " + classDiaryMap.get(classDiary)));
+        continueMenu();
     }
 
     public static void printStudClassInfo() {
@@ -129,6 +134,7 @@ public class UserInterface {
         System.out.println(labelOfAction.toUpperCase());
 
         System.out.println(Menu.studClassSearch());
+        continueMenu();
     }
 
     public static void printStudClassGrades() {
@@ -177,6 +183,7 @@ public class UserInterface {
         System.out.println(sbFirstRow.toString());
         System.out.println(sbSubjDataPerStudent.toString());
         System.out.println(sbLastRow);
+        continueMenu();
     }
 
     public static void printStudClassAbsence() {
@@ -197,6 +204,7 @@ public class UserInterface {
                     sb.append(System.lineSeparator());
                 });
         System.out.println(sb);
+        continueMenu();
     }
 
     public static void printClassDiary() {
@@ -246,6 +254,7 @@ public class UserInterface {
         ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(numberOfAbsent).addToList();
         System.out.println(classDiary);
         printSuccesfullyTerminated(labelOfAction);
+        continueMenu();
     }
 
     public static void saveGrade() {
@@ -259,6 +268,7 @@ public class UserInterface {
         int grade = Menu.gradeValidator();
         student.addGrade(subject, description, grade);
         printSuccesfullyTerminated(labelOfAction);
+        continueMenu();
     }
 
     public static void modifyClassDiary() {
@@ -280,6 +290,7 @@ public class UserInterface {
         } else {
             System.out.println("Naplóadat nem került módosításra!");
         }
+        continueMenu();
     }
 
     public static void deleteGrade() {
@@ -301,6 +312,7 @@ public class UserInterface {
         } else {
             System.out.println(message);
         }
+        continueMenu();
     }
 
     public static void printAdmin() {
@@ -358,6 +370,7 @@ public class UserInterface {
 
         new Student(new Name(lastName, firstName), studClass.getNameOfClass(), birthday).addToList();
         printSuccesfullyTerminated(labelOfAction);
+        continueMenu();
     }
 
     public static void adminModifyStudent() {
@@ -375,6 +388,7 @@ public class UserInterface {
             printSuccesfullyTerminated(labelOfAction);
             System.out.println(student);
         }
+        continueMenu();
     }
 
     public static void adminArchiveStudent() {
@@ -384,6 +398,7 @@ public class UserInterface {
         Student student = Menu.studentSearch();
         student.archive();
         printSuccesfullyTerminated(labelOfAction);
+        continueMenu();
     }
 
     public static void adminAddNewStudClass() {
@@ -396,6 +411,7 @@ public class UserInterface {
         Teacher headTeacher = Menu.teacherSearch();
         new StudClass(headTeacher, nameOfClass).addToList();
         printSuccesfullyTerminated(labelOfAction);
+        continueMenu();
     }
 
     public static void adminModifyStudClass() {
@@ -432,6 +448,7 @@ public class UserInterface {
         Teacher newHeadTeacher = Menu.teacherSearch();
         studClass.setHeadTeacher(newHeadTeacher);
         printSuccesfullyTerminated(labelOfAction);
+        continueMenu();
     }
 
     public static void adminModifyStudClassTeacher() {
@@ -457,6 +474,7 @@ public class UserInterface {
             studClass.getClassTeachersBySubject().get(subject).add(modifiedTeacher);
         }
         printSuccesfullyTerminated(labelOfAction);
+        continueMenu();
     }
 
     public static void adminArchiveStudClass() {
@@ -477,6 +495,7 @@ public class UserInterface {
         }
         studClass.archive();
         printSuccesfullyTerminated(labelOfAction);
+        continueMenu();
     }
 
 
@@ -484,6 +503,33 @@ public class UserInterface {
         System.out.println(label + " - a művelet sikeresen megtörtént!");
     }
 
+    public static void continueMenu() {
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        double widthDouble = screenSize.getWidth();
+        int spacePixelWidth = 12;
+        int width = (int) widthDouble / spacePixelWidth;
+        int tab = 5;
+        StringBuilder sbBottomLine = new StringBuilder();
+        sbBottomLine
+                .append("b - visszalépés").append(" ".repeat(tab))
+                .append("r - újra").append(" ".repeat(tab))
+                .append("0 - kilépés").append(System.lineSeparator())
+                .append("-".repeat(width));
+
+        System.out.println(sbBottomLine);
+
+        String input = generalLineScan();
+        // java - get screen size using the Toolkit class
+        if (input.toLowerCase().equals("b")) {
+            System.out.println("Előző menüpont újrahívása!!!!");
+        } else if (input.toLowerCase().equals("r")) {
+            System.out.println("Aktuális menüpont újrahívása!!!!");
+        } else if (input.toLowerCase().equals("0")) {
+            Log.logout();
+        } else {
+            UserInterface.printMainPage();
+        }
+    }
 
     /*----------------------------SCANNERS----------------------------*/
 
