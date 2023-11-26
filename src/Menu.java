@@ -201,7 +201,7 @@ public class Menu {
                 //reset the inputValidator to its original state
                 isWrongInput = false;
                 choice = UserInterface.choiceScan();
-                if (choice > numberOfOptions || choice < 1) {
+                if (choice > numberOfOptions || choice < 0) {
                     throw new MenuExcpetion();
                 }
             } catch (NumberFormatException | InputMismatchException e) {

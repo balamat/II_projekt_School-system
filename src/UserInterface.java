@@ -19,6 +19,7 @@ public class UserInterface {
         if (permission == 0) {
             System.out.println("4 - Admin feladatok");
         }
+        System.out.println("0 - Kilépés");
 
         //save the choices
         int choice = Menu.choiceValidator(4);
@@ -36,6 +37,9 @@ public class UserInterface {
         if (choice == 4 && permission == 0) {
             printAdmin();
         }
+        if (choice == 0) {
+            Log.logout();
+        }
     }
 
     public static void printStudentInfo() {
@@ -43,6 +47,7 @@ public class UserInterface {
         System.out.println("1 - Diák adatainak lekérdezése");
         System.out.println("2 - Diák jegyeinek lekérdezése");
         System.out.println("3 - Diák hiányzásainak lekérdezése");
+        System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(3);
         choiceList.add(choice);
@@ -56,6 +61,9 @@ public class UserInterface {
                 break;
             case 3:
                 printStudentAbsence();
+                break;
+            case 0:
+                UserInterface.printMainPage();
                 break;
         }
     }
@@ -96,6 +104,7 @@ public class UserInterface {
         System.out.println("1 - Osztály adatainak lekérdezése");
         System.out.println("2 - Osztály jegyeinek lekérdezése");
         System.out.println("3 - Osztály hiányzásainak lekérdezése");
+        System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(3);
         choiceList.add(choice);
@@ -109,6 +118,9 @@ public class UserInterface {
                 break;
             case 3:
                 printStudClassAbsence();
+                break;
+            case 0:
+                UserInterface.printMainPage();
                 break;
         }
     }
@@ -197,6 +209,7 @@ public class UserInterface {
         System.out.println("2 - meglévő naplóadatok módosítása");
         System.out.println("3 - jegy beírása");
         System.out.println("4 - jegy törlése");
+        System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(4);
         choiceList.add(choice);
@@ -214,6 +227,9 @@ public class UserInterface {
             case 4:
                 Menu.deleteGrade();
                 break;
+            case 0:
+                UserInterface.printMainPage();
+                break;
         }
     }
 
@@ -228,6 +244,7 @@ public class UserInterface {
         System.out.println("4 - új osztály regisztrálása");
         System.out.println("5 - osztály adatainak módosítása");
         System.out.println("6 - osztály archiválása");
+        System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(6);
         choiceList.add(choice);
@@ -250,6 +267,9 @@ public class UserInterface {
                 break;
             case 6:
                 UserInterface.adminArchiveStudClass();
+                break;
+            case 0:
+                UserInterface.printMainPage();
                 break;
         }
     }
@@ -314,6 +334,7 @@ public class UserInterface {
 
         System.out.println("1 - osztályfőnök módosítása");
         System.out.println("2 - oktató tanárok módosítása");
+        System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(2);
         choiceList.add(choice);
@@ -324,6 +345,9 @@ public class UserInterface {
                 break;
             case 2:
                 UserInterface.adminModifyStudClassTeacher();
+                break;
+            case 0:
+                UserInterface.printMainPage();
                 break;
         }
     }

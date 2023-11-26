@@ -31,7 +31,7 @@ public class Log {
     }
 
     public static void logout() {
-
+        System.out.println("kilépés...");
     }
 
 
