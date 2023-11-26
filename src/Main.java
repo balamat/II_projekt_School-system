@@ -19,6 +19,7 @@ public class Main {
 
         //mainPage                        //OK!!
         UserInterface.printMainPage();
+//        UserInterface.adminModifyStudClassTeacher();
 
         //Functions
         //1- student info                   //OK!!
@@ -40,7 +41,7 @@ public class Main {
         //registrate new student             //OK!!
         //modify student data                //OK!!
         //archive student                    //OK!!
-        //registrate new studClass
+        //registrate new studClass           //OK!!
         //modify studClass data
         //archive studClass
 

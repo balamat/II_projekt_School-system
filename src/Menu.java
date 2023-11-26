@@ -148,7 +148,26 @@ public class Menu {
                 return name;
             } catch (DataException e) {
                 isWrongInput = true;
-                System.out.println("Nem megfelelő a megadott név formátuma!");
+                System.out.println("Nem megfelelő a megadott formátum!");
+            }
+        } while (isWrongInput);
+        return null;
+    }
+
+    public static String newStudClassNameValidator() {
+        do {
+            try {
+                String name = UserInterface.generalScan();
+                if (name.length() < 2 || name.length() > 3 || !Character.isDigit(name.charAt(0)) || Character.isDigit(name.charAt(name.length()-1))) {
+                    throw new DataException("Túl rövid név!");
+                }
+                if (!name.toUpperCase().equals(name)) {
+                    throw new DataException("Nem a mintának megfelelő formátum!");
+                }
+                return name;
+            } catch (DataException e) {
+                isWrongInput = true;
+                System.out.println("Nem megfelelő a megadott formátum!");
             }
         } while (isWrongInput);
         return null;

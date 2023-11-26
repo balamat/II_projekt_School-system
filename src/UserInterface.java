@@ -1,6 +1,7 @@
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.*;
+import java.util.jar.JarOutputStream;
 
 public class UserInterface {
 
@@ -114,7 +115,7 @@ public class UserInterface {
     }
 
     public static void printStudClassGrades() {
-        String labelOfAction = "osztályadatok";
+        String labelOfAction = "osztály diákjainak átlagai";
         System.out.println(labelOfAction.toUpperCase());
         StudClass studClass = Menu.studClassSearch();
 
@@ -236,6 +237,7 @@ public class UserInterface {
     public static void adminAddNewStudent() {
         String labelOfAction = "új diák regisztrálása";
         System.out.println(labelOfAction.toUpperCase());
+
         System.out.println("Add meg a diák vezetéknevét!");
         String lastName = Menu.newNameValidator();
         System.out.println("Add meg a diák keresztnevét!");
@@ -251,6 +253,7 @@ public class UserInterface {
     public static void adminModifyStudent() {
         String labelOfAction = "diák adatainak módosítása";
         System.out.println(labelOfAction.toUpperCase());
+
         Student student = Menu.studentSearch();
         System.out.println(student);
         System.out.println("A diák osztálya módosítható. Akarod módosítani? Ha igen, nyomj egy \"I\"-t és entert!");
@@ -263,17 +266,82 @@ public class UserInterface {
             System.out.println(student);
         }
     }
+
     public static void adminArchiveStudent() {
         String labelOfAction = "diák archiválása";
         System.out.println(labelOfAction.toUpperCase());
+
         Student student = Menu.studentSearch();
         student.archive();
         printSuccesfullyTerminated(labelOfAction);
     }
+
     public static void adminAddNewStudClass() {
+        String labelOfAction = "új osztály regisztrálása";
+        System.out.println(labelOfAction.toUpperCase());
+
+        System.out.println("Add meg az új osztály jelét!");
+        String nameOfClass = Menu.newStudClassNameValidator();
+        System.out.println("Add meg az osztályfőnök nevét");
+        Teacher headTeacher = Menu.teacherSearch();
+        new StudClass(headTeacher, nameOfClass).addToList();
+        printSuccesfullyTerminated(labelOfAction);
     }
+
     public static void adminModifyStudClass() {
+        String labelOfAction = "új osztály regisztrálása";
+        System.out.println(labelOfAction.toUpperCase());
+
+        System.out.println("1 - osztályfőnök módosítása");
+        System.out.println("2 - oktató tanárok módosítása");
+
+        Scanner optionScanner = new Scanner(System.in);
+        int optionChoice = optionScanner.nextInt();
+        switch (optionChoice) {
+            case 1:
+                UserInterface.adminModifyStudClassHeadTeacher();
+                break;
+            case 2:
+                UserInterface.adminModifyStudClassTeacher();
+                break;
+        }
     }
+
+    public static void adminModifyStudClassHeadTeacher() {
+        String labelOfAction = "osztályfőnök módosítása";
+        System.out.println(labelOfAction.toUpperCase());
+
+        StudClass studClass = Menu.studClassSearch();
+        System.out.println("Az eddigi osztályfőnök: " + studClass.getHeadTeacher().getName());
+        System.out.println("Az új osztályfőnök:");
+        Teacher newHeadTeacher = Menu.teacherSearch();
+        studClass.setHeadTeacher(newHeadTeacher);
+        printSuccesfullyTerminated(labelOfAction);
+    }
+
+    public static void adminModifyStudClassTeacher() {
+        String labelOfAction = "oktató tanárok módosítása";
+        System.out.println(labelOfAction.toUpperCase());
+
+        StudClass studClass = Menu.studClassSearch();
+        System.out.println(studClass.getClassTeachersBySubject().entrySet());
+        System.out.println("Add meg a módosítandó tantárgyat!");
+        Subjects subjects = Menu.subjectSearch();
+        System.out.println("Add meg a hozzáadandó/eltávolítandó tanár nevét!");
+        Teacher teacher = Menu.teacherSearch();
+
+        List<Teacher> teacherList = studClass.getClassTeachersBySubject().getOrDefault(subjects, new ArrayList<Teacher>());
+        if (teacherList.stream().filter(teacher1 -> teacher1.getUuid().equals(teacher.getUuid())).count() > 0) {
+            teacherList.remove(teacher);
+            System.out.println("Van ilyen tanár");
+        } else {
+            teacherList.add(teacher);
+            System.out.println("Nincs ilyen tanár");
+        }
+
+        printSuccesfullyTerminated(labelOfAction);
+    }
+
     public static void adminArchiveStudClass() {
     }
 
@@ -288,6 +356,7 @@ public class UserInterface {
         Scanner generalScanner = new Scanner(System.in);
         return generalScanner.next();
     }
+
     public static String generalLineScan() {
         Scanner generalScanner = new Scanner(System.in);
         return generalScanner.nextLine();
