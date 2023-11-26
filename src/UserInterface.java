@@ -5,14 +5,11 @@ import java.util.jar.JarOutputStream;
 
 public class UserInterface {
 
-    /**
-     * permission codes
-     * 0 - admin
-     * 1 - teacher
-     * 2 - student
-     */
+    public static List<Integer> choiceList = new ArrayList<>();
+
     public static void printMainPage() {
         int permission = Log.permission;
+
         System.out.println("Válassz a lehetőségek közül!");
         System.out.println("1 - Tanulói adatok elérése");
         if (Log.permission == 0 || permission == 1) {
@@ -23,18 +20,20 @@ public class UserInterface {
             System.out.println("4 - Admin feladatok");
         }
 
-        Scanner menuChoiceScanner = new Scanner(System.in);
-        int menuChoice = menuChoiceScanner.nextInt();
-        if (menuChoice == 1) {
+        //save the choices
+        int choice = Menu.choiceValidator(4);
+        choiceList.add(choice);
+
+        if (choice == 1) {
             printStudentInfo();
         }
-        if (menuChoice == 2 && (permission == 0 || permission == 1)) {
+        if (choice == 2 && (permission == 0 || permission == 1)) {
             printStudClassInfo();
         }
-        if (menuChoice == 3 && (permission == 0 || permission == 1)) {
+        if (choice == 3 && (permission == 0 || permission == 1)) {
             printClassDiary();
         }
-        if (menuChoice == 4 && permission == 0) {
+        if (choice == 4 && permission == 0) {
             printAdmin();
         }
     }
@@ -44,7 +43,10 @@ public class UserInterface {
         System.out.println("1 - Diák adatainak lekérdezése");
         System.out.println("2 - Diák jegyeinek lekérdezése");
         System.out.println("3 - Diák hiányzásainak lekérdezése");
-        int choice = Integer.parseInt(generalScan());
+
+        int choice = Menu.choiceValidator(3);
+        choiceList.add(choice);
+
         switch (choice) {
             case 1:
                 printStudentPersonalData();
@@ -87,13 +89,17 @@ public class UserInterface {
     }
 
     public static void printStudClassInfo() {
-        System.out.println("Osztályadatok");
-        System.out.println("--------------------");
+        String labelOfAction = "Osztályadatok";
+        System.out.println(labelOfAction.toUpperCase());
+
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - Osztály adatainak lekérdezése");
         System.out.println("2 - Osztály jegyeinek lekérdezése");
         System.out.println("3 - Osztály hiányzásainak lekérdezése");
-        int choice = Integer.parseInt(generalScan());
+
+        int choice = Menu.choiceValidator(3);
+        choiceList.add(choice);
+
         switch (choice) {
             case 1:
                 printStudClassData();
@@ -117,8 +123,8 @@ public class UserInterface {
     public static void printStudClassGrades() {
         String labelOfAction = "osztály diákjainak átlagai";
         System.out.println(labelOfAction.toUpperCase());
-        StudClass studClass = Menu.studClassSearch();
 
+        StudClass studClass = Menu.studClassSearch();
         DecimalFormat df = new DecimalFormat("0.00");
         int indent = 30;
         int tab = 4;
@@ -183,29 +189,38 @@ public class UserInterface {
     }
 
     public static void printClassDiary() {
-        System.out.println("Naplóadatok");
-        System.out.println("--------------------");
+        String labelOfAction = "naplóadatok";
+        System.out.println(labelOfAction.toUpperCase());
+
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - aktuális óra naplózása");
         System.out.println("2 - meglévő naplóadatok módosítása");
         System.out.println("3 - jegy beírása");
         System.out.println("4 - jegy törlése");
-        Scanner diaryOptionScanner = new Scanner(System.in);
-        int diaryOptionChoice = diaryOptionScanner.nextInt();
-        if (diaryOptionChoice == 1) {
-            Menu.fillClassDiary();
-        } else if (diaryOptionChoice == 2) {
-            Menu.modifyClassDiary();
-        } else if (diaryOptionChoice == 3) {
-            Menu.saveGrade();
-        } else if (diaryOptionChoice == 4) {
-            Menu.deleteGrade();
+
+        int choice = Menu.choiceValidator(4);
+        choiceList.add(choice);
+
+        switch (choice) {
+            case 1:
+                Menu.fillClassDiary();
+                break;
+            case 2:
+                Menu.modifyClassDiary();
+                break;
+            case 3:
+                Menu.saveGrade();
+                break;
+            case 4:
+                Menu.deleteGrade();
+                break;
         }
     }
 
     public static void printAdmin() {
-        System.out.println("Admin műveletek");
-        System.out.println("--------------------");
+        String labelOfAction = "admin műveletek";
+        System.out.println(labelOfAction.toUpperCase());
+
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - új diák regisztrálása");
         System.out.println("2 - diák adatainak módosítása");
@@ -213,9 +228,11 @@ public class UserInterface {
         System.out.println("4 - új osztály regisztrálása");
         System.out.println("5 - osztály adatainak módosítása");
         System.out.println("6 - osztály archiválása");
-        Scanner diaryOptionScanner = new Scanner(System.in);
-        int optionChoice = diaryOptionScanner.nextInt();
-        switch (optionChoice) {
+
+        int choice = Menu.choiceValidator(6);
+        choiceList.add(choice);
+
+        switch (choice) {
             case 1:
                 UserInterface.adminAddNewStudent();
                 break;
@@ -298,9 +315,10 @@ public class UserInterface {
         System.out.println("1 - osztályfőnök módosítása");
         System.out.println("2 - oktató tanárok módosítása");
 
-        Scanner optionScanner = new Scanner(System.in);
-        int optionChoice = optionScanner.nextInt();
-        switch (optionChoice) {
+        int choice = Menu.choiceValidator(2);
+        choiceList.add(choice);
+
+        switch (choice) {
             case 1:
                 UserInterface.adminModifyStudClassHeadTeacher();
                 break;
@@ -373,6 +391,11 @@ public class UserInterface {
     }
 
     /*----------------------------SCANNERS----------------------------*/
+
+    public static int choiceScan() {
+        Scanner choiceScanner = new Scanner(System.in);
+        return choiceScanner.nextInt();
+    }
 
     public static String generalScan() {
         Scanner generalScanner = new Scanner(System.in);

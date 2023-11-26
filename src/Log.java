@@ -3,6 +3,13 @@ import java.util.Scanner;
 
 public class Log {
 
+    /*
+     * permission codes
+     * 0 - admin
+     * 1 - teacher
+     * 2 - student
+     */
+
     public static int permission = 0;
     public static LocalDate actualDate = LocalDate.now();
 

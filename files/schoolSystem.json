@@ -370,6 +370,23 @@
       },
       "birthday": "2004-01-30",
       "studClassString": "12A",
+      "subjectAndGradeList": {
+        "PHYSICS": [
+          {
+            "description": "erők",
+            "grade": 2
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "1793d2f8-1c5d-484d-a810-71a6d68eae8c",
+      "name": {
+        "firstName": "Chris",
+        "lastName": "Luno"
+      },
+      "birthday": "2023-10-01",
+      "studClassString": "12C",
       "subjectAndGradeList": {}
     }
   ],
@@ -528,7 +545,21 @@
         ]
       },
       "nameOfClass": "12C",
-      "ClassTeachersBySubject": {}
+      "ClassTeachersBySubject": {
+        "GERMAN": [
+          {
+            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ]
+      }
     },
     {
       "headTeacher": {

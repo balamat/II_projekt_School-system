@@ -194,9 +194,39 @@ public class Menu {
         return numberOfAbsent;
     }
 
+    public static int choiceValidator(int numberOfOptions) {
+        int choice = 0;
+        do {
+            try {
+                //reset the inputValidator to its original state
+                isWrongInput = false;
+                choice = UserInterface.choiceScan();
+                if (choice > numberOfOptions || choice < 1) {
+                    throw new MenuExcpetion();
+                }
+            } catch (NumberFormatException | InputMismatchException e) {
+                System.out.println("Nem számot adtál meg! Válassz az előbbi lehetőségek közül!");
+                isWrongInput = true;
+            } catch (MenuExcpetion e) {
+                System.out.println("Nincs ilyen menüpont! Válassz az előbbi lehetőségek közül!");
+                isWrongInput = true;
+            }
+        } while (isWrongInput);
+        return choice;
+    }
+
+
+
+
+
+
+
+    /*----------------------------combined with UI----------------------------*/
+
     public static ClassDiary fillClassDiary() {
         String labelOfAction = "aktuális óra naplózása";
         System.out.println(labelOfAction.toUpperCase());
+
         LocalDate localDate = dateSearch();
         ClassSerial classSerial = classSerialSearch();
         Subjects subject = subjectSearch();
@@ -213,6 +243,7 @@ public class Menu {
     public static void modifyClassDiary() {
         String labelOfAction = "meglévő naplóadatok módosítása";
         System.out.println(labelOfAction.toUpperCase());
+
         ClassDiary searchedClassDiary = classDiarySearch();
         System.out.println("A kiválasztott óra adatai:");
         System.out.println(searchedClassDiary);
