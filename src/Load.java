@@ -52,8 +52,32 @@ public class Load {
         }
     }
 
-    public static void exportToJson() {
+    public static void loadArchiveFromJson() {
+        String importPath = "files/schoolSystem_archive.json";
+        Path path = Paths.get(importPath);
 
+        try {
+            Gson gson = new GsonBuilder()
+                    .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
+                    .create();
+            String inputString = Files.readString(path);
+            List<JsonArray> importedList = Arrays.asList(gson.fromJson(inputString, JsonArray[].class));
+
+            JsonArray jsonArrayStudent = importedList.get(0);
+            JsonArray jsonArrayStudClass = importedList.get(1);
+
+            List<Student> importListStudent = Arrays.asList(gson.fromJson(jsonArrayStudent, Student[].class));
+            List<StudClass> importListStudClass = Arrays.asList(gson.fromJson(jsonArrayStudClass, StudClass[].class));
+
+            Student.getArchivedStudentList().addAll(importListStudent);
+            StudClass.getAllStudClassList().addAll(importListStudClass);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void exportToJson() {
         Gson prettyGson = new GsonBuilder()
                 .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
                 .setPrettyPrinting()
@@ -65,7 +89,12 @@ public class Load {
         totalList.add(StudClass.getAllStudClassList());
         totalList.add((ClassDiary.getAllClassDiary()));
 
+        List<Object> archivedTotalList = new ArrayList<>();
+        archivedTotalList.add(Student.getArchivedStudentList());
+        archivedTotalList.add(StudClass.getArchivedStudClassList());
+
         String output = prettyGson.toJson(totalList);
+        String archivedOutput = prettyGson.toJson(archivedTotalList);
 
         try {
             FileWriter fw = new FileWriter("files/schoolSystem.json");
@@ -74,6 +103,9 @@ public class Load {
             FileWriter fw_backup = new FileWriter("files/backup/schoolSystem_" + backupVersion() + ".json");
             fw_backup.write(output);
             fw_backup.close();
+            FileWriter fw_archive = new FileWriter("files/schoolSystem_archive.json");
+            fw_archive.write(archivedOutput);
+            fw_archive.close();
 
         } catch (IOException e) {
             throw new RuntimeException(e);

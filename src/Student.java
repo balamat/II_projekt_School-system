@@ -10,6 +10,7 @@ public class Student {
     private String studClassString;
     private Map<Subjects, List<Grade>> subjectAndGradeList;
     private static List<Student> allStudentList = new ArrayList<>();
+    private static List<Student> archivedStudentList = new ArrayList<>();
 
     public Student(Name name, String studClassString) {
         this.uuid = UUID.randomUUID();
@@ -19,18 +20,22 @@ public class Student {
         this.subjectAndGradeList = new HashMap<>();
     }
 
+    public Student(Name name, String studClassString, LocalDate birthday) {
+        this.uuid = UUID.randomUUID();
+        this.name = name;
+        this.birthday = birthday;
+        this.studClassString = studClassString;
+        this.subjectAndGradeList = new HashMap<>();
+    }
+
     public Student addToList() {
         allStudentList.add(this);
         return this;
     }
 
-    public Student(Name name, String studClassString, String birthday) {
-        this.uuid = UUID.randomUUID();
-        this.name = name;
-        this.birthday = LocalDate.parse(birthday);
-        this.studClassString = studClassString;
-        this.subjectAndGradeList = new HashMap<>();
-        Student.getAllStudentList().add(this);
+    public void archive() {
+        allStudentList.remove(this);
+        archivedStudentList.add(this);
     }
 
     public Name getName() {
@@ -70,6 +75,10 @@ public class Student {
 
     public static List<Student> getAllStudentList() {
         return allStudentList;
+    }
+
+    public static List<Student> getArchivedStudentList() {
+        return archivedStudentList;
     }
 
     public LocalDate getBirthday() {

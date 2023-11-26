@@ -23,7 +23,7 @@ public class Menu {
                 System.out.println("A megadott idő formátuma nem megfelelő!");
             } catch (DataException e) {
                 isWrongInput = true;
-                System.out.println("Nem lehet jövőbeli órát naplózni!");
+                System.out.println("Nem lehet jövőbeli időt megadni!");
             } catch (PermissionException e) {
                 isWrongInput = true;
                 System.out.println("Admin jogosultság szükséges: 1 évnél régebbi óra!!");
@@ -126,6 +126,29 @@ public class Menu {
             } catch (NoSuchElementException e) {
                 isWrongInput = true;
                 System.out.println("A megadott óra még nincs bekönyvelve!");
+            }
+        } while (isWrongInput);
+        return null;
+    }
+
+    public static String newNameValidator() {
+        do {
+            try {
+                String name = UserInterface.generalLineScan();
+                if (name.isEmpty() || name.length() < 2) {
+                    throw new DataException("Túl rövid név!");
+                }
+                String[] dividedName = name.split(" ");
+                for (String namepart : dividedName
+                ) {
+                    if (namepart.substring(0, 1).equals(namepart.substring(0, 1).toLowerCase())) {
+                        throw new DataException("Nem nagybetűvel kezdődik!");
+                    }
+                }
+                return name;
+            } catch (DataException e) {
+                isWrongInput = true;
+                System.out.println("Nem megfelelő a megadott név formátuma!");
             }
         } while (isWrongInput);
         return null;

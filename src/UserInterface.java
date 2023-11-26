@@ -1,4 +1,5 @@
 import java.text.DecimalFormat;
+import java.time.LocalDate;
 import java.util.*;
 
 public class UserInterface {
@@ -199,7 +200,83 @@ public class UserInterface {
     }
 
     public static void printAdmin() {
+        System.out.println("Admin műveletek");
+        System.out.println("--------------------");
+        System.out.println("Válassz a lehetőségek közül:");
+        System.out.println("1 - új diák regisztrálása");
+        System.out.println("2 - diák adatainak módosítása");
+        System.out.println("3 - diák archiválása");
+        System.out.println("4 - új osztály regisztrálása");
+        System.out.println("5 - osztály adatainak módosítása");
+        System.out.println("6 - osztály archiválása");
+        Scanner diaryOptionScanner = new Scanner(System.in);
+        int optionChoice = diaryOptionScanner.nextInt();
+        switch (optionChoice) {
+            case 1:
+                UserInterface.adminAddNewStudent();
+                break;
+            case 2:
+                UserInterface.adminModifyStudent();
+                break;
+            case 3:
+                UserInterface.adminArchiveStudent();
+                break;
+            case 4:
+                UserInterface.adminAddNewStudClass();
+                break;
+            case 5:
+                UserInterface.adminModifyStudClass();
+                break;
+            case 6:
+                UserInterface.adminArchiveStudClass();
+                break;
+        }
     }
+
+    public static void adminAddNewStudent() {
+        String labelOfAction = "új diák regisztrálása";
+        System.out.println(labelOfAction.toUpperCase());
+        System.out.println("Add meg a diák vezetéknevét!");
+        String lastName = Menu.newNameValidator();
+        System.out.println("Add meg a diák keresztnevét!");
+        String firstName = Menu.newNameValidator();
+        System.out.println("Add meg a diák születési dátumát!");
+        LocalDate birthday = Menu.dateSearch();
+        StudClass studClass = Menu.studClassSearch();
+
+        new Student(new Name(lastName, firstName), studClass.getNameOfClass(), birthday).addToList();
+        printSuccesfullyTerminated(labelOfAction);
+    }
+
+    public static void adminModifyStudent() {
+        String labelOfAction = "diák adatainak módosítása";
+        System.out.println(labelOfAction.toUpperCase());
+        Student student = Menu.studentSearch();
+        System.out.println(student);
+        System.out.println("A diák osztálya módosítható. Akarod módosítani? Ha igen, nyomj egy \"I\"-t és entert!");
+        String s = generalScan();
+        if (s.toLowerCase().equals("i")) {
+            System.out.println("Add meg, hogy melyik osztályba kerüljön át!");
+            StudClass newStudClass = Menu.studClassSearch();
+            student.setStudClassString(newStudClass.getNameOfClass());
+            printSuccesfullyTerminated(labelOfAction);
+            System.out.println(student);
+        }
+    }
+    public static void adminArchiveStudent() {
+        String labelOfAction = "diák archiválása";
+        System.out.println(labelOfAction.toUpperCase());
+        Student student = Menu.studentSearch();
+        student.archive();
+        printSuccesfullyTerminated(labelOfAction);
+    }
+    public static void adminAddNewStudClass() {
+    }
+    public static void adminModifyStudClass() {
+    }
+    public static void adminArchiveStudClass() {
+    }
+
 
     public static void printSuccesfullyTerminated(String label) {
         System.out.println(label + " - a művelet sikeresen megtörtént!");
@@ -210,6 +287,10 @@ public class UserInterface {
     public static String generalScan() {
         Scanner generalScanner = new Scanner(System.in);
         return generalScanner.next();
+    }
+    public static String generalLineScan() {
+        Scanner generalScanner = new Scanner(System.in);
+        return generalScanner.nextLine();
     }
 
     public static String dateScan() {

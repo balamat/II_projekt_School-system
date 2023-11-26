@@ -4,6 +4,7 @@ import java.util.stream.Collectors;
 public class StudClass {
 
     private static List<StudClass> allStudClassList = new ArrayList<>();
+    private static List<StudClass> archivedStudClassList = new ArrayList<>();
     private Teacher headTeacher;
     private String nameOfClass;
     private Map<Subjects, List<Teacher>> ClassTeachersBySubject;
@@ -46,6 +47,10 @@ public class StudClass {
 
     public static List<StudClass> getAllStudClassList() {
         return allStudClassList;
+    }
+
+    public static List<StudClass> getArchivedStudClassList() {
+        return archivedStudClassList;
     }
 
     @Override

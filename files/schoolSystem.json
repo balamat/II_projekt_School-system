@@ -315,6 +315,56 @@
       "birthday": "2011-12-19",
       "studClassString": "12B",
       "subjectAndGradeList": {}
+    },
+    {
+      "uuid": "ad84f90a-b719-432d-976e-308c37ea50a9",
+      "name": {
+        "firstName": "Árpád",
+        "lastName": "He"
+      },
+      "birthday": "2005-03-06",
+      "studClassString": "12A",
+      "subjectAndGradeList": {}
+    },
+    {
+      "uuid": "6cfcfd71-b647-4bb2-9b6b-574f1cdace65",
+      "name": {
+        "firstName": "Roger",
+        "lastName": "Federer"
+      },
+      "birthday": "1985-01-19",
+      "studClassString": "12C",
+      "subjectAndGradeList": {}
+    },
+    {
+      "uuid": "5b70b39b-fe12-4979-a14b-0ea9054d0b25",
+      "name": {
+        "firstName": "Károly László",
+        "lastName": "Gert"
+      },
+      "birthday": "2002-01-18",
+      "studClassString": "12C",
+      "subjectAndGradeList": {}
+    },
+    {
+      "uuid": "5e145d4c-3087-4da3-ac85-2b3913a2c998",
+      "name": {
+        "firstName": "Sándor Béla",
+        "lastName": "Nárai-Kovács"
+      },
+      "birthday": "1991-06-12",
+      "studClassString": "12C",
+      "subjectAndGradeList": {}
+    },
+    {
+      "uuid": "ac4efa6d-c39a-456f-9da8-1de8a31c0a8a",
+      "name": {
+        "firstName": "Kázmér",
+        "lastName": "Kazmerovics"
+      },
+      "birthday": "2001-11-19",
+      "studClassString": "12C",
+      "subjectAndGradeList": {}
     }
   ],
   [

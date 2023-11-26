@@ -10,6 +10,7 @@ public class Main {
 
         //load - uploading data
         Load.loadFromJson();
+        Load.loadArchiveFromJson();
 
         //login
         //scanner - user
@@ -17,11 +18,7 @@ public class Main {
 
 
         //mainPage                        //OK!!
-//        UserInterface.printMainPage();
-
         UserInterface.printMainPage();
-//        UserInterface.printStudentGrades();
-//        UserInterface.printStudClassGrades();
 
         //Functions
         //1- student info                   //OK!!
@@ -38,11 +35,15 @@ public class Main {
         //fill classDiary                   //OK!!
         //modify classDiary                 //OK!!
         //mark                              //OK!!
-        
+
         //4 - admin tasks
-        //add-modify-delete student
-        //add-modify-delete class
-        //add-modify-delete teacher
+        //registrate new student             //OK!!
+        //modify student data                //OK!!
+        //archive student                    //OK!!
+        //registrate new studClass
+        //modify studClass data
+        //archive studClass
+
 
         //logout
         //save specific data - a certain class/student to CSV
