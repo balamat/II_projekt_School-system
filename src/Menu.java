@@ -233,6 +233,7 @@ public class Menu {
     public static void saveGrade() {
         String labelOfAction = "jegy beírása";
         System.out.println(labelOfAction.toUpperCase());
+
         Student student = Menu.studentSearch();
         Subjects subject = Menu.subjectSearch();
         String description = UserInterface.gradeDescriptionScan();
@@ -257,6 +258,27 @@ public class Menu {
 
         student.addGrade(subject, description, grade);
         UserInterface.printSuccesfullyTerminated(labelOfAction);
+    }
+
+    public static void deleteGrade() {
+        String labelOfAction = "jegy törlése";
+        System.out.println(labelOfAction.toUpperCase());
+
+        String message = "A tantárgyból nincs jegye a diáknak!";
+        System.out.println("A naplóból egy adott tárgy utoljára beírt jegye törölhető.");
+        Student student = Menu.studentSearch();
+        Subjects subject = Menu.subjectSearch();
+        if (student.getSubjectAndGradeList().containsKey(subject)) {
+            List<Grade> grades = student.getSubjectAndGradeList().get(subject);
+            if (grades.size() > 0) {
+                grades.remove(grades.size() - 1);
+                UserInterface.printSuccesfullyTerminated(labelOfAction);
+            } else {
+                System.out.println(message);
+            }
+        } else {
+            System.out.println(message);
+        }
     }
 
 

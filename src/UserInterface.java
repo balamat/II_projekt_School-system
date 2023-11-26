@@ -189,6 +189,7 @@ public class UserInterface {
         System.out.println("1 - aktuális óra naplózása");
         System.out.println("2 - meglévő naplóadatok módosítása");
         System.out.println("3 - jegy beírása");
+        System.out.println("4 - jegy törlése");
         Scanner diaryOptionScanner = new Scanner(System.in);
         int diaryOptionChoice = diaryOptionScanner.nextInt();
         if (diaryOptionChoice == 1) {
@@ -197,6 +198,8 @@ public class UserInterface {
             Menu.modifyClassDiary();
         } else if (diaryOptionChoice == 3) {
             Menu.saveGrade();
+        } else if (diaryOptionChoice == 4) {
+            Menu.deleteGrade();
         }
     }
 

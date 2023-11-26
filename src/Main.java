@@ -17,40 +17,39 @@ public class Main {
         //scanner -password
 
 
-        //mainPage                        //OK!!
+        //mainPage
         UserInterface.printMainPage();
 
         //Functions
-        //1- student info                   //OK!!
-        //personal info                     //OK!!
-        //grade, average                    //OK!!
-        //absence                           //OK!!
+        //1- student info
+        //personal info
+        //grade, average
+        //absence
 
-        //2 - class info                    //OK!!
-        //class info                        //OK!!
-        //averages                          //OK!!
-        //absence                           //OK!!
+        //2 - class info
+        //class info
+        //averages
+        //absence
 
-        //3 - fill diary                    //OK!!
-        //fill classDiary                   //OK!!
-        //modify classDiary                 //OK!!
-        //mark                              //OK!!
+        //3 - fill diary
+        //fill classDiary
+        //modify classDiary
+        //mark
         //remove mark
 
         //4 - admin tasks
-        //registrate new student             //OK!!
-        //modify student data                //OK!!
-        //archive student                    //OK!!
-        //registrate new studClass           //OK!!
-        //modify studClass data              //OK!!
+        //registrate new student
+        //modify student data
+        //archive student
+        //registrate new studClass
+        //modify studClass data
         //archive studClass
 
+        //auto export toJson
+        Load.exportToJson();
 
         //logout
         //save specific data - a certain class/student to CSV
-
-        //auto export toJson                //OK!!
-        Load.exportToJson();
 
     }
 }
