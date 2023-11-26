@@ -326,19 +326,21 @@ public class UserInterface {
         StudClass studClass = Menu.studClassSearch();
         System.out.println(studClass.getClassTeachersBySubject().entrySet());
         System.out.println("Add meg a módosítandó tantárgyat!");
-        Subjects subjects = Menu.subjectSearch();
+        Subjects subject = Menu.subjectSearch();
         System.out.println("Add meg a hozzáadandó/eltávolítandó tanár nevét!");
-        Teacher teacher = Menu.teacherSearch();
+        Teacher modifiedTeacher = Menu.teacherSearch();
 
-        List<Teacher> teacherList = studClass.getClassTeachersBySubject().getOrDefault(subjects, new ArrayList<Teacher>());
-        if (teacherList.stream().filter(teacher1 -> teacher1.getUuid().equals(teacher.getUuid())).count() > 0) {
-            teacherList.remove(teacher);
-            System.out.println("Van ilyen tanár");
+        if (studClass.getClassTeachersBySubject().containsKey(subject)) {
+            List<Teacher> teacherList = studClass.getClassTeachersBySubject().get(subject);
+            if (teacherList.stream().filter(teach -> teach.getUuid().equals(modifiedTeacher.getUuid())).count() > 0) {
+                teacherList.removeIf(teacher -> teacher.getUuid().equals(modifiedTeacher.getUuid()));
+            } else {
+                teacherList.add(modifiedTeacher);
+            }
         } else {
-            teacherList.add(teacher);
-            System.out.println("Nincs ilyen tanár");
+            studClass.getClassTeachersBySubject().put(subject, new ArrayList<>());
+            studClass.getClassTeachersBySubject().get(subject).add(modifiedTeacher);
         }
-
         printSuccesfullyTerminated(labelOfAction);
     }
 

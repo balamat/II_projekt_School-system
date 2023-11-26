@@ -158,7 +158,7 @@ public class Menu {
         do {
             try {
                 String name = UserInterface.generalScan();
-                if (name.length() < 2 || name.length() > 3 || !Character.isDigit(name.charAt(0)) || Character.isDigit(name.charAt(name.length()-1))) {
+                if (name.length() < 2 || name.length() > 3 || !Character.isDigit(name.charAt(0)) || Character.isDigit(name.charAt(name.length() - 1))) {
                     throw new DataException("Túl rövid név!");
                 }
                 if (!name.toUpperCase().equals(name)) {
@@ -220,7 +220,8 @@ public class Menu {
         if (UserInterface.generalScan().equals("igen")) {
             searchedClassDiary.getAbsentStudents().clear();
             System.out.println("Az órára bekönyvelt hiányzások törlésre kerültek!");
-            int numberOfAbsent = numberOfAbsentValidator(searchedClassDiary.getStudClass());
+            StudClass studClass = StudClass.getAllStudClassList().stream().filter(studCl -> studCl.getNameOfClass().equals(searchedClassDiary.getStudClassString())).findFirst().orElse(StudClass.getAllStudClassList().get(0));
+            int numberOfAbsent = numberOfAbsentValidator(studClass);
             searchedClassDiary.addAbsentStudent(numberOfAbsent);
             UserInterface.printSuccesfullyTerminated(labelOfAction);
             System.out.println(searchedClassDiary);

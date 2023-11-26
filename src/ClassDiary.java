@@ -8,7 +8,7 @@ public class ClassDiary {
     private ClassSerial classSerial;
     private Subjects subject;
     private Teacher teacher;
-    private StudClass studClass;
+    private String studClassString;
     //1 - uuid of student, 2 - reason of absence
     private Map<UUID, String> absentStudents;
 
@@ -18,7 +18,7 @@ public class ClassDiary {
         this.classSerial = classSerial;
         this.subject = subject;
         this.teacher = teacher;
-        this.studClass = studClass;
+        this.studClassString = studClass.getNameOfClass();
         this.absentStudents = new HashMap<>();
     }
 
@@ -76,12 +76,12 @@ public class ClassDiary {
         this.teacher = teacher;
     }
 
-    public StudClass getStudClass() {
-        return studClass;
+    public String getStudClassString() {
+        return studClassString;
     }
 
-    public void setStudClass(StudClass studClass) {
-        this.studClass = studClass;
+    public void setStudClassString(StudClass studClass) {
+        this.studClassString = studClass.getNameOfClass();
     }
 
     public Map<UUID, String> getAbsentStudents() {
@@ -115,7 +115,7 @@ public class ClassDiary {
                 ", classSerial=" + classSerial + System.lineSeparator() +
                 ", subject=" + subject + System.lineSeparator() +
                 ", teacher=" + teacher + System.lineSeparator() +
-                ", studClass=" + studClass.getNameOfClass() + System.lineSeparator() +
+                ", studClass=" + studClassString + System.lineSeparator() +
                 ", absentStudents=" + absentStudents +
                 '}' + System.lineSeparator();
     }

@@ -436,24 +436,13 @@
       "ClassTeachersBySubject": {
         "HISTORY": [
           {
-            "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
+            "uuid": "0c514a4e-f1da-4885-b991-10cd6fb21ae5",
             "name": {
-              "firstName": "B",
-              "lastName": "A"
+              "firstName": "Elek",
+              "lastName": "Tört"
             },
             "taughtSubject": [
-              "HISTORY"
-            ]
-          },
-          {
-            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
-            "name": {
-              "firstName": "Ferenc",
-              "lastName": "Jó"
-            },
-            "taughtSubject": [
-              "ENGLISH",
-              "GERMAN"
+              "MATHS"
             ]
           }
         ],
@@ -480,6 +469,19 @@
           }
         ],
         "HUNGARIAN": [
+          {
+            "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
+            "name": {
+              "firstName": "Ferenc",
+              "lastName": "Jó"
+            },
+            "taughtSubject": [
+              "ENGLISH",
+              "GERMAN"
+            ]
+          }
+        ],
+        "SPORT": [
           {
             "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
             "name": {
@@ -568,45 +570,6 @@
           "HISTORY"
         ]
       },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            }
-          ]
-        }
-      },
       "absentStudents": {
         "69297503-d859-4571-a5b2-78775fd11254": "beteg",
         "c47298e3-59c7-4362-b06b-0e8e41bf11e5": "puskázott, kiküldésre került",
@@ -627,45 +590,6 @@
         "taughtSubject": [
           "HISTORY"
         ]
-      },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            }
-          ]
-        }
       },
       "absentStudents": {
         "c47298e3-59c7-4362-b06b-0e8e41bf11e5": "Szavalóversenyen vesz részt.",
@@ -688,45 +612,6 @@
           "HISTORY"
         ]
       },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            }
-          ]
-        }
-      },
       "absentStudents": {}
     },
     {
@@ -743,20 +628,6 @@
         "taughtSubject": [
           "SPORT"
         ]
-      },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "0c514a4e-f1da-4885-b991-10cd6fb21ae5",
-          "name": {
-            "firstName": "Elek",
-            "lastName": "Tört"
-          },
-          "taughtSubject": [
-            "MATHS"
-          ]
-        },
-        "nameOfClass": "12B",
-        "ClassTeachersBySubject": {}
       },
       "absentStudents": {}
     },
@@ -775,20 +646,6 @@
           "HISTORY"
         ]
       },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "0c514a4e-f1da-4885-b991-10cd6fb21ae5",
-          "name": {
-            "firstName": "Elek",
-            "lastName": "Tört"
-          },
-          "taughtSubject": [
-            "MATHS"
-          ]
-        },
-        "nameOfClass": "12B",
-        "ClassTeachersBySubject": {}
-      },
       "absentStudents": {}
     },
     {
@@ -805,45 +662,6 @@
         "taughtSubject": [
           "PHYSICS"
         ]
-      },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            }
-          ]
-        }
       },
       "absentStudents": {
         "6a209a34-a9f5-4f69-88b9-9763bbf41ba4": "kommentátorkodik",
@@ -865,45 +683,6 @@
           "HISTORY"
         ]
       },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            }
-          ]
-        }
-      },
       "absentStudents": {
         "c47298e3-59c7-4362-b06b-0e8e41bf11e5": "beteg"
       }
@@ -922,45 +701,6 @@
         "taughtSubject": [
           "PHYSICS"
         ]
-      },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            }
-          ]
-        }
       },
       "absentStudents": {
         "1c40331d-a8de-4e44-a7fb-73326b0c6479": "Szerbia elleni válogatott meccsen szerepel",
@@ -982,68 +722,6 @@
           "MATHS"
         ]
       },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            },
-            {
-              "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
-              "name": {
-                "firstName": "Norbert",
-                "lastName": "Nemoda"
-              },
-              "taughtSubject": [
-                "SPORT"
-              ]
-            }
-          ],
-          "HUNGARIAN": [
-            {
-              "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
-              "name": {
-                "firstName": "Ferenc",
-                "lastName": "Jó"
-              },
-              "taughtSubject": [
-                "ENGLISH",
-                "GERMAN"
-              ]
-            }
-          ]
-        }
-      },
       "absentStudents": {
         "fc2ec634-53eb-4507-a4b5-4ed7e0b4477f": "betegség"
       }
@@ -1062,68 +740,6 @@
         "taughtSubject": [
           "SPORT"
         ]
-      },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            },
-            {
-              "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
-              "name": {
-                "firstName": "Norbert",
-                "lastName": "Nemoda"
-              },
-              "taughtSubject": [
-                "SPORT"
-              ]
-            }
-          ],
-          "HUNGARIAN": [
-            {
-              "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
-              "name": {
-                "firstName": "Ferenc",
-                "lastName": "Jó"
-              },
-              "taughtSubject": [
-                "ENGLISH",
-                "GERMAN"
-              ]
-            }
-          ]
-        }
       },
       "absentStudents": {
         "1c40331d-a8de-4e44-a7fb-73326b0c6479": "focizik"
@@ -1144,68 +760,6 @@
           "HISTORY"
         ]
       },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            },
-            {
-              "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
-              "name": {
-                "firstName": "Norbert",
-                "lastName": "Nemoda"
-              },
-              "taughtSubject": [
-                "SPORT"
-              ]
-            }
-          ],
-          "HUNGARIAN": [
-            {
-              "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
-              "name": {
-                "firstName": "Ferenc",
-                "lastName": "Jó"
-              },
-              "taughtSubject": [
-                "ENGLISH",
-                "GERMAN"
-              ]
-            }
-          ]
-        }
-      },
       "absentStudents": {}
     },
     {
@@ -1222,68 +776,6 @@
         "taughtSubject": [
           "PHYSICS"
         ]
-      },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            },
-            {
-              "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
-              "name": {
-                "firstName": "Norbert",
-                "lastName": "Nemoda"
-              },
-              "taughtSubject": [
-                "SPORT"
-              ]
-            }
-          ],
-          "HUNGARIAN": [
-            {
-              "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
-              "name": {
-                "firstName": "Ferenc",
-                "lastName": "Jó"
-              },
-              "taughtSubject": [
-                "ENGLISH",
-                "GERMAN"
-              ]
-            }
-          ]
-        }
       },
       "absentStudents": {}
     },
@@ -1302,68 +794,6 @@
           "HISTORY"
         ]
       },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            },
-            {
-              "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
-              "name": {
-                "firstName": "Norbert",
-                "lastName": "Nemoda"
-              },
-              "taughtSubject": [
-                "SPORT"
-              ]
-            }
-          ],
-          "HUNGARIAN": [
-            {
-              "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
-              "name": {
-                "firstName": "Ferenc",
-                "lastName": "Jó"
-              },
-              "taughtSubject": [
-                "ENGLISH",
-                "GERMAN"
-              ]
-            }
-          ]
-        }
-      },
       "absentStudents": {}
     },
     {
@@ -1380,68 +810,6 @@
         "taughtSubject": [
           "HISTORY"
         ]
-      },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-          "name": {
-            "firstName": "B",
-            "lastName": "A"
-          },
-          "taughtSubject": [
-            "HISTORY"
-          ]
-        },
-        "nameOfClass": "12A",
-        "ClassTeachersBySubject": {
-          "HISTORY": [
-            {
-              "uuid": "ca2d6c1a-c999-4884-b132-56ffc55849a3",
-              "name": {
-                "firstName": "B",
-                "lastName": "A"
-              },
-              "taughtSubject": [
-                "HISTORY"
-              ]
-            }
-          ],
-          "ENGLISH": [
-            {
-              "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
-              "name": {
-                "firstName": "Károly",
-                "lastName": "Kós"
-              },
-              "taughtSubject": [
-                "PHYSICS"
-              ]
-            },
-            {
-              "uuid": "68271244-cb5f-460d-b02b-4566e4449894",
-              "name": {
-                "firstName": "Norbert",
-                "lastName": "Nemoda"
-              },
-              "taughtSubject": [
-                "SPORT"
-              ]
-            }
-          ],
-          "HUNGARIAN": [
-            {
-              "uuid": "2007ad78-3a01-4c16-a30c-090f32357a2d",
-              "name": {
-                "firstName": "Ferenc",
-                "lastName": "Jó"
-              },
-              "taughtSubject": [
-                "ENGLISH",
-                "GERMAN"
-              ]
-            }
-          ]
-        }
       },
       "absentStudents": {}
     },
@@ -1460,22 +828,28 @@
           "PHYSICS"
         ]
       },
-      "studClass": {
-        "headTeacher": {
-          "uuid": "0c514a4e-f1da-4885-b991-10cd6fb21ae5",
-          "name": {
-            "firstName": "Elek",
-            "lastName": "Tört"
-          },
-          "taughtSubject": [
-            "MATHS"
-          ]
-        },
-        "nameOfClass": "12B",
-        "ClassTeachersBySubject": {}
-      },
       "absentStudents": {
         "6a209a34-a9f5-4f69-88b9-9763bbf41ba4": "nyílt napon vesz részt"
+      }
+    },
+    {
+      "uuid": "b87bfca1-8c4f-4f63-a2e5-0b19237b68ca",
+      "date": "1987-10-15",
+      "classSerial": "CL_8",
+      "subject": "MATHS",
+      "teacher": {
+        "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+        "name": {
+          "firstName": "Károly",
+          "lastName": "Kós"
+        },
+        "taughtSubject": [
+          "PHYSICS"
+        ]
+      },
+      "studClassString": "12A",
+      "absentStudents": {
+        "42fbdcfb-729c-4694-9a84-9b993384607a": "nyaralt éppen"
       }
     }
   ]
