@@ -20,7 +20,6 @@ public class Main {
         //mainPage
         UserInterface.printMainPage();
 
-
         //Functions
         //1- student info
         //personal info

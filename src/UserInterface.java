@@ -6,9 +6,92 @@ import java.util.List;
 
 public class UserInterface {
 
-    public static List<Integer> choiceList = new ArrayList<>();
+    public static List<Integer> functionList = new ArrayList<>();
+
+    /**
+     * 0 -the same option, 1 - the previous option
+     *
+     * @param levelUp
+     */
+    public static void runPreviousFunction(int levelUp) {
+        Integer functionIndex = functionList.get(functionList.size() - 1 - levelUp);
+        switch (functionIndex) {
+            case 1:
+                printStudentInfo();
+                break;
+            case 11:
+                printStudentPersonalData();
+                break;
+            case 12:
+                printStudentGrades();
+                break;
+            case 13:
+                printStudentAbsence();
+                break;
+            case 2:
+                printStudClassInfo();
+                break;
+            case 21:
+                printStudClassData();
+                break;
+            case 22:
+                printStudClassGrades();
+                break;
+            case 23:
+                printStudClassAbsence();
+                break;
+            case 3:
+                printClassDiary();
+                break;
+            case 31:
+                fillClassDiary();
+                break;
+            case 32:
+                modifyClassDiary();
+                break;
+            case 33:
+                saveGrade();
+                break;
+            case 34:
+                deleteGrade();
+                break;
+            case 4:
+                printAdmin();
+                break;
+            case 41:
+                adminAddNewStudent();
+                break;
+            case 42:
+                adminModifyStudent();
+                break;
+            case 43:
+                adminArchiveStudent();
+                break;
+            case 44:
+                adminAddNewStudClass();
+                break;
+            case 45:
+                adminModifyStudClass();
+                break;
+            case 451:
+                adminModifyStudClassHeadTeacher();
+                break;
+            case 452:
+                adminModifyStudClassTeacher();
+                break;
+            case 46:
+                adminArchiveStudClass();
+                break;
+            default:
+                System.out.println("Nincs a funkció bejegyezve ebbe a metódusba!");
+                break;
+        }
+    }
+
 
     public static void printMainPage() {
+        int functionIndex = 1;
+        functionList.add(functionIndex);
         int permission = Log.permission;
 
         System.out.println("Válassz a lehetőségek közül!");
@@ -22,9 +105,7 @@ public class UserInterface {
         }
         System.out.println("0 - Kilépés");
 
-        //save the choices
         int choice = Menu.choiceValidator(4);
-        choiceList.add(choice);
 
         if (choice == 1) {
             printStudentInfo();
@@ -44,6 +125,12 @@ public class UserInterface {
     }
 
     public static void printStudentInfo() {
+        int functionIndex = 1;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
+
+
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - Diák adatainak lekérdezése");
         System.out.println("2 - Diák jegyeinek lekérdezése");
@@ -51,7 +138,6 @@ public class UserInterface {
         System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(3);
-        choiceList.add(choice);
 
         switch (choice) {
             case 1:
@@ -70,6 +156,10 @@ public class UserInterface {
     }
 
     public static void printStudentPersonalData() {
+        int functionIndex = 11;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "személyes adatok";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -78,8 +168,13 @@ public class UserInterface {
     }
 
     public static void printStudentGrades() {
+        int functionIndex = 12;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "jegyek lekérdezése";
         System.out.println(labelOfAction.toUpperCase());
+
         Student student = Menu.studentSearch();
 
         student.getSubjectAndGradeList().forEach((a, b) -> {
@@ -93,6 +188,10 @@ public class UserInterface {
     }
 
     public static void printStudentAbsence() {
+        int functionIndex = 13;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "hiányzások lekérdezése";
         System.out.println(labelOfAction.toUpperCase());
         Map<ClassDiary, String> classDiaryMap = ClassDiary.generateAbsenceMapByStudent(Menu.studentSearch());
@@ -101,6 +200,10 @@ public class UserInterface {
     }
 
     public static void printStudClassInfo() {
+        int functionIndex = 2;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "Osztályadatok";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -111,7 +214,6 @@ public class UserInterface {
         System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(3);
-        choiceList.add(choice);
 
         switch (choice) {
             case 1:
@@ -130,6 +232,10 @@ public class UserInterface {
     }
 
     public static void printStudClassData() {
+        int functionIndex = 21;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "osztályadatok";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -138,6 +244,10 @@ public class UserInterface {
     }
 
     public static void printStudClassGrades() {
+        int functionIndex = 22;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "osztály diákjainak átlagai";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -160,6 +270,7 @@ public class UserInterface {
 
         Student.getAllStudentList().stream()
                 .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
+                .sorted(Comparator.comparing(student -> (student.getName().getLastName())))
                 .forEach(student -> {
                     sbSubjDataPerStudent.append(student.getName()).append(" ".repeat(indent - student.getName().toString().length()));
 
@@ -187,6 +298,11 @@ public class UserInterface {
     }
 
     public static void printStudClassAbsence() {
+        int functionIndex = 23;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
+
         int indent = 30;
         int tab = 4;
         int tabFirstRow = tab + 1;
@@ -195,6 +311,7 @@ public class UserInterface {
         StudClass studClass = Menu.studClassSearch();
         Student.getAllStudentList().stream()
                 .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
+                .sorted(Comparator.comparing(student -> (student.getName().getLastName())))
                 .forEach(student -> {
                     sb.append(student.getName()).append(" ".repeat(indent - student.getName().toString().length()));
                     sb.append(" ".repeat(tab));
@@ -208,6 +325,10 @@ public class UserInterface {
     }
 
     public static void printClassDiary() {
+        int functionIndex = 3;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "naplóadatok";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -219,7 +340,6 @@ public class UserInterface {
         System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(4);
-        choiceList.add(choice);
 
         switch (choice) {
             case 1:
@@ -241,6 +361,10 @@ public class UserInterface {
     }
 
     public static void fillClassDiary() {
+        int functionIndex = 31;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "aktuális óra naplózása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -258,6 +382,10 @@ public class UserInterface {
     }
 
     public static void saveGrade() {
+        int functionIndex = 33;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "jegy beírása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -272,6 +400,10 @@ public class UserInterface {
     }
 
     public static void modifyClassDiary() {
+        int functionIndex = 32;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "meglévő naplóadatok módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -294,6 +426,10 @@ public class UserInterface {
     }
 
     public static void deleteGrade() {
+        int functionIndex = 34;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "jegy törlése";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -316,6 +452,10 @@ public class UserInterface {
     }
 
     public static void printAdmin() {
+        int functionIndex = 4;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "admin műveletek";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -329,7 +469,6 @@ public class UserInterface {
         System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(6);
-        choiceList.add(choice);
 
         switch (choice) {
             case 1:
@@ -357,6 +496,10 @@ public class UserInterface {
     }
 
     public static void adminAddNewStudent() {
+        int functionIndex = 41;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "új diák regisztrálása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -374,6 +517,10 @@ public class UserInterface {
     }
 
     public static void adminModifyStudent() {
+        int functionIndex = 42;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "diák adatainak módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -392,6 +539,10 @@ public class UserInterface {
     }
 
     public static void adminArchiveStudent() {
+        int functionIndex = 43;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "diák archiválása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -402,6 +553,10 @@ public class UserInterface {
     }
 
     public static void adminAddNewStudClass() {
+        int functionIndex = 44;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "új osztály regisztrálása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -415,7 +570,11 @@ public class UserInterface {
     }
 
     public static void adminModifyStudClass() {
-        String labelOfAction = "új osztály regisztrálása";
+        int functionIndex = 45;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
+        String labelOfAction = "osztály módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
         System.out.println("1 - osztályfőnök módosítása");
@@ -423,7 +582,6 @@ public class UserInterface {
         System.out.println("0 - Visszalépés a kezdőlapra");
 
         int choice = Menu.choiceValidator(2);
-        choiceList.add(choice);
 
         switch (choice) {
             case 1:
@@ -439,6 +597,10 @@ public class UserInterface {
     }
 
     public static void adminModifyStudClassHeadTeacher() {
+        int functionIndex = 451;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "osztályfőnök módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -452,6 +614,10 @@ public class UserInterface {
     }
 
     public static void adminModifyStudClassTeacher() {
+        int functionIndex = 452;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "oktató tanárok módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -478,6 +644,10 @@ public class UserInterface {
     }
 
     public static void adminArchiveStudClass() {
+        int functionIndex = 46;
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
         String labelOfAction = "osztály archiválása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -504,26 +674,29 @@ public class UserInterface {
     }
 
     public static void continueMenu() {
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        double widthDouble = screenSize.getWidth();
+//        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+//        java - get screen size using the Toolkit class
+//        int width = (int) widthDouble / spacePixelWidth;
+//        double widthDouble = screenSize.getWidth();
         int spacePixelWidth = 12;
-        int width = (int) widthDouble / spacePixelWidth;
+        int width = 120;
         int tab = 5;
         StringBuilder sbBottomLine = new StringBuilder();
         sbBottomLine
+                .append("-".repeat(width)).append(System.lineSeparator())
                 .append("b - visszalépés").append(" ".repeat(tab))
                 .append("r - újra").append(" ".repeat(tab))
-                .append("0 - kilépés").append(System.lineSeparator())
-                .append("-".repeat(width));
+                .append("0 - kilépés").append(" ".repeat(tab))
+                .append("ENTER - kezdőoldal").append(System.lineSeparator())
+                .append("-".repeat(width)).append(System.lineSeparator());
 
         System.out.println(sbBottomLine);
-
         String input = generalLineScan();
-        // java - get screen size using the Toolkit class
+
         if (input.toLowerCase().equals("b")) {
-            System.out.println("Előző menüpont újrahívása!!!!");
+            runPreviousFunction(1);
         } else if (input.toLowerCase().equals("r")) {
-            System.out.println("Aktuális menüpont újrahívása!!!!");
+            runPreviousFunction(0);
         } else if (input.toLowerCase().equals("0")) {
             Log.logout();
         } else {
