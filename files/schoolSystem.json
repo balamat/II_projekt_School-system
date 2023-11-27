@@ -156,7 +156,14 @@
       },
       "birthday": "2011-02-20",
       "studClassString": "12A",
-      "subjectAndGradeList": {}
+      "subjectAndGradeList": {
+        "GERMAN": [
+          {
+            "description": "dolgozat",
+            "grade": 1
+          }
+        ]
+      }
     },
     {
       "uuid": "1c40331d-a8de-4e44-a7fb-73326b0c6479",
@@ -400,6 +407,16 @@
       },
       "birthday": "2023-10-01",
       "studClassString": "12C",
+      "subjectAndGradeList": {}
+    },
+    {
+      "uuid": "22334ee6-98e8-4e03-ac0a-b61033baf249",
+      "name": {
+        "firstName": "Ferenc",
+        "lastName": "Szobor"
+      },
+      "birthday": "1988-03-21",
+      "studClassString": "12A",
       "subjectAndGradeList": {}
     }
   ],
@@ -906,6 +923,26 @@
       "studClassString": "12B",
       "absentStudents": {
         "1de6acfe-fb7a-447d-8b95-0ac61c6284ef": "fogorvoshoz ment"
+      }
+    },
+    {
+      "uuid": "05cf7e5b-1107-449c-9324-43d29ffb391a",
+      "date": "1996-05-22",
+      "classSerial": "CL_7",
+      "subject": "VISUAL_ARTS",
+      "teacher": {
+        "uuid": "a7fa247f-a005-49be-b979-4f609bd7efda",
+        "name": {
+          "firstName": "Károly",
+          "lastName": "Kós"
+        },
+        "taughtSubject": [
+          "PHYSICS"
+        ]
+      },
+      "studClassString": "12A",
+      "absentStudents": {
+        "22334ee6-98e8-4e03-ac0a-b61033baf249": "betegeskedik"
       }
     }
   ]

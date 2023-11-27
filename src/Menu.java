@@ -100,13 +100,18 @@ public class Menu {
      */
     public static Student studentSearch() {
         do {
+            String similarStudent = "";
             try {
-                String inputStudent = UserInterface.studentScan();
+                String inputStudent = studentNameValidator();
+//                String inputStudent = UserInterface.studentScan();
+                similarStudent = inputStudent;
                 Student student = Student.getAllStudentList().stream().filter(stud -> stud.getName().toString().equals(inputStudent)).findFirst().orElseThrow();
                 return student;
             } catch (NoSuchElementException e) {
                 isWrongInput = true;
                 System.out.println("Nincs ilyen nevű diák az iskolában!");
+                System.out.println(similarStudent);
+                UserInterface.printSimilarStudents(similarStudent);
             }
         } while (isWrongInput);
         return null;
@@ -131,10 +136,11 @@ public class Menu {
         return null;
     }
 
-    public static String newNameValidator() {
+    public static String studentNameValidator() {
         do {
             try {
-                String name = UserInterface.generalLineScan();
+                String name = UserInterface.studentScan();
+
                 if (name.isEmpty() || name.length() < 2) {
                     throw new DataException("Túl rövid név!");
                 }

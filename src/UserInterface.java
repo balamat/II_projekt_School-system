@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.*;
@@ -8,90 +7,61 @@ public class UserInterface {
 
     public static List<Integer> functionList = new ArrayList<>();
 
-    /**
-     * 0 -the same option, 1 - the previous option
-     *
-     * @param levelUp
-     */
+    public static Map<Integer, Runnable> functionMap = new HashMap<>();
+
+    static {
+        functionMap.put(1, UserInterface::printStudentInfo);
+        functionMap.put(11, UserInterface::printStudentPersonalData);
+        functionMap.put(12, UserInterface::printStudentGrades);
+        functionMap.put(13, UserInterface::printStudentAbsence);
+        functionMap.put(2, UserInterface::printStudClassInfo);
+        functionMap.put(21, UserInterface::printStudClassData);
+        functionMap.put(22, UserInterface::printStudClassGrades);
+        functionMap.put(23, UserInterface::printStudClassAbsence);
+        functionMap.put(3, UserInterface::printClassDiary);
+        functionMap.put(31, UserInterface::fillClassDiary);             //with security confirm
+        functionMap.put(32, UserInterface::modifyClassDiary);
+        functionMap.put(33, UserInterface::saveGrade);
+        functionMap.put(34, UserInterface::deleteGrade);                //with security confirm
+        functionMap.put(4, UserInterface::printAdmin);
+        functionMap.put(41, UserInterface::adminAddNewStudent);         //with security confirm
+        functionMap.put(42, UserInterface::adminModifyStudent);         //with security confirm
+        functionMap.put(43, UserInterface::adminArchiveStudent);        //with security confirm
+        functionMap.put(44, UserInterface::adminAddNewStudClass);
+        functionMap.put(45, UserInterface::adminModifyStudClass);
+        functionMap.put(451, UserInterface::adminModifyStudClassHeadTeacher); //with security confirm
+        functionMap.put(452, UserInterface::adminModifyStudClassTeacher);     //with security confirm
+        functionMap.put(46, UserInterface::adminArchiveStudClass);            //with security confirm
+    }
+
     public static void runPreviousFunction(int levelUp) {
         Integer functionIndex = functionList.get(functionList.size() - 1 - levelUp);
-        switch (functionIndex) {
-            case 1:
-                printStudentInfo();
-                break;
-            case 11:
-                printStudentPersonalData();
-                break;
-            case 12:
-                printStudentGrades();
-                break;
-            case 13:
-                printStudentAbsence();
-                break;
-            case 2:
-                printStudClassInfo();
-                break;
-            case 21:
-                printStudClassData();
-                break;
-            case 22:
-                printStudClassGrades();
-                break;
-            case 23:
-                printStudClassAbsence();
-                break;
-            case 3:
-                printClassDiary();
-                break;
-            case 31:
-                fillClassDiary();
-                break;
-            case 32:
-                modifyClassDiary();
-                break;
-            case 33:
-                saveGrade();
-                break;
-            case 34:
-                deleteGrade();
-                break;
-            case 4:
-                printAdmin();
-                break;
-            case 41:
-                adminAddNewStudent();
-                break;
-            case 42:
-                adminModifyStudent();
-                break;
-            case 43:
-                adminArchiveStudent();
-                break;
-            case 44:
-                adminAddNewStudClass();
-                break;
-            case 45:
-                adminModifyStudClass();
-                break;
-            case 451:
-                adminModifyStudClassHeadTeacher();
-                break;
-            case 452:
-                adminModifyStudClassTeacher();
-                break;
-            case 46:
-                adminArchiveStudClass();
-                break;
-            default:
-                System.out.println("Nincs a funkció bejegyezve ebbe a metódusba!");
-                break;
+        Runnable function = functionMap.get(functionIndex);
+
+        if (function != null) {
+            function.run();
+        } else {
+            System.out.println("Nincs a funkció bejegyezve ebbe a metódusba!");
         }
     }
 
+    public static void saveActualFunction(int functionIndex) {
+        if (functionList.get(functionList.size() - 1) != functionIndex) {
+            functionList.add(functionIndex);
+        }
+    }
+
+    /**
+     * Does not work on Windows CMD and IDE terminal
+     */
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
 
     public static void printMainPage() {
         int functionIndex = 1;
-        functionList.add(functionIndex);
+        functionList.add(0);
         int permission = Log.permission;
 
         System.out.println("Válassz a lehetőségek közül!");
@@ -125,12 +95,7 @@ public class UserInterface {
     }
 
     public static void printStudentInfo() {
-        int functionIndex = 1;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
-
-
+        saveActualFunction(1);
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - Diák adatainak lekérdezése");
         System.out.println("2 - Diák jegyeinek lekérdezése");
@@ -153,13 +118,11 @@ public class UserInterface {
                 UserInterface.printMainPage();
                 break;
         }
+
     }
 
     public static void printStudentPersonalData() {
-        int functionIndex = 11;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(11);
         String labelOfAction = "személyes adatok";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -168,10 +131,7 @@ public class UserInterface {
     }
 
     public static void printStudentGrades() {
-        int functionIndex = 12;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(12);
         String labelOfAction = "jegyek lekérdezése";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -188,22 +148,17 @@ public class UserInterface {
     }
 
     public static void printStudentAbsence() {
-        int functionIndex = 13;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(13);
         String labelOfAction = "hiányzások lekérdezése";
         System.out.println(labelOfAction.toUpperCase());
+
         Map<ClassDiary, String> classDiaryMap = ClassDiary.generateAbsenceMapByStudent(Menu.studentSearch());
         classDiaryMap.keySet().stream().sorted((a, b) -> a.getDate().compareTo(b.getDate())).forEach(classDiary -> System.out.println(classDiary.getDate().toString() + " - " + classDiary.getClassSerial() + ": " + classDiaryMap.get(classDiary)));
         continueMenu();
     }
 
     public static void printStudClassInfo() {
-        int functionIndex = 2;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(2);
         String labelOfAction = "Osztályadatok";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -232,10 +187,7 @@ public class UserInterface {
     }
 
     public static void printStudClassData() {
-        int functionIndex = 21;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(21);
         String labelOfAction = "osztályadatok";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -244,10 +196,7 @@ public class UserInterface {
     }
 
     public static void printStudClassGrades() {
-        int functionIndex = 22;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(22);
         String labelOfAction = "osztály diákjainak átlagai";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -298,10 +247,7 @@ public class UserInterface {
     }
 
     public static void printStudClassAbsence() {
-        int functionIndex = 23;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(23);
 
         int indent = 30;
         int tab = 4;
@@ -325,10 +271,7 @@ public class UserInterface {
     }
 
     public static void printClassDiary() {
-        int functionIndex = 3;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(3);
         String labelOfAction = "naplóadatok";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -361,31 +304,27 @@ public class UserInterface {
     }
 
     public static void fillClassDiary() {
-        int functionIndex = 31;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(31);
         String labelOfAction = "aktuális óra naplózása";
         System.out.println(labelOfAction.toUpperCase());
 
-        LocalDate localDate = Menu.dateSearch();
-        ClassSerial classSerial = Menu.classSerialSearch();
-        Subjects subject = Menu.subjectSearch();
-        Teacher teacher = Menu.teacherSearch();
-        StudClass studClass = Menu.studClassSearch();
-        int numberOfAbsent = Menu.numberOfAbsentValidator(studClass);
+        if (isConfirmed(labelOfAction)) {
+            LocalDate localDate = Menu.dateSearch();
+            ClassSerial classSerial = Menu.classSerialSearch();
+            Subjects subject = Menu.subjectSearch();
+            Teacher teacher = Menu.teacherSearch();
+            StudClass studClass = Menu.studClassSearch();
+            int numberOfAbsent = Menu.numberOfAbsentValidator(studClass);
 
-        ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(numberOfAbsent).addToList();
-        System.out.println(classDiary);
-        printSuccesfullyTerminated(labelOfAction);
+            ClassDiary classDiary = new ClassDiary(localDate, classSerial, subject, teacher, studClass).addAbsentStudent(numberOfAbsent).addToList();
+            System.out.println(classDiary);
+            printSuccesfullyTerminated(labelOfAction);
+        }
         continueMenu();
     }
 
     public static void saveGrade() {
-        int functionIndex = 33;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(33);
         String labelOfAction = "jegy beírása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -400,18 +339,15 @@ public class UserInterface {
     }
 
     public static void modifyClassDiary() {
-        int functionIndex = 32;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(32);
         String labelOfAction = "meglévő naplóadatok módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
         ClassDiary searchedClassDiary = Menu.classDiarySearch();
         System.out.println("A kiválasztott óra adatai:");
         System.out.println(searchedClassDiary);
-        System.out.println("Akarod a hiányzókat módosítani? Ha igen írd, be, hogy 'igen'!Ha nem akkor üss be egy billentyűt és az entert!");
-        if (generalScan().equals("igen")) {
+        System.out.println("Akarod a hiányzókat módosítani? Ha igen írd, be, hogy \"i\" és egy ENTER-t!");
+        if (generalLineScan().toLowerCase().equals("i")) {
             searchedClassDiary.getAbsentStudents().clear();
             System.out.println("Az órára bekönyvelt hiányzások törlésre kerültek!");
             StudClass studClass = StudClass.getAllStudClassList().stream().filter(studCl -> studCl.getNameOfClass().equals(searchedClassDiary.getStudClassString())).findFirst().orElse(StudClass.getAllStudClassList().get(0));
@@ -426,36 +362,32 @@ public class UserInterface {
     }
 
     public static void deleteGrade() {
-        int functionIndex = 34;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(34);
         String labelOfAction = "jegy törlése";
         System.out.println(labelOfAction.toUpperCase());
 
-        String message = "A tantárgyból nincs jegye a diáknak!";
-        System.out.println("A naplóból egy adott tárgy utoljára beírt jegye törölhető.");
-        Student student = Menu.studentSearch();
-        Subjects subject = Menu.subjectSearch();
-        if (student.getSubjectAndGradeList().containsKey(subject)) {
-            List<Grade> grades = student.getSubjectAndGradeList().get(subject);
-            if (grades.size() > 0) {
-                grades.remove(grades.size() - 1);
-                printSuccesfullyTerminated(labelOfAction);
+        if (isConfirmed(labelOfAction)) {
+            String message = "A tantárgyból nincs jegye a diáknak!";
+            System.out.println("A naplóból egy adott tárgy utoljára beírt jegye törölhető.");
+            Student student = Menu.studentSearch();
+            Subjects subject = Menu.subjectSearch();
+            if (student.getSubjectAndGradeList().containsKey(subject)) {
+                List<Grade> grades = student.getSubjectAndGradeList().get(subject);
+                if (grades.size() > 0) {
+                    grades.remove(grades.size() - 1);
+                    printSuccesfullyTerminated(labelOfAction);
+                } else {
+                    System.out.println(message);
+                }
             } else {
                 System.out.println(message);
             }
-        } else {
-            System.out.println(message);
         }
         continueMenu();
     }
 
     public static void printAdmin() {
-        int functionIndex = 4;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(4);
         String labelOfAction = "admin műveletek";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -496,67 +428,61 @@ public class UserInterface {
     }
 
     public static void adminAddNewStudent() {
-        int functionIndex = 41;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(41);
         String labelOfAction = "új diák regisztrálása";
         System.out.println(labelOfAction.toUpperCase());
 
-        System.out.println("Add meg a diák vezetéknevét!");
-        String lastName = Menu.newNameValidator();
-        System.out.println("Add meg a diák keresztnevét!");
-        String firstName = Menu.newNameValidator();
-        System.out.println("Add meg a diák születési dátumát!");
-        LocalDate birthday = Menu.dateSearch();
-        StudClass studClass = Menu.studClassSearch();
+        if (isConfirmed(labelOfAction)) {
+            System.out.printf("Vezetéknév: ");
+            String lastName = Menu.studentNameValidator();
+            System.out.printf("Keresztnév: ");
+            String firstName = Menu.studentNameValidator();
+            System.out.println("Add meg a diák születési dátumát!");
+            LocalDate birthday = Menu.dateSearch();
+            StudClass studClass = Menu.studClassSearch();
 
-        new Student(new Name(lastName, firstName), studClass.getNameOfClass(), birthday).addToList();
-        printSuccesfullyTerminated(labelOfAction);
+            new Student(new Name(lastName, firstName), studClass.getNameOfClass(), birthday).addToList();
+            printSuccesfullyTerminated(labelOfAction);
+        }
         continueMenu();
     }
 
     public static void adminModifyStudent() {
-        int functionIndex = 42;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(42);
         String labelOfAction = "diák adatainak módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
-        Student student = Menu.studentSearch();
-        System.out.println(student);
-        System.out.println("A diák osztálya módosítható. Akarod módosítani? Ha igen, nyomj egy \"I\"-t és entert!");
-        String s = generalScan();
-        if (s.toLowerCase().equals("i")) {
-            System.out.println("Add meg, hogy melyik osztályba kerüljön át!");
-            StudClass newStudClass = Menu.studClassSearch();
-            student.setStudClassString(newStudClass.getNameOfClass());
-            printSuccesfullyTerminated(labelOfAction);
+        if (isConfirmed(labelOfAction)) {
+            Student student = Menu.studentSearch();
             System.out.println(student);
+            System.out.println("A diák osztálya módosítható. Akarod módosítani? Ha igen, nyomj egy \"I\"-t és entert!");
+            String s = generalScan();
+            if (s.toLowerCase().equals("i")) {
+                System.out.println("Add meg, hogy melyik osztályba kerüljön át!");
+                StudClass newStudClass = Menu.studClassSearch();
+                student.setStudClassString(newStudClass.getNameOfClass());
+                printSuccesfullyTerminated(labelOfAction);
+                System.out.println(student);
+            }
         }
         continueMenu();
     }
 
     public static void adminArchiveStudent() {
-        int functionIndex = 43;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(43);
         String labelOfAction = "diák archiválása";
         System.out.println(labelOfAction.toUpperCase());
 
-        Student student = Menu.studentSearch();
-        student.archive();
-        printSuccesfullyTerminated(labelOfAction);
+        if (isConfirmed(labelOfAction)) {
+            Student student = Menu.studentSearch();
+            student.archive();
+            printSuccesfullyTerminated(labelOfAction);
+        }
         continueMenu();
     }
 
     public static void adminAddNewStudClass() {
-        int functionIndex = 44;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(44);
         String labelOfAction = "új osztály regisztrálása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -570,10 +496,7 @@ public class UserInterface {
     }
 
     public static void adminModifyStudClass() {
-        int functionIndex = 45;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(45);
         String labelOfAction = "osztály módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
@@ -597,80 +520,86 @@ public class UserInterface {
     }
 
     public static void adminModifyStudClassHeadTeacher() {
-        int functionIndex = 451;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(451);
         String labelOfAction = "osztályfőnök módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
-        StudClass studClass = Menu.studClassSearch();
-        System.out.println("Az eddigi osztályfőnök: " + studClass.getHeadTeacher().getName());
-        System.out.println("Az új osztályfőnök:");
-        Teacher newHeadTeacher = Menu.teacherSearch();
-        studClass.setHeadTeacher(newHeadTeacher);
-        printSuccesfullyTerminated(labelOfAction);
+        if (isConfirmed(labelOfAction)) {
+            StudClass studClass = Menu.studClassSearch();
+            System.out.println("Az eddigi osztályfőnök: " + studClass.getHeadTeacher().getName());
+            System.out.println("Az új osztályfőnök:");
+            Teacher newHeadTeacher = Menu.teacherSearch();
+            studClass.setHeadTeacher(newHeadTeacher);
+            printSuccesfullyTerminated(labelOfAction);
+        }
         continueMenu();
     }
 
     public static void adminModifyStudClassTeacher() {
-        int functionIndex = 452;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(452);
         String labelOfAction = "oktató tanárok módosítása";
         System.out.println(labelOfAction.toUpperCase());
 
-        StudClass studClass = Menu.studClassSearch();
-        System.out.println(studClass.getClassTeachersBySubject().entrySet());
-        System.out.println("Add meg a módosítandó tantárgyat!");
-        Subjects subject = Menu.subjectSearch();
-        System.out.println("Add meg a hozzáadandó/eltávolítandó tanár nevét!");
-        Teacher modifiedTeacher = Menu.teacherSearch();
+        if (isConfirmed(labelOfAction)) {
+            StudClass studClass = Menu.studClassSearch();
+            System.out.println(studClass.getClassTeachersBySubject().entrySet());
+            System.out.println("Add meg a módosítandó tantárgyat!");
+            Subjects subject = Menu.subjectSearch();
+            System.out.println("Add meg a hozzáadandó/eltávolítandó tanár nevét!");
+            Teacher modifiedTeacher = Menu.teacherSearch();
 
-        if (studClass.getClassTeachersBySubject().containsKey(subject)) {
-            List<Teacher> teacherList = studClass.getClassTeachersBySubject().get(subject);
-            if (teacherList.stream().filter(teach -> teach.getUuid().equals(modifiedTeacher.getUuid())).count() > 0) {
-                teacherList.removeIf(teacher -> teacher.getUuid().equals(modifiedTeacher.getUuid()));
+            if (studClass.getClassTeachersBySubject().containsKey(subject)) {
+                List<Teacher> teacherList = studClass.getClassTeachersBySubject().get(subject);
+                if (teacherList.stream().filter(teach -> teach.getUuid().equals(modifiedTeacher.getUuid())).count() > 0) {
+                    teacherList.removeIf(teacher -> teacher.getUuid().equals(modifiedTeacher.getUuid()));
+                } else {
+                    teacherList.add(modifiedTeacher);
+                }
             } else {
-                teacherList.add(modifiedTeacher);
+                studClass.getClassTeachersBySubject().put(subject, new ArrayList<>());
+                studClass.getClassTeachersBySubject().get(subject).add(modifiedTeacher);
             }
-        } else {
-            studClass.getClassTeachersBySubject().put(subject, new ArrayList<>());
-            studClass.getClassTeachersBySubject().get(subject).add(modifiedTeacher);
+            printSuccesfullyTerminated(labelOfAction);
         }
-        printSuccesfullyTerminated(labelOfAction);
         continueMenu();
     }
 
     public static void adminArchiveStudClass() {
-        int functionIndex = 46;
-        if (functionList.get(functionList.size() - 1) != functionIndex) {
-            functionList.add(functionIndex);
-        }
+        saveActualFunction(46);
         String labelOfAction = "osztály archiválása";
         System.out.println(labelOfAction.toUpperCase());
 
-        StudClass studClass = Menu.studClassSearch();
-        long count = Student.getAllStudentList().stream()
-                .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
-                .count();
-        if (count > 0) {
-            System.out.println("Az archiválandó osztályhoz " + count + " diák tartozik!");
-            System.out.println("Melyik osztályba kerüljenek át a diákok?");
-            StudClass destinationStudClass = Menu.studClassSearch();
-            Student.getAllStudentList().stream()
+        if (isConfirmed(labelOfAction)) {
+            StudClass studClass = Menu.studClassSearch();
+            long count = Student.getAllStudentList().stream()
                     .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
-                    .forEach(student -> student.setStudClassString(destinationStudClass.getNameOfClass()));
+                    .count();
+            if (count > 0) {
+                System.out.println("Az archiválandó osztályhoz " + count + " diák tartozik!");
+                System.out.println("Melyik osztályba kerüljenek át a diákok?");
+                StudClass destinationStudClass = Menu.studClassSearch();
+                Student.getAllStudentList().stream()
+                        .filter(student -> student.getStudClassString().equals(studClass.getNameOfClass()))
+                        .forEach(student -> student.setStudClassString(destinationStudClass.getNameOfClass()));
+            }
+            studClass.archive();
+            printSuccesfullyTerminated(labelOfAction);
         }
-        studClass.archive();
-        printSuccesfullyTerminated(labelOfAction);
         continueMenu();
     }
 
 
     public static void printSuccesfullyTerminated(String label) {
         System.out.println(label + " - a művelet sikeresen megtörtént!");
+    }
+
+    public static Boolean isConfirmed(String labelOfAction) {
+        System.out.println("Biztos végre akarod hajtani a " + labelOfAction + " műveletet? Ha igen, írd be, hogy \"i\" és nyomj egy ENTER-t!");
+        String input = UserInterface.generalLineScan();
+        if (input.toLowerCase().equals("i")) {
+            return true;
+        }
+        return false;
     }
 
     public static void continueMenu() {
@@ -776,9 +705,24 @@ public class UserInterface {
     }
 
     public static String studentScan() {
-        System.out.println("Add meg a diák teljes nevét!");
+        System.out.println("Add meg a nevét!");
         Scanner studentScanner = new Scanner(System.in);
         return studentScanner.nextLine();
+    }
+
+    public static void printSimilarStudents(String similarName) {
+        int length = similarName.length() > 3 ? 3 : similarName.length();
+        String st = similarName.substring(0, length);
+        StringBuilder sbAvailableStudents = new StringBuilder();
+        Student.getAllStudentList().stream()
+                .filter(student -> student.getName().toString().substring(0, length).equals(st))
+                .map(student -> student.getName().toString())
+                .forEach(i -> sbAvailableStudents.append(i + ", "));
+        if (sbAvailableStudents.length() > 2) {
+            sbAvailableStudents.delete(sbAvailableStudents.length() - 2, sbAvailableStudents.length() - 1);
+            System.out.println("Hasonló nevűek:");
+            System.out.println(sbAvailableStudents);
+        }
     }
 
     public static String numberOfAbsentScan() {
