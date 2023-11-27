@@ -1,5 +1,7 @@
 import java.time.LocalDate;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 public class Log {
 
@@ -9,30 +11,56 @@ public class Log {
      * 1 - teacher
      * 2 - student
      */
-
-    public static int permission = 0;
     public static LocalDate actualDate = LocalDate.now();
+    public static int permission;
+    public static boolean isWrongInput = false;
+    public static User user;
 
-    public static int login() {
-//        System.out.println("Add meg a teljes neved (Vezetéknév Keresztnév1 Keresztnév2...)!");
-//        Scanner usernameScanner = new Scanner(System.in);
-//        String username = usernameScanner.nextLine();
-//        usernameScanner.close();
-//        search for equal username, if there is one, then it will scan its password
+    public static void login() {
+        user = userSearch();
+        setPermission(user);
+    }
 
-        System.out.println("Add meg, hogy milyen felhasználó vagy?");
-        System.out.println("0 - Admin");
-        System.out.println("1 - Tanár");
-        System.out.println("2 - Diák");
+    public static void setPermission(User user) {
+        permission = 0;
+        if (user instanceof Teacher) {
+            permission = 1;
+        } else if (user instanceof Student) {
+            permission = 2;
+        }
+    }
 
-        Scanner permissionScanner = new Scanner(System.in);
-        int permission = permissionScanner.nextInt();
-        return permission;
+    public static User userSearch() {
+        List<User> allUserList = new ArrayList<>();
+        Student.getAllStudentList().forEach(student -> allUserList.add(student.clone()));
+        Teacher.getAllTeacherList().forEach(teacher -> allUserList.add(teacher.clone()));
+
+        //set the admin!
+        Admin admin = new Admin(new Name("Máté", "Balázs"));
+        allUserList.add(admin.clone());
+
+        do {
+            try {
+                System.out.println("Add meg a felhasználóneved!");
+                String inputUserName = UserInterface.generalLineScan();
+                User loginUser = allUserList.stream().filter(user -> user.getName().toString().equals(inputUserName))
+                        .findFirst()
+                        .orElseThrow();
+                return loginUser;
+            } catch (NoSuchElementException e) {
+                isWrongInput = true;
+                System.out.println("Nincs ilyen nevű felhasználó az iskolában!");
+            }
+        } while (isWrongInput);
+        return null;
+    }
+
+    private int passwordValidator() {
+        return 0;
     }
 
     public static void logout() {
         System.out.println("kilépés...");
     }
-
 
 }

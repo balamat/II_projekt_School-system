@@ -1,10 +1,8 @@
+import java.util.UUID;
+
 public interface User {
-    void login();
 
-    void chooseMainFunction();
+    public UUID getUuid();
 
-    void showData();
-
-    void logout();
-
+    public Name getName();
 }

@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Student {
+public class Student implements Cloneable, User {
 
     private final UUID uuid;
     private Name name;
@@ -108,6 +108,15 @@ public class Student {
                 "\t UserID: " + uuid + System.lineSeparator() +
                 "\t születési idő: " + birthday + System.lineSeparator() +
                 "\t Osztály: " + studClassString + System.lineSeparator();
+    }
+
+    @Override
+    public Student clone() {
+        try {
+            return (Student) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 }
 

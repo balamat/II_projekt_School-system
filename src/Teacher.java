@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class Teacher implements User {
+public class Teacher implements Cloneable, User{
 
     private final UUID uuid;
     private static List<Teacher> allTeacherList = new ArrayList<>();
@@ -55,26 +55,16 @@ public class Teacher implements User {
     }
 
     @Override
-    public void login() {
-    }
-
-    @Override
-    public void chooseMainFunction() {
-
-    }
-
-    @Override
-    public void showData() {
-
-    }
-
-    @Override
-    public void logout() {
-
-    }
-
-    @Override
     public String toString() {
         return name.toString();
+    }
+
+    @Override
+    public Teacher clone() {
+        try {
+            return (Teacher) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 }

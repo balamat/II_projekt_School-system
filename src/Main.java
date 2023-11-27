@@ -13,9 +13,7 @@ public class Main {
         Load.loadArchiveFromJson();
 
         //login
-        //scanner - user
-        //scanner -password
-
+        Log.login();
 
         //mainPage
         UserInterface.printMainPage();

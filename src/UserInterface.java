@@ -63,10 +63,11 @@ public class UserInterface {
         int functionIndex = 1;
         functionList.add(0);
         int permission = Log.permission;
+        clearScreen();
 
         System.out.println("Válassz a lehetőségek közül!");
         System.out.println("1 - Tanulói adatok elérése");
-        if (Log.permission == 0 || permission == 1) {
+        if (permission == 0 || permission == 1) {
             System.out.println("2 - Osztályadatok elérése");
             System.out.println("3 - Óra naplózása");
         }
@@ -95,6 +96,7 @@ public class UserInterface {
     }
 
     public static void printStudentInfo() {
+        clearScreen();
         saveActualFunction(1);
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - Diák adatainak lekérdezése");
@@ -158,6 +160,7 @@ public class UserInterface {
     }
 
     public static void printStudClassInfo() {
+        clearScreen();
         saveActualFunction(2);
         String labelOfAction = "Osztályadatok";
         System.out.println(labelOfAction.toUpperCase());
@@ -271,6 +274,7 @@ public class UserInterface {
     }
 
     public static void printClassDiary() {
+        clearScreen();
         saveActualFunction(3);
         String labelOfAction = "naplóadatok";
         System.out.println(labelOfAction.toUpperCase());
@@ -387,6 +391,7 @@ public class UserInterface {
     }
 
     public static void printAdmin() {
+        clearScreen();
         saveActualFunction(4);
         String labelOfAction = "admin műveletek";
         System.out.println(labelOfAction.toUpperCase());
