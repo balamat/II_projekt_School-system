@@ -72,31 +72,17 @@ public class UnicodeColor {
     public static final String CYAN_BACKGROUND_BRIGHT = "\033[0;106m";  // CYAN
     public static final String WHITE_BACKGROUND_BRIGHT = "\033[0;107m";   // WHITE
 
-    public static String color(char colorIndex) {
-        switch (colorIndex) {
-            case '*':
-                return RED_BOLD;
-            case '0':
-                return WHITE_BOLD;
-            case '1':
-                return BLUE_BOLD;
-            case '2':
-                return GREEN_BOLD;
-            case '3':
-                return YELLOW_BOLD;
-            case '4':
-                return RED_BOLD;
-            case '5':
-                return CYAN_BOLD;
-            case '6':
-                return PURPLE_BOLD;
-            case '7':
-                return PURPLE_BRIGHT;
-            case '8':
-                return BLUE_BRIGHT;
-            default:
-                return RESET;
+    public static String colorizeGrade(double inputGrade) {
+        double lowerAvgIndicator = 2.0;
+        double higherAvgIndicator = 4.5;
+        if (inputGrade <= lowerAvgIndicator && inputGrade != 0) {
+            return RED_BOLD;
+        } else if (inputGrade >= higherAvgIndicator) {
+            return GREEN_BOLD;
+        } else {
+            return RESET;
         }
     }
+
 
 }

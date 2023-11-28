@@ -13,15 +13,11 @@ public class Main {
         Load.loadArchiveFromJson();
 
         //login
-        Log.login();
-
-//
-
-
+//        Log.login();
 
         //mainPage
+        InitialData.initializeGrades();
         UserInterface.printMainPage();
-
 
         //Functions
         //1- student info
@@ -29,7 +25,7 @@ public class Main {
         //grade, average
         //absence
 
-        //2 - class info
+        //2 - studClass info
         //class info
         //averages
         //absence
@@ -49,10 +45,6 @@ public class Main {
         //archive studClass
 
         //auto export toJson
-        Load.exportToJson();
-
-        //logout
-        //save specific data - a certain class/student to CSV
-
+//        Load.exportToJson();
     }
 }

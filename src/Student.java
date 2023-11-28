@@ -73,6 +73,41 @@ public class Student implements Cloneable, User {
         this.getSubjectAndGradeList().get(subject).add(new Grade(description, grade));
     }
 
+    //DATA UPLOAD - INSTALLATION
+    public void generateRandomGrades(int minGrade, int maxGrade) {
+        //generate random descriptions
+        Map<Subjects, String[]> descriptionOptionsMap = new HashMap<>();
+        descriptionOptionsMap.put(Subjects.GERMAN, new String[]{"dolgozat", "felelés", "röpdolgozat", "házi feladat", "órai munka", "témazáró", "gyakorlófeladatok", "projektmunka", "javítódolgozat", "szorgalmi"});
+        descriptionOptionsMap.put(Subjects.MATHS, new String[]{"dolgozat", "felelés", "röpdolgozat", "házi feladat", "órai munka", "témazáró", "gyakorlófeladatok", "projektmunka", "javítódolgozat", "szorgalmi"});
+        descriptionOptionsMap.put(Subjects.HUNGARIAN, new String[]{"dolgozat", "felelés", "röpdolgozat", "házi feladat", "órai munka", "témazáró", "gyakorlófeladatok", "projektmunka", "javítódolgozat", "szorgalmi"});
+        descriptionOptionsMap.put(Subjects.ENGLISH, new String[]{"dolgozat", "felelés", "röpdolgozat", "házi feladat", "órai munka", "témazáró", "gyakorlófeladatok", "projektmunka", "javítódolgozat", "szorgalmi"});
+        descriptionOptionsMap.put(Subjects.HISTORY, new String[]{"dolgozat", "felelés", "röpdolgozat", "házi feladat", "órai munka", "témazáró", "gyakorlófeladatok", "projektmunka", "javítódolgozat", "szorgalmi"});
+        descriptionOptionsMap.put(Subjects.PHYSICS, new String[]{"dolgozat", "felelés", "röpdolgozat", "házi feladat", "órai munka", "témazáró", "gyakorlófeladatok", "projektmunka", "javítódolgozat", "szorgalmi"});
+        descriptionOptionsMap.put(Subjects.VISUAL_ARTS, new String[]{"szabadkézi rajz", "festés", "röpdolgozat", "házi feladat", "órai munka", "híres festők", "gyakorlórajz", "projektmunka", "kollázs", "szorgalmi"});
+        descriptionOptionsMap.put(Subjects.MUSIC, new String[]{"dolgozat", "felelés", "kottázás", "házi feladat", "órai munka", "témazáró", "gyakorlófeladatok", "éneklés", "javítódolgozat", "szorgalmi"});
+        descriptionOptionsMap.put(Subjects.SPORT, new String[]{"Cooper-teszt", "kislabdadobás", "fekvőtámasz", "foci", "kézilabda", "úszás", "erőnléti felmérés", "sprint"});
+
+//        String[] descriptionOptions = new String[]
+//                {"dolgozat", "felelés", "röpdolgozat", "házi feladat", "órai munka", "témazáró", "gyakorlófeladatok", "projektmunka", "javítódolgozat", "szorgalmi"};
+//        int descriptionOptionsLength = descriptionOptions.length;
+
+//        //generate random grades
+//        int minGrade = 1;
+//        int maxGrade = 5;
+
+        //generate random number of grades per subject
+        int minNumberOfGrades = 4;
+        int maxNumberOfGrades = 8;
+
+        for (Subjects subject : Subjects.values()
+        ) {
+            for (int i = 0; i < ThreadLocalRandom.current().nextInt(minNumberOfGrades, maxNumberOfGrades + 1); i++) {
+//                this.addGrade(subject, descriptionOptions[ThreadLocalRandom.current().nextInt(0, descriptionOptionsLength)], ThreadLocalRandom.current().nextInt(minGrade, maxGrade + 1));
+                this.addGrade(subject, descriptionOptionsMap.get(subject)[ThreadLocalRandom.current().nextInt(0, descriptionOptionsMap.get(subject).length)], ThreadLocalRandom.current().nextInt(minGrade, maxGrade + 1));
+            }
+        }
+    }
+
     public static List<Student> getAllStudentList() {
         return allStudentList;
     }

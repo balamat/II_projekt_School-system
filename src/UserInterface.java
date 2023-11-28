@@ -2,6 +2,7 @@ import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class UserInterface {
 
@@ -154,13 +155,16 @@ public class UserInterface {
 
         Student student = Menu.studentSearch();
 
+        DecimalFormat df = new DecimalFormat("0.00");
+        int indent = 15;
+
         student.getSubjectAndGradeList().forEach((a, b) -> {
-            System.out.println(a.getSubjectName() + ": \t" + b + " - átlag: " + Calculator.calculateStudentAvgBySubject(student, a));
+            System.out.println(a.getSubjectName() + ":" + " ".repeat(indent - a.getSubjectName().length()) + b + " - átlag: " + df.format(Calculator.calculateStudentAvgBySubject(student, a)));
         });
 
         double totalAvg = Calculator.calculateStudentAvg(student);
         System.out.println("---------------------------------------------------------");
-        System.out.println("Tanulmányi átlag: " + totalAvg + System.lineSeparator());
+        System.out.println("Tanulmányi átlag: " + df.format(totalAvg) + System.lineSeparator());
         continueMenu();
     }
 
@@ -243,18 +247,28 @@ public class UserInterface {
 
                     Arrays.stream(Subjects.values()).forEach(subj ->
                             {
-                                sbSubjDataPerStudent.append(df.format(Calculator.calculateStudentAvgBySubject(student, subj)))
+                                sbSubjDataPerStudent
+                                        .append(UnicodeColor.colorizeGrade(Calculator.calculateStudentAvgBySubject(student, subj)))
+                                        .append(df.format(Calculator.calculateStudentAvgBySubject(student, subj)))
+                                        .append(UnicodeColor.RESET)
                                         .append(" ".repeat(tab));
                             }
                     );
-                    sbSubjDataPerStudent.append(df.format(Calculator.calculateStudentAvg(student)));
-                    sbSubjDataPerStudent.append(System.lineSeparator());
+                    sbSubjDataPerStudent
+                            .append(UnicodeColor.colorizeGrade(Calculator.calculateStudentAvg(student)))
+                            .append(df.format(Calculator.calculateStudentAvg(student)))
+                            .append(UnicodeColor.RESET)
+                            .append(System.lineSeparator());
                 });
 
         sbLastRow.append(" ".repeat(indent));
         for (Subjects subject : Subjects.values()
         ) {
-            sbLastRow.append(df.format(Calculator.calculateSubjectAvg(subject, studClass))).append(" ".repeat(tab));
+            sbLastRow
+                    .append(UnicodeColor.colorizeGrade(Calculator.calculateSubjectAvg(subject, studClass)))
+                    .append(df.format(Calculator.calculateSubjectAvg(subject, studClass))).append(" ".repeat(tab))
+                    .append(UnicodeColor.RESET);
+
         }
         sbLastRow.append(df.format(Calculator.calculateStudClassAvg(studClass)));
 
