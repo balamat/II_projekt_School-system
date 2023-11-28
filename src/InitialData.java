@@ -4,13 +4,23 @@ import java.util.ArrayList;
 public class InitialData {
 
 
-//        Admin admin01 = new Admin();
-//
 //        Teacher teacher01 = new Teacher(new Name("A", "B"), Subjects.HISTORY).addToList();
 //        Teacher teacher02 = new Teacher(new Name("Tört", "Elek"), Subjects.MATHS).addToList();
 //        Teacher teacher03 = new Teacher(new Name("Kós", "Károly"), Subjects.PHYSICS).addToList();
 //        Teacher teacher04 = new Teacher(new Name("Jó", "Ferenc"), Subjects.ENGLISH, Subjects.GERMAN).addToList();
 //        Teacher teacher05 = new Teacher(new Name("Nemoda", "Norbert"), Subjects.SPORT).addToList();
+//        new Teacher(new Name("Jürgen", "Klopp"), Subjects.SPORT, Subjects.GERMAN).addToList();
+//        new Teacher(new Name("Bolyai", "János"), Subjects.MATHS, Subjects.PHYSICS).addToList();
+//        new Teacher(new Name("Neumann", "János"), Subjects.MATHS).addToList();
+//        new Teacher(new Name("Karinthy", "Frigyes"), Subjects.HUNGARIAN).addToList();
+//        new Teacher(new Name("Móricz", "Zsigmond"), Subjects.HUNGARIAN, Subjects.HISTORY).addToList();
+//        new Teacher(new Name("Atkinson", "Rowan"), Subjects.ENGLISH).addToList();
+//        new Teacher(new Name("Hill", "Benny"), Subjects.ENGLISH, Subjects.SPORT).addToList();
+//        new Teacher(new Name("Öveges", "József"), Subjects.PHYSICS).addToList();
+//        new Teacher(new Name("Thorma", "János"), Subjects.VISUAL_ARTS).addToList();
+//        new Teacher(new Name("Bartók", "Béla"), Subjects.MUSIC).addToList();
+//        new Teacher(new Name("Kodály", "Zoltán"), Subjects.MUSIC, Subjects.HISTORY).addToList();
+//        new Teacher(new Name("Rossi", "Marco"), Subjects.SPORT, Subjects.ENGLISH).addToList();
 
 //        StudClass A12 = new StudClass(teacher01, "12A").addToList();
 //        StudClass B12 = new StudClass(teacher02, "12B").addToList();

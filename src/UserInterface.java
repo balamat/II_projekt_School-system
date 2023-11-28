@@ -60,10 +60,22 @@ public class UserInterface {
     }
 
     public static void printMainPage() {
+        clearScreen();
         int functionIndex = 1;
         functionList.add(0);
         int permission = Log.permission;
-        clearScreen();
+        int numberOfOptions = 1;
+        switch (permission) {
+            case 0:
+                numberOfOptions = 4;
+                break;
+            case 1:
+                numberOfOptions = 3;
+                break;
+            case 2:
+                numberOfOptions = 1;
+                break;
+        }
 
         System.out.println("Válassz a lehetőségek közül!");
         System.out.println("1 - Tanulói adatok elérése");
@@ -76,7 +88,7 @@ public class UserInterface {
         }
         System.out.println("0 - Kilépés");
 
-        int choice = Menu.choiceValidator(4);
+        int choice = Menu.choiceValidator(numberOfOptions);
 
         if (choice == 1) {
             printStudentInfo();
@@ -98,6 +110,9 @@ public class UserInterface {
     public static void printStudentInfo() {
         clearScreen();
         saveActualFunction(1);
+        String labelOfAction = "tanulói adatok";
+        System.out.println(labelOfAction.toUpperCase());
+
         System.out.println("Válassz a lehetőségek közül:");
         System.out.println("1 - Diák adatainak lekérdezése");
         System.out.println("2 - Diák jegyeinek lekérdezése");
