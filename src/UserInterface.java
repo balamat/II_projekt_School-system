@@ -6,6 +6,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class UserInterface {
 
+    public static int linewidth = 120;
+
     public static List<Integer> functionList = new ArrayList<>();
 
     public static Map<Integer, Runnable> functionMap = new HashMap<>();
@@ -58,6 +60,23 @@ public class UserInterface {
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
+        printAboutProgram();
+    }
+
+    public static void printAboutProgram() {
+        StringBuilder sbLogo = new StringBuilder();
+        String releaseNumber = "v1.1 ";
+        String labelTitle = "StudSys School System - Iskolai nyilvántartó rendszer";
+        String labelAuthor = "Máté Balázs \t Flow Academy projektfeladat \t 2023";
+
+        sbLogo
+                .append(UnicodeChar.LU_N_TABLE).append(UnicodeChar.HH_N_TABLE.repeat(117)).append(UnicodeChar.RU_N_TABLE).append(System.lineSeparator())
+                .append(UnicodeChar.VV_N_TABLE).append(" ".repeat(10)).append(" __  ___       __   __       __ ").append(" ".repeat(10)).append(releaseNumber).append(" ".repeat(60)).append(UnicodeChar.VV_N_TABLE).append(System.lineSeparator())
+                .append(UnicodeChar.VV_N_TABLE).append(" ".repeat(10)).append("/__`  |  |  | |  \\ /__` \\ / /__`").append(" ".repeat(10)).append(labelTitle).append(" ".repeat(12)).append(UnicodeChar.VV_N_TABLE).append(System.lineSeparator())
+                .append(UnicodeChar.VV_N_TABLE).append(" ".repeat(10)).append(".__/  |  \\__/ |__/ .__/  |  .__/").append(" ".repeat(10)).append(labelAuthor).append(" ".repeat(13)).append(UnicodeChar.VV_N_TABLE).append(System.lineSeparator())
+                .append(UnicodeChar.LL_N_TABLE).append(UnicodeChar.HH_N_TABLE.repeat(117)).append(UnicodeChar.RL_N_TABLE).append(System.lineSeparator());
+
+        System.out.println(sbLogo);
     }
 
     public static void printMainPage() {
@@ -164,7 +183,7 @@ public class UserInterface {
         });
 
         double totalAvg = Calculator.calculateStudentAvg(student);
-        System.out.println("---------------------------------------------------------");
+        System.out.println("-".repeat(linewidth));
         System.out.println("Tanulmányi átlag: " + df.format(totalAvg) + System.lineSeparator());
         continueMenu();
     }
@@ -651,16 +670,15 @@ public class UserInterface {
 //        int width = (int) widthDouble / spacePixelWidth;
 //        double widthDouble = screenSize.getWidth();
         int spacePixelWidth = 12;
-        int width = 120;
         int tab = 5;
         StringBuilder sbBottomLine = new StringBuilder();
         sbBottomLine
-                .append("-".repeat(width)).append(System.lineSeparator())
+                .append("-".repeat(linewidth)).append(System.lineSeparator())
                 .append("b - visszalépés").append(" ".repeat(tab))
                 .append("r - újra").append(" ".repeat(tab))
                 .append("0 - kilépés").append(" ".repeat(tab))
                 .append("ENTER - kezdőoldal").append(System.lineSeparator())
-                .append("-".repeat(width)).append(System.lineSeparator());
+                .append("-".repeat(linewidth)).append(System.lineSeparator());
 
         System.out.println(sbBottomLine);
         String input = generalLineScan();

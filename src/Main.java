@@ -13,6 +13,7 @@ public class Main {
         Load.loadArchiveFromJson();
 
         //login
+        UserInterface.clearScreen();
         Log.login();
 
         //mainPage
