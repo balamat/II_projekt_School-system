@@ -22,7 +22,8 @@ public class Load {
     }
 
     public static void loadFromJson() {
-        String importPath = "out/artifacts/project2_school_system_jar/files/schoolSystem.json";
+        String importPath = "files/schoolSystem.json";
+//        String importPath = "out/artifacts/project2_school_system_jar/files/schoolSystem.json";
 
         Path path = Paths.get(importPath);
 
@@ -54,7 +55,8 @@ public class Load {
     }
 
     public static void loadArchiveFromJson() {
-        String importPath = "out/artifacts/project2_school_system_jar/files/schoolSystem_archive.json";
+        String importPath = "files/schoolSystem_archive.json";
+//        String importPath = "out/artifacts/project2_school_system_jar/files/schoolSystem_archive.json";
         Path path = Paths.get(importPath);
 
         try {
@@ -98,13 +100,16 @@ public class Load {
         String archivedOutput = prettyGson.toJson(archivedTotalList);
 
         try {
-            FileWriter fw = new FileWriter("out/artifacts/project2_school_system_jar/files/schoolSystem.json");
+            FileWriter fw = new FileWriter("files/schoolSystem.json");
+//            FileWriter fw = new FileWriter("out/artifacts/project2_school_system_jar/files/schoolSystem.json");
             fw.write(output);
             fw.close();
-            FileWriter fw_backup = new FileWriter("out/artifacts/project2_school_system_jar/files/backup/schoolSystem_" + backupVersion() + ".json");
+            FileWriter fw_backup = new FileWriter("files/backup/schoolSystem_" + backupVersion() + ".json");
+//            FileWriter fw_backup = new FileWriter("out/artifacts/project2_school_system_jar/files/backup/schoolSystem_" + backupVersion() + ".json");
             fw_backup.write(output);
             fw_backup.close();
-            FileWriter fw_archive = new FileWriter("out/artifacts/project2_school_system_jar/files/schoolSystem_archive.json");
+            FileWriter fw_archive = new FileWriter("files/schoolSystem_archive.json");
+//            FileWriter fw_archive = new FileWriter("out/artifacts/project2_school_system_jar/files/schoolSystem_archive.json");
             fw_archive.write(archivedOutput);
             fw_archive.close();
 

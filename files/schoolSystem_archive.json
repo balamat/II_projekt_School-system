@@ -1,0 +1,218 @@
+[
+  [
+    {
+      "uuid": "7c5ff883-f9f8-4840-92cb-a65b261f48e7",
+      "name": {
+        "firstName": "Yetty",
+        "lastName": "Nichol"
+      },
+      "birthday": "2008-03-20",
+      "studClassString": "9C",
+      "subjectAndGradeList": {
+        "GERMAN": [
+          {
+            "description": "röpdolgozat",
+            "grade": 2
+          },
+          {
+            "description": "témazáró",
+            "grade": 3
+          },
+          {
+            "description": "órai munka",
+            "grade": 3
+          },
+          {
+            "description": "felelés",
+            "grade": 5
+          },
+          {
+            "description": "gyakorlófeladatok",
+            "grade": 4
+          }
+        ],
+        "MATHS": [
+          {
+            "description": "javítódolgozat",
+            "grade": 1
+          },
+          {
+            "description": "felelés",
+            "grade": 2
+          },
+          {
+            "description": "röpdolgozat",
+            "grade": 1
+          },
+          {
+            "description": "felelés",
+            "grade": 1
+          }
+        ],
+        "HUNGARIAN": [
+          {
+            "description": "dolgozat",
+            "grade": 1
+          },
+          {
+            "description": "projektmunka",
+            "grade": 2
+          },
+          {
+            "description": "dolgozat",
+            "grade": 5
+          },
+          {
+            "description": "témazáró",
+            "grade": 2
+          },
+          {
+            "description": "dolgozat",
+            "grade": 2
+          },
+          {
+            "description": "gyakorlófeladatok",
+            "grade": 1
+          }
+        ],
+        "ENGLISH": [
+          {
+            "description": "dolgozat",
+            "grade": 1
+          },
+          {
+            "description": "projektmunka",
+            "grade": 4
+          },
+          {
+            "description": "órai munka",
+            "grade": 5
+          },
+          {
+            "description": "házi feladat",
+            "grade": 3
+          }
+        ],
+        "HISTORY": [
+          {
+            "description": "dolgozat",
+            "grade": 3
+          },
+          {
+            "description": "házi feladat",
+            "grade": 5
+          },
+          {
+            "description": "röpdolgozat",
+            "grade": 1
+          },
+          {
+            "description": "dolgozat",
+            "grade": 1
+          },
+          {
+            "description": "javítódolgozat",
+            "grade": 5
+          }
+        ],
+        "PHYSICS": [
+          {
+            "description": "röpdolgozat",
+            "grade": 5
+          },
+          {
+            "description": "órai munka",
+            "grade": 1
+          },
+          {
+            "description": "órai munka",
+            "grade": 4
+          },
+          {
+            "description": "projektmunka",
+            "grade": 3
+          },
+          {
+            "description": "dolgozat",
+            "grade": 3
+          },
+          {
+            "description": "dolgozat",
+            "grade": 2
+          }
+        ],
+        "VISUAL_ARTS": [
+          {
+            "description": "szorgalmi",
+            "grade": 2
+          },
+          {
+            "description": "festés",
+            "grade": 2
+          },
+          {
+            "description": "projektmunka",
+            "grade": 3
+          },
+          {
+            "description": "projektmunka",
+            "grade": 5
+          }
+        ],
+        "MUSIC": [
+          {
+            "description": "témazáró",
+            "grade": 5
+          },
+          {
+            "description": "gyakorlófeladatok",
+            "grade": 4
+          },
+          {
+            "description": "felelés",
+            "grade": 2
+          },
+          {
+            "description": "témazáró",
+            "grade": 1
+          },
+          {
+            "description": "javítódolgozat",
+            "grade": 5
+          },
+          {
+            "description": "témazáró",
+            "grade": 4
+          }
+        ],
+        "SPORT": [
+          {
+            "description": "kézilabda",
+            "grade": 4
+          },
+          {
+            "description": "erőnléti felmérés",
+            "grade": 5
+          },
+          {
+            "description": "foci",
+            "grade": 4
+          },
+          {
+            "description": "foci",
+            "grade": 3
+          },
+          {
+            "description": "kézilabda",
+            "grade": 5
+          },
+          {
+            "description": "sprint",
+            "grade": 3
+          }
+        ]
+      }
+    }
+  ],
+  []
+]

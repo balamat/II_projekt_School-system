@@ -149,6 +149,7 @@ public class UserInterface {
     }
 
     public static void printStudentGrades() {
+        UserInterface.clearScreen();
         saveActualFunction(12);
         String labelOfAction = "jegyek lekérdezése";
         System.out.println(labelOfAction.toUpperCase());
@@ -169,6 +170,7 @@ public class UserInterface {
     }
 
     public static void printStudentAbsence() {
+        UserInterface.clearScreen();
         saveActualFunction(13);
         String labelOfAction = "hiányzások lekérdezése";
         System.out.println(labelOfAction.toUpperCase());
@@ -209,6 +211,7 @@ public class UserInterface {
     }
 
     public static void printStudClassData() {
+        UserInterface.clearScreen();
         saveActualFunction(21);
         String labelOfAction = "osztályadatok";
         System.out.println(labelOfAction.toUpperCase());
@@ -218,6 +221,7 @@ public class UserInterface {
     }
 
     public static void printStudClassGrades() {
+        UserInterface.clearScreen();
         saveActualFunction(22);
         String labelOfAction = "osztály diákjainak átlagai";
         System.out.println(labelOfAction.toUpperCase());
@@ -279,6 +283,7 @@ public class UserInterface {
     }
 
     public static void printStudClassAbsence() {
+        UserInterface.clearScreen();
         saveActualFunction(23);
 
         int indent = 30;
@@ -337,6 +342,7 @@ public class UserInterface {
     }
 
     public static void fillClassDiary() {
+        UserInterface.clearScreen();
         saveActualFunction(31);
         String labelOfAction = "aktuális óra naplózása";
         System.out.println(labelOfAction.toUpperCase());
@@ -357,6 +363,7 @@ public class UserInterface {
     }
 
     public static void saveGrade() {
+        UserInterface.clearScreen();
         saveActualFunction(33);
         String labelOfAction = "jegy beírása";
         System.out.println(labelOfAction.toUpperCase());
@@ -372,6 +379,7 @@ public class UserInterface {
     }
 
     public static void modifyClassDiary() {
+        UserInterface.clearScreen();
         saveActualFunction(32);
         String labelOfAction = "meglévő naplóadatok módosítása";
         System.out.println(labelOfAction.toUpperCase());
@@ -395,6 +403,7 @@ public class UserInterface {
     }
 
     public static void deleteGrade() {
+        UserInterface.clearScreen();
         saveActualFunction(34);
         String labelOfAction = "jegy törlése";
         System.out.println(labelOfAction.toUpperCase());
