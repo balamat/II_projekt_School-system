@@ -5,6 +5,7 @@ out/
 
 ### exclude backup json files
 /files/backup
+/out/artifacts/project2_school_system_jar/files/backup
 
 ### Eclipse ###
 .apt_generated

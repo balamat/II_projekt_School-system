@@ -13,10 +13,9 @@ public class Main {
         Load.loadArchiveFromJson();
 
         //login
-//        Log.login();
+        Log.login();
 
         //mainPage
-        InitialData.initializeGrades();
         UserInterface.printMainPage();
 
         //Functions
@@ -45,6 +44,6 @@ public class Main {
         //archive studClass
 
         //auto export toJson
-//        Load.exportToJson();
+        Load.exportToJson();
     }
 }

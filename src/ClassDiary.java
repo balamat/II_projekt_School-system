@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class ClassDiary {
     private static List<ClassDiary> allClassDiary = new ArrayList<>();
@@ -106,6 +107,13 @@ public class ClassDiary {
                 .filter(classDiary -> classDiary.getAbsentStudents().containsKey(student.getUuid()))
                 .forEach(classDiary -> absenceMap.put(classDiary, classDiary.getAbsentStudents().get(student.getUuid())));
         return absenceMap;
+    }
+
+    public static LocalDate generateRandomDiaryDate() {
+        long minDay = LocalDate.of(2023, 9, 1).toEpochDay();
+        long maxDay = LocalDate.now().toEpochDay();
+        long randomDay = ThreadLocalRandom.current().nextLong(minDay, maxDay);
+        return LocalDate.ofEpochDay(randomDay);
     }
 
     @Override

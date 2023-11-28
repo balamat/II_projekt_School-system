@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class InitialData {
 
@@ -17,7 +18,7 @@ public class InitialData {
         Student.getAllStudentList()
                 .stream()
                 .skip(446)
-                .forEach(student -> student.generateRandomGrades(1, 3));
+                .forEach(student -> student.generateRandomGrades(1, 4));
     }
 
 }

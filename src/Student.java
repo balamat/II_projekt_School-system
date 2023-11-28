@@ -15,7 +15,7 @@ public class Student implements Cloneable, User {
     public Student(Name name, String studClassString) {
         this.uuid = UUID.randomUUID();
         this.name = name;
-        this.birthday = generateRandomDate();
+        this.birthday = generateRandomBirthDate();
         this.studClassString = studClassString;
         this.subjectAndGradeList = new HashMap<>();
     }
@@ -129,9 +129,9 @@ public class Student implements Cloneable, User {
         return 0;
     }
 
-    public static LocalDate generateRandomDate() {
-        long minDay = LocalDate.of(2007, 8, 31).toEpochDay();
-        long maxDay = LocalDate.of(2013, 9, 1).toEpochDay();
+    public static LocalDate generateRandomBirthDate() {
+        long minDay = LocalDate.of(2004, 9, 1).toEpochDay();
+        long maxDay = LocalDate.of(2009, 9, 1).toEpochDay();
         long randomDay = ThreadLocalRandom.current().nextLong(minDay, maxDay);
         return LocalDate.ofEpochDay(randomDay);
     }
