@@ -4335,6 +4335,10 @@
           {
             "description": "órai munka",
             "grade": 5
+          },
+          {
+            "description": "nem volt felszerelése",
+            "grade": 1
           }
         ],
         "ENGLISH": [
@@ -119134,6 +119138,27 @@
       "studClassString": "12A",
       "absentStudents": {
         "22334ee6-98e8-4e03-ac0a-b61033baf249": "betegeskedik"
+      }
+    },
+    {
+      "uuid": "b2853ac1-58d4-4ff6-8c82-7356c824e254",
+      "date": "2023-10-14",
+      "classSerial": "CL_2",
+      "subject": "SPORT",
+      "teacher": {
+        "uuid": "f006416c-1127-451f-92eb-085bd01186bc",
+        "name": {
+          "firstName": "Marco",
+          "lastName": "Rossi"
+        },
+        "taughtSubject": [
+          "SPORT",
+          "ENGLISH"
+        ]
+      },
+      "studClassString": "12E",
+      "absentStudents": {
+        "b6d6421f-8926-4383-8ae0-7d33fa004567": "válogatott meccs (Szerbia)"
       }
     }
   ]

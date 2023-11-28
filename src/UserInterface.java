@@ -73,7 +73,7 @@ public class UserInterface {
                 .append(UnicodeChar.LU_N_TABLE).append(UnicodeChar.HH_N_TABLE.repeat(117)).append(UnicodeChar.RU_N_TABLE).append(System.lineSeparator())
                 .append(UnicodeChar.VV_N_TABLE).append(" ".repeat(10)).append(" __  ___       __   __       __ ").append(" ".repeat(10)).append(releaseNumber).append(" ".repeat(60)).append(UnicodeChar.VV_N_TABLE).append(System.lineSeparator())
                 .append(UnicodeChar.VV_N_TABLE).append(" ".repeat(10)).append("/__`  |  |  | |  \\ /__` \\ / /__`").append(" ".repeat(10)).append(labelTitle).append(" ".repeat(12)).append(UnicodeChar.VV_N_TABLE).append(System.lineSeparator())
-                .append(UnicodeChar.VV_N_TABLE).append(" ".repeat(10)).append(".__/  |  \\__/ |__/ .__/  |  .__/").append(" ".repeat(10)).append(labelAuthor).append(" ".repeat(13)).append(UnicodeChar.VV_N_TABLE).append(System.lineSeparator())
+                .append(UnicodeChar.VV_N_TABLE).append(" ".repeat(10)).append(".__/  |  \\__/ |__/ .__/  |  .__/").append(" ".repeat(10)).append(labelAuthor).append(" ".repeat(9)).append(UnicodeChar.VV_N_TABLE).append(System.lineSeparator())
                 .append(UnicodeChar.LL_N_TABLE).append(UnicodeChar.HH_N_TABLE.repeat(117)).append(UnicodeChar.RL_N_TABLE).append(System.lineSeparator());
 
         System.out.println(sbLogo);
