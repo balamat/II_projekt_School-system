@@ -119160,6 +119160,44 @@
       "absentStudents": {
         "b6d6421f-8926-4383-8ae0-7d33fa004567": "válogatott meccs (Szerbia)"
       }
+    },
+    {
+      "uuid": "e5126589-a246-4fa5-81a0-4bb3a192b1c3",
+      "date": "2023-11-28",
+      "classSerial": "CL_9",
+      "subject": "PHYSICS",
+      "teacher": {
+        "uuid": "f8e45f2a-ab99-4616-a35e-e90a68b87ad7",
+        "name": {
+          "firstName": "József",
+          "lastName": "Öveges"
+        },
+        "taughtSubject": [
+          "PHYSICS"
+        ]
+      },
+      "studClassString": "12A",
+      "absentStudents": {
+        "1de6acfe-fb7a-447d-8b95-0ac61c6284ef": "fáj a lába"
+      }
+    },
+    {
+      "uuid": "a503bf27-f235-4dc2-acfb-c6b5212be32a",
+      "date": "2023-11-28",
+      "classSerial": "CL_8",
+      "subject": "ENGLISH",
+      "teacher": {
+        "uuid": "749d4297-6e96-41cd-8982-aeacd81c98bb",
+        "name": {
+          "firstName": "Rowan",
+          "lastName": "Atkinson"
+        },
+        "taughtSubject": [
+          "ENGLISH"
+        ]
+      },
+      "studClassString": "12E",
+      "absentStudents": {}
     }
   ]
 ]

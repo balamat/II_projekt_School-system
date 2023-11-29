@@ -212,6 +212,16 @@
           }
         ]
       }
+    },
+    {
+      "uuid": "12d9b745-4429-4206-9e01-3e5c972d48b2",
+      "name": {
+        "firstName": "Attila",
+        "lastName": "Szalai"
+      },
+      "birthday": "1992-02-22",
+      "studClassString": "12E",
+      "subjectAndGradeList": {}
     }
   ],
   []

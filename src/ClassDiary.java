@@ -118,13 +118,12 @@ public class ClassDiary {
 
     @Override
     public String toString() {
-        return "ClassDiary{" +
-                "date=" + date + System.lineSeparator() +
-                ", classSerial=" + classSerial + System.lineSeparator() +
-                ", subject=" + subject + System.lineSeparator() +
-                ", teacher=" + teacher + System.lineSeparator() +
-                ", studClass=" + studClassString + System.lineSeparator() +
-                ", absentStudents=" + absentStudents +
-                '}' + System.lineSeparator();
+        return "Napló:" + System.lineSeparator() +
+                "\t dátum: " + date + System.lineSeparator() +
+                "\t óra: " + classSerial + System.lineSeparator() +
+                "\t tárgy: " + subject + System.lineSeparator() +
+                "\t tanár: " + teacher + System.lineSeparator() +
+                "\t osztály: " + studClassString + System.lineSeparator() +
+                "\t hiányzók: " + absentStudents + System.lineSeparator();
     }
 }
