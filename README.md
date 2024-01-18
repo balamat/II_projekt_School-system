@@ -20,7 +20,7 @@ This solution was created during Flow Academy's (https://flowacademy.hu/) Junior
 Flow Work Earth - project phase 2.
 School System
 Your task is to build a school registration system.
-Recommended classes: Name, Subject, Grade, Student,Teacher, ClassDiary
+Recommended classes: Name, Subject, Grade, Student, Teacher, ClassDiary
 
 1. create queryable data in a JSON file
 2. when starting the program, decide what we want to do
@@ -62,7 +62,7 @@ Deadline and the date of the project presentation: **2023-11-29 17:00**
 
 ### What I learned
 
-In this project phase I did my own, so the main skill what was to order the different features by importance, because there was 2 weeks for it. It was also beneficial for practicing time management as well. The solid fundementals of using JSON-s was one of the biggest technical challenge due to the numerous classes. After the first project phase (where I made a minesweeper application) this time I put the emphasize on to create clean code too.
+In this project phase one of the most important skills was to order the different features by importance, because there was only 2 weeks for it. It was also beneficial for practicing time management as well. The solid fundementals of using JSON-s was one of the biggest technical challenge due to the numerous classes. After the first project phase (where I made a minesweeper application with 2 of my classmates together) this time I put the emphasize on to create clean code too.
 
 
 ### Continued development
