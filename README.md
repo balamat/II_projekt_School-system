@@ -15,7 +15,7 @@ This solution was created during Flow Academy's (https://flowacademy.hu/) Junior
 
 ## Overview
 
-### Requirements - given by Flow Academy
+### Requirements - given by Flow Academy at 2023.11.13.
 
 Flow Work Earth - project phase 2.
 School System
